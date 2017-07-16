@@ -3,10 +3,10 @@
  */
 angular
   .module('app')
-  .controller('MainController', ['$scope', '$anchorScroll', '$location', function($scope, $anchorScroll, $location)
+  .controller('MainController', ['$scope', '$anchorScroll', '$location', 'coreFactory', function($scope, $anchorScroll, $location, coreFactory)
   {
     $scope.MenuItemSelectedIndex = -1;
-    $scope.SelectedLanguage = 'English';
+    $scope.SelectedLanguage = coreFactory.Language;
     $scope.SelectMenuItem = function (index)
     {
       $scope.MenuItemSelectedIndex = index ==  $scope.MenuItemSelectedIndex ? -1 : index;
@@ -15,7 +15,9 @@ angular
     $scope.ChangeLanguage = function (value, event)
     {
       event.stopPropagation();
-      $scope.SelectedLanguage = value;
+      //$scope.SelectedLanguage = value;
+      coreFactory.SetLanguage(value);
+      location.reload();
     }
 
     $scope.GoToById = function (id)

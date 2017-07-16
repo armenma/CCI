@@ -18,6 +18,10 @@ var i18n = {
     return this.Translations[word] || word;
   }
 };
+var language = localStorage.getItem('language');
+
+if (!language)language = 'English';
+
 app.filter('i18n', [function () {
 
   return function (word) {
@@ -26,4 +30,31 @@ app.filter('i18n', [function () {
   };
 
 }]);
+app.factory('coreFactory', function () {
+
+  var f = {
+
+    Language: language,
+
+    Run: function () {
+
+      $.ajax({
+        "url": 'js/i18n/' + language + '.json',
+        async: false,
+        success: function (systemJson) {
+
+          i18n.Add(systemJson);
+        }
+      });
+    },
+
+    SetLanguage: function (lang) {
+
+      localStorage.setItem('language', lang);
+    }
+
+  };
+
+  return f;
+});
 

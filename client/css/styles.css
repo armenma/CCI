@@ -11,6 +11,9 @@ header{
   height: 60px;
   background: #0c2a31;
   border-bottom: 2px solid #16a6c4;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 .footer-column{width: 215px; float: left; text-align: left;
   padding-left: 55px; padding-top: 55px;
@@ -88,6 +91,14 @@ header{
 .index-content h1{font-size: 20px}
 .index-content p{text-align: left; padding: 10px 15px 10px 15px}
 .clear{clear: both}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
 table{width: 100%; border-collapse: collapse;}
 table tr{border-top: 1px solid black}
 table tr td{padding: 10px 10px 10px 10px; vertical-align: middle}
@@ -272,4 +283,26 @@ section.home p:nth-of-type(5){font-size: 60px; font-weight: bold; text-align: ce
   left: 50%;
   transform: translateX(-50%);
   background: url("../images/routing.png") no-repeat;
+}
+
+/*FOOTER AREA*/
+footer{
+  height: 112px;
+  background: #02a3d5;
+  text-align: center;
+}
+.footer-item{
+  width: 52px;
+  height: 52px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 31px;
+}
+footer > div .footer-item:first-of-type{background: url("../images/footer/Twitter.png") no-repeat; margin-left: 50px;}
+footer > div .footer-item:nth-of-type(2){background: url("../images/footer/Facebook.png") no-repeat;}
+footer > div .footer-item:nth-of-type(3){background: url("../images/footer/Telegram.png") no-repeat;}
+footer > div .footer-item:nth-of-type(4){background: url("../images/footer/Slack.png") no-repeat;}
+footer span{font-size: 22px; color: white; font-weight: bold; line-height: 112px;
+  display: inline-block;
+  margin-right: 310px;
 }
