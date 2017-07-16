@@ -1,0 +1,22 @@
+{
+  "name": "CryptoCurrencyIndexes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "value": {
+      "type": "number",
+      "default": 0
+    },
+    "date": {
+      "type": "date",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

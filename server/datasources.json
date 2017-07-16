@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "crypto_currency_management",
+    "password": "",
+    "name": "mongodb",
+    "user": "armen",
+    "connector": "mongodb"
+  }
+}

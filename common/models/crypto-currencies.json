@@ -1,0 +1,54 @@
+{
+  "name": "CryptoCurrencies",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "forceId": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "rank": {
+      "type": "string"
+    },
+    "price_usd": {
+      "type": "number"
+    },
+    "price_btc": {
+      "type": "number"
+    },
+    "24h_volume_usd": {
+      "type": "number"
+    },
+    "market_cap_usd": {
+      "type": "number"
+    },
+    "available_supply": {
+      "type": "number"
+    },
+    "total_supply": {
+      "type": "number"
+    },
+    "percent_change_1h": {
+      "type": "number"
+    },
+    "percent_change_24h": {
+      "type": "number"
+    },
+    "percent_change_7d": {
+      "type": "number"
+    },
+    "last_updated": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
