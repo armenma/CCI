@@ -17,6 +17,11 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
       templateUrl: 'views/main.html',
       controller: 'GetCryptoCurrencies'
     })
+    .state('ico', {
+      url: '/ico',
+      templateUrl: 'views/ico.html',
+      controller: 'ICOController'
+    })
     .state('home', {
       url: '/home',
       templateUrl: 'views/home.html',

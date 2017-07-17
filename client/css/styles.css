@@ -87,11 +87,10 @@ header{
 .chart-container, .intro-container{float: left; border: 1px solid rgba(0, 0, 0, .5); height: 500px}
 .chart-container{width: calc(100% - 270px); margin-right: 20px}
 .intro-container{width: 240px}
-.index-content{padding: 0 30px 0 30px; text-align: center}
+.index-content{padding: 60px 30px 0 30px; text-align: center}
 .index-content h1{font-size: 20px}
 .index-content p{text-align: left; padding: 10px 15px 10px 15px}
 .clear{clear: both}
-.clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
@@ -306,3 +305,16 @@ footer span{font-size: 22px; color: white; font-weight: bold; line-height: 112px
   display: inline-block;
   margin-right: 310px;
 }
+/*ICO PART*/
+.ico-section{padding-top: 78px; overflow: hidden; position: relative}
+.ico-header{text-align: center; font-size: 33px; font-weight: bold; color: #0c2a31}
+.pre-ico-header{text-align: center; font-size: 20px; color: #b3b1ba; margin-top: 50px}
+.ico-header-left-rate{font-size: 20px; color: #b3b1ba; white-space: pre-wrap; float: left}
+.ico-header-left-rate span, .ico-header-right-rate span{color: #02a3d5}
+.count-down{position: absolute; width: 510px; left: 50%; transform: translateX(-50%); top:170px}
+.ico-header-right-rate{font-size: 20px; color: #b3b1ba; white-space: pre-wrap; float: right; margin-right: 30px}
+.count-down-item{float: left; white-space: pre-wrap; text-align: center; font-weight: bold; color: #02a3d5; font-size: 36px}
+.count-down-item span{color: #b3b1ba; font-size: 12px}
+.ico-contribute-far{font-size: 20px; color: #b3b1ba; margin-top: 35px; text-align: center; font-weight: normal}
+.ico-change-box{background: #f4f4f4; overflow: hidden; margin-top: 30px; padding-bottom: 75px}
+.ico-info-box{float: left; padding-top: 30px}

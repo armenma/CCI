@@ -3,13 +3,16 @@
  */
 angular
   .module('app')
-  .controller('MainController', ['$scope', '$anchorScroll', '$location', 'coreFactory', function($scope, $anchorScroll, $location, coreFactory)
+  .controller('MainController', ['$scope', '$anchorScroll', '$location', 'coreFactory', '$state', function($scope, $anchorScroll, $location, coreFactory, $state)
   {
     $scope.MenuItemSelectedIndex = -1;
     $scope.SelectedLanguage = coreFactory.Language;
     $scope.SelectMenuItem = function (index)
     {
       $scope.MenuItemSelectedIndex = index ==  $scope.MenuItemSelectedIndex ? -1 : index;
+
+      if(index === 3) $state.go('ico');
+
     }
 
     $scope.ChangeLanguage = function (value, event)
