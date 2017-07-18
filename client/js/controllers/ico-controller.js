@@ -4,6 +4,23 @@ angular
   {
     var countDownDate = new Date("Aug 1, 2017 15:37:25").getTime();
 
+    $scope.State = 0;
+    $scope.CCValue = 0;
+    $scope.ETHValue = 0;
+
+    $scope.ChangeState = function (value) {
+      $scope.State = value;
+    }
+    $scope.CChange = function ()
+    {
+      $scope.ETHValue = Number(($scope.CCValue / 2000).toFixed(2));
+    }
+
+    $scope.ETHChange = function ()
+    {
+      $scope.CCValue = Number(($scope.ETHValue * 2000).toFixed(2));
+    }
+
     function calculate()
     {
       var now = new Date().getTime();

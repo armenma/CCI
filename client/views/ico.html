@@ -34,7 +34,7 @@
 
   <div class="ico-contribute-far">{{'CONTRIBUTE_SO_FAR' | i18n}}</div>
 
-  <div class="ico-change-box">
+  <div class="ico-change-box" ng-if="State == 0">
 
     <div class="ico-info-box">
 
@@ -87,6 +87,46 @@
         <span style="font-size: 22px; font-weight: bold">Total token amount:</span> <span style="font-size: 19px;">100 000 000 CCI tokens</span>
       </div>
     </div>
+    <div class="change-box">
+      <p>{{'BECOME_INVESTOR' | i18n}}</p>
+      <div>
+        <input type="number" ng-model="ETHValue" ng-change="ETHChange()">
+        <div>ETH</div>
+      </div>
+      <p>{{'CURRENT_RATE' | i18n}} <span>1ETH : 2000 CCI</span></p>
+      <div>
+        <input type="number" ng-model="CCValue" ng-change="CChange()">
+        <div>CCI</div>
+      </div>
+      <div class="clear"></div>
+      <button class="contribute-button" ng-click="ChangeState(1)">{{'CONTRIBUTE' | i18n}}</button>
+    </div>
+  </div>
+
+  <div class="ico-second-box" ng-if="State == 1">
+
+    <div>
+      <span>{{'TERMS_AND_CONDITIONS' | i18n}}</span>
+      <span>{{'TERMS_AND_CONDITIONS_SEC' | i18n}}</span>
+    </div>
+
+    <div>
+      READ THESE TERMS AND CONDITIONS ("Terms") CAREFULLY READ THESE READS TERMS AND CONDITIONS
+      READ THESE TERMS AND CONDITIONS ("Terms") CAREFULLY READ THESE READS TERMS AND CONDITIONS
+      READ THESE TERMS AND CONDITIONS ("Terms") CAREFULLY READ THESE TERMS READS AND CONDITIONS
+      READ THESE TERMS AND CONDITIONS ("Terms") CAREFULLY READ THESE TERMS READS AND CONDITIONS
+      READ THESE TERMS AND CONDITIONS ("Terms") CAREFULLY READ THESE TERMS READS AND CONDITIONS
+      READ THESE TERMS AND CONDITIONS ("Terms") CAREFULLY READ THESE TERMS READS AND CONDITIONS
+      READ THESE TERMS AND CONDITIONS ("Terms") CAREFULLY READ THESE TERMS READS AND CONDITIONS
+      READ THESE TERMS AND CONDITIONS ("Terms") CAREFULLY READ THESE TERMS READS AND CONDITIONS
+      READ THESE TERMS AND CONDITIONS ("Terms") CAREFULLY READ THESE TERMS READS AND CONDITIONS
+      READ THESE TERMS AND CONDITIONS ("Terms") CAREFULLY READ THESE TERMS READS AND CONDITIONS
+    </div>
+
+  </div>
+
+  <div class="ico-third-box" ng-if="State == 2">
+
   </div>
 
 

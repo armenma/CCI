@@ -318,3 +318,27 @@ footer span{font-size: 22px; color: white; font-weight: bold; line-height: 112px
 .ico-contribute-far{font-size: 20px; color: #b3b1ba; margin-top: 35px; text-align: center; font-weight: normal}
 .ico-change-box{background: #f4f4f4; overflow: hidden; margin-top: 30px; padding-bottom: 75px}
 .ico-info-box{float: left; padding-top: 30px}
+
+.change-box{width: 600px; height: 480px; background: #0c2a31; float: right; margin-right: 30px; margin-top: 30px}
+.change-box > div{margin-right: auto; margin-left: auto; width: calc(100% - 40px); height: 60px}
+.change-box > div input{width: calc(100% - 100px); height: 100%; float: left; padding-left: 30px; font-size: 30px}
+.change-box > div div{width: 100px; float: left; line-height: 60px; background: #02a3d5;
+  color: white; font-weight: bold; font-size: 30px; text-align: center}
+.change-box > p:first-of-type{color: white; font-size: 33px; text-align: center; padding-top: 50px; padding-bottom: 50px}
+.change-box > p:nth-of-type(2){color: white; font-size: 28px; text-align: center; padding-top: 10px; padding-bottom: 10px}
+.change-box > p:nth-of-type(2) > span{font-size: 25px; color: #02a3d5}
+.change-box button{text-align: center; font-size: 30px; color: white; line-height: 70px; height: 70px; width: 265px;
+margin-right: auto; margin-left: auto; background: #02a3d5; display: block}
+.ico-second-box, .ico-third-box{width: calc(100% - 60px); margin-right: auto; margin-left: auto; background: #0c2a31;
+height: 510px; margin-top: 30px; margin-bottom: 50px}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.input-group-btn:last-child > .btn{z-index: 0}
+.input-group .form-control{z-index: -1}
+.ico-second-box > div:first-of-type {white-space: pre-wrap; font-size: 20px; text-align: center; color: white}
+.ico-second-box > div span:first-of-type{text-transform: uppercase}
+.ico-second-box > div:nth-of-type(2){font-size: 20px; color: white; padding: 20px; max-height: 250px;  overflow-y: auto}

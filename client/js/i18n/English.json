@@ -8,5 +8,9 @@
   "HOURS": "hours",
   "MINUTES": "minutes",
   "SECONDS": "seconds",
-  "CONTRIBUTE_SO_FAR" : "Contributed so far: 5000 ETH"
+  "CONTRIBUTE_SO_FAR" : "Contributed so far: 5000 ETH",
+  "CONTRIBUTE": "CONTRIBUTE",
+  "BECOME_INVESTOR": "Стать Cовладелцом CCI",
+  "TERMS_AND_CONDITIONS": "TERMS AND CONDITIONS",
+  "TERMS_AND_CONDITIONS_SEC": " for users acquiring CCI Tokens"
 }
