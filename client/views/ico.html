@@ -123,9 +123,44 @@
       READ THESE TERMS AND CONDITIONS ("Terms") CAREFULLY READ THESE TERMS READS AND CONDITIONS
     </div>
 
+    <div><input type="checkbox">  <span>{{'TERMS_AND_CONDITION_AGREE' | i18n}}</span></div>
+    <div style="position: absolute; height: 1px; background: #02a3d5; bottom: 107px; width: 100%"></div>
+
+    <button ng-click="ChangeState(0)" style="position: absolute; left: 10px; bottom: 10px; width: 165px;
+     height: 75px; color: white; text-align: center; line-height: 75px; background: #02a3d5;
+      font-size: 30px"><i class="fa fa-arrow-left" aria-hidden="true"></i>  {{'BACK' | i18n}}</button>
+
+    <button ng-click="ChangeState(2)" style="position: absolute; right: 10px; bottom: 10px; width: 165px;
+     height: 75px; color: white; text-align: center; line-height: 75px; background: #02a3d5;
+      font-size: 30px"><i class="fa fa-arrow-right" aria-hidden="true"></i>  {{'NEXT' | i18n}}</button>
+
   </div>
 
   <div class="ico-third-box" ng-if="State == 2">
+
+    <div>{{'SEND_SMART_CONTRACT' | i18n}}</div>
+
+    <div>{{'IMPORTANT' | i18n}}</div>
+
+    <ul>
+      <li><span>{{'DO_NOT_SEND_FOUND' | i18n}}</span></li>
+      <li><span>{{'SET_GAS_LIMIT' | i18n}}</span></li>
+      <li><span>{{'SET_GWEI' | i18n}}</span></li>
+      <li><span>{{'SKIN_TOKEN' | i18n}}</span></li>
+    </ul>
+
+    <div>
+      <div class="qr-code"></div>
+      <div class="qr-code-info-box">
+        <span style="color: #b3b1ba">{{'CONTRACT_ADDRESS' | i18n}}</span>
+        <span style="color: black">5465115186565165/66165165161</span>
+      </div>
+    </div>
+
+    <div>
+      <a style="float: left; color: white; line-height: 80px; margin-left: 150px; cursor: pointer">{{'HOW_SEE_CCI' | i18n}}</a>
+      <a style="float: right; color: white; line-height: 80px; margin-right: 150px; cursor: pointer">{{'HOW_SEND_ETH' | i18n}}</a>
+    </div>
 
   </div>
 

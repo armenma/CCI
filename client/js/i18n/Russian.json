@@ -12,5 +12,17 @@
   "CONTRIBUTE": "CONTRIBUTE",
   "BECOME_INVESTOR": "Стать Cовладелцом CCI",
   "TERMS_AND_CONDITIONS": "TERMS AND CONDITIONS",
-  "TERMS_AND_CONDITIONS_SEC": " for users acquiring CCI Tokens"
+  "TERMS_AND_CONDITIONS_SEC": " for users acquiring CCI Tokens",
+  "TERMS_AND_CONDITION_AGREE": "I agree to the terms and conditions and confirm that I am not a citizen of the USA or Hong Kong",
+  "BACK":"Back",
+  "NEXT": "Next",
+  "SEND_SMART_CONTRACT":"Send ETH to the smart contract address below.",
+  "IMPORTANT": "IMPORTANT",
+  "DO_NOT_SEND_FOUND": "DO NOT send funds from exchanges like Coinbase, Poloniex etc. You have to send ETH funds from your personal Ethereum wallets like MyEtherWallet, Metamask, Parity, Mist or Ledger (hardware wallet)",
+  "SET_GAS_LIMIT": "Set Gas Limit to 250 000 (during high-load network)",
+  "SET_GWEI":"Set the gas price at 60 GWEI (during high-load network)",
+  "SKIN_TOKEN": "SKIN tokens will be sent immediately to the wallet from which the ETH arrived",
+  "HOW_SEND_ETH":"How to send ETH to CCI Token sale Address",
+  "HOW_SEE_CCI":"How to see CCI Token in Wallet",
+  "CONTRACT_ADDRESS": "CONTRACT ADDRESS"
 }

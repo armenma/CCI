@@ -329,6 +329,7 @@ footer span{font-size: 22px; color: white; font-weight: bold; line-height: 112px
 .change-box > p:nth-of-type(2) > span{font-size: 25px; color: #02a3d5}
 .change-box button{text-align: center; font-size: 30px; color: white; line-height: 70px; height: 70px; width: 265px;
 margin-right: auto; margin-left: auto; background: #02a3d5; display: block}
+.ico-second-box{position: relative}
 .ico-second-box, .ico-third-box{width: calc(100% - 60px); margin-right: auto; margin-left: auto; background: #0c2a31;
 height: 510px; margin-top: 30px; margin-bottom: 50px}
 input[type=number]::-webkit-inner-spin-button,
@@ -340,5 +341,26 @@ input[type=number]::-webkit-outer-spin-button {
 .input-group-btn:last-child > .btn{z-index: 0}
 .input-group .form-control{z-index: -1}
 .ico-second-box > div:first-of-type {white-space: pre-wrap; font-size: 20px; text-align: center; color: white}
-.ico-second-box > div span:first-of-type{text-transform: uppercase}
+.ico-second-box > div:nth-of-type(2) > span:first-of-type{text-transform: uppercase}
 .ico-second-box > div:nth-of-type(2){font-size: 20px; color: white; padding: 20px; max-height: 250px;  overflow-y: auto}
+.ico-second-box > div:nth-of-type(3){font-size: 20px; color: white; padding: 20px; text-align: center; white-space: nowrap}
+
+.ico-third-box{color: white; font-size: 20px; overflow: hidden;}
+.ico-third-box > div:first-of-type{text-align: center; margin-top: 30px}
+.ico-third-box > div:nth-of-type(2){text-align: left; margin-top: 30px; margin-left: 30px}
+.ico-third-box > ul{margin-top: 30px; margin-left: 30px; font-size: 20px}
+.ico-third-box > ul li{
+  list-style-type: square;
+  color: #02a3d5;
+  padding: 5px;
+}
+.ico-third-box > ul li span{color: white}
+.ico-third-box > div:nth-of-type(3){background: white; height: 130px; margin-top: 20px; margin-left: auto; margin-right: auto;
+  width: calc(100% - 40px); position: relative;
+}
+.ico-third-box > div:nth-of-type(4){background: #02a3d5; height: 80px; margin-left: auto; margin-right: auto;
+  width: calc(100% - 40px);
+}
+.ico-third-box .qr-code{width: 95px; height: 95px;
+  background: url("../images/QRcod.png") no-repeat; position: absolute; left: 85px; top:50%; transform: translateY(-50%) }
+.ico-third-box .qr-code-info-box{white-space: pre-wrap; text-align: center}
