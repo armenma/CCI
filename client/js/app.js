@@ -2,7 +2,7 @@
 // Node module: loopback-example-angular
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
-var app = angular.module('app', ['lbServices', 'ui.router']);
+var app = angular.module('app', ['lbServices', 'ui.router', 'nvd3']);
 
 app.factory('localFactory', ['coreFactory', function (coreFactory) {
 
