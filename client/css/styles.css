@@ -339,7 +339,7 @@ input[type=number]::-webkit-outer-spin-button {
   appearance: none;
 }
 .input-group-btn:last-child > .btn{z-index: 0}
-.input-group .form-control{z-index: -1}
+.input-group .form-control{z-index: -1; position: static}
 .ico-second-box > div:first-of-type {white-space: pre-wrap; font-size: 20px; text-align: center; color: white}
 .ico-second-box > div:nth-of-type(2) > span:first-of-type{text-transform: uppercase}
 .ico-second-box > div:nth-of-type(2){font-size: 20px; color: white; padding: 20px; max-height: 250px;  overflow-y: auto}
@@ -364,3 +364,10 @@ input[type=number]::-webkit-outer-spin-button {
 .ico-third-box .qr-code{width: 95px; height: 95px;
   background: url("../images/QRcod.png") no-repeat; position: absolute; left: 85px; top:50%; transform: translateY(-50%) }
 .ico-third-box .qr-code-info-box{white-space: pre-wrap; text-align: center}
+/*MODULES AREA*/
+section.modules{padding-top:  60px}
+section.modules > aside{height: 500px; background: #f4f4f4}
+section.modules > aside p{color: #0aa6d6; font-size: 33px; text-align: center; padding-top: 20px}
+section.modules > aside:first-of-type{background: white}
+section.modules > aside:first-of-type p{color: black}
+section iframe{height: calc(100vh - 112px)}

@@ -15,7 +15,7 @@ module.exports = function(app) {
 
   var CryptoCurrenciesIndexModel = app.models.CryptoCurrencyIndexes;
 
-  db.automigrate(function(err) {
+  db.autoupdate(function(err) {
 
     process.on('uncaughtException', function (error) {
       console.log(new Date() + 'ERROR STACK: ' + error.stack);

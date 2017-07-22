@@ -12,6 +12,8 @@ angular
       $scope.MenuItemSelectedIndex = index ==  $scope.MenuItemSelectedIndex ? -1 : index;
 
       if(index === 3) $state.go('ico');
+      if(index === 2) $state.go('whitepaper');
+      if(index === 4) $state.go('crypto-currencies');
 
     }
 

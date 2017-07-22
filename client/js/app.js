@@ -2,7 +2,7 @@
 // Node module: loopback-example-angular
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
-var app = angular.module('app', ['lbServices', 'ui.router', 'nvd3']);
+var app = angular.module('app', ['lbServices', 'ui.router', 'nvd3', 'ngOnload']);
 
 app.factory('localFactory', ['coreFactory', function (coreFactory) {
 
@@ -21,6 +21,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
       url: '/ico',
       templateUrl: 'views/ico.html',
       controller: 'ICOController'
+    })
+    .state('modules', {
+      url: '/modules',
+      templateUrl: 'views/modules.html',
+      controller: 'ModulesController'
+    })
+    .state('whitepaper', {
+      url: '/whitepaper',
+      templateUrl: 'views/whitepaper.html',
+      controller: 'StaticPagesController'
     })
     .state('home', {
       url: '/home',
