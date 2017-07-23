@@ -2,23 +2,24 @@ angular
   .module('app')
   .controller('ICOController', ['$scope', '$interval',  function($scope, $interval)
   {
+    var vm = this;
     var countDownDate = new Date("Aug 1, 2017 15:37:25").getTime();
 
-    $scope.State = 0;
-    $scope.CCValue = 0;
-    $scope.ETHValue = 0;
+    vm.State = 0;
+    vm.CCValue = 0;
+    vm.ETHValue = 0;
 
-    $scope.ChangeState = function (value) {
+    vm.ChangeState = function (value) {
       $scope.State = value;
     }
-    $scope.CChange = function ()
+    vm.CChange = function ()
     {
-      $scope.ETHValue = Number(($scope.CCValue / 2000).toFixed(2));
+      vm.ETHValue = Number((vm.CCValue / 2000).toFixed(2));
     }
 
-    $scope.ETHChange = function ()
+    vm.ETHChange = function ()
     {
-      $scope.CCValue = Number(($scope.ETHValue * 2000).toFixed(2));
+      vm.CCValue = Number((vm.ETHValue * 2000).toFixed(2));
     }
 
     function calculate()
@@ -29,10 +30,10 @@ angular
       var distance = countDownDate - now;
 
       // Time calculations for days, hours, minutes and seconds
-      $scope.Deys = Math.floor(distance / (1000 * 60 * 60 * 24));
-      $scope.Hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      $scope.Minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      $scope.Seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      vm.Deys = Math.floor(distance / (1000 * 60 * 60 * 24));
+      vm.Hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      vm.Minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      vm.Seconds = Math.floor((distance % (1000 * 60)) / 1000);
     }
     calculate();
 
@@ -48,4 +49,5 @@ angular
         $interval.cancel(intervalPromise);
       }
     });
+    return vm;
   }]);

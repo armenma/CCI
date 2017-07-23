@@ -20,7 +20,8 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
     .state('ico', {
       url: '/ico',
       templateUrl: 'views/ico.html',
-      controller: 'ICOController'
+      controller: 'ICOController',
+      controllerAs: 'vm'
     })
     .state('modules', {
       url: '/modules',

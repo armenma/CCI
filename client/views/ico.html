@@ -13,19 +13,19 @@
 
   <div class="count-down">
     <div class="count-down-item">
-      {{Deys}}
+      {{vm.Deys}}
       <span>{{'DAYS' | i18n}}</span>
     </div>
     <div class="count-down-item">
-      {{Hours}}
+      {{vm.Hours}}
       <span>{{'Hours' | i18n}}</span>
     </div>
     <div class="count-down-item">
-      {{Minutes}}
+      {{vm.Minutes}}
       <span>{{'MINUTES' | i18n}}</span>
     </div>
     <div class="count-down-item">
-      {{Seconds}}
+      {{vm.Seconds}}
       <span>{{'SECONDS' | i18n}}</span>
     </div>
   </div>
@@ -34,7 +34,7 @@
 
   <div class="ico-contribute-far">{{'CONTRIBUTE_SO_FAR' | i18n}}</div>
 
-  <div class="ico-change-box" ng-if="State == 0">
+  <div class="ico-change-box" ng-if="vm.State == 0">
 
     <div class="ico-info-box">
 
@@ -90,20 +90,20 @@
     <div class="change-box">
       <p>{{'BECOME_INVESTOR' | i18n}}</p>
       <div>
-        <input type="number" ng-model="ETHValue" ng-change="ETHChange()">
+        <input type="number" ng-model="vm.ETHValue" ng-change="vm.ETHChange()">
         <div>ETH</div>
       </div>
       <p>{{'CURRENT_RATE' | i18n}} <span>1ETH : 2000 CCI</span></p>
       <div>
-        <input type="number" ng-model="CCValue" ng-change="CChange()">
+        <input type="number"  ng-model="vm.CCValue" ng-change="vm.CChange()">
         <div>CCI</div>
       </div>
       <div class="clear"></div>
-      <button class="contribute-button" ng-click="ChangeState(1)">{{'CONTRIBUTE' | i18n}}</button>
+      <button class="contribute-button" ng-click="vm.ChangeState(1)">{{'CONTRIBUTE' | i18n}}</button>
     </div>
   </div>
 
-  <div class="ico-second-box" ng-if="State == 1">
+  <div class="ico-second-box" ng-if="vm.State == 1">
 
     <div>
       <span>{{'TERMS_AND_CONDITIONS' | i18n}}</span>
@@ -126,17 +126,17 @@
     <div><input type="checkbox">  <span>{{'TERMS_AND_CONDITION_AGREE' | i18n}}</span></div>
     <div style="position: absolute; height: 1px; background: #02a3d5; bottom: 107px; width: 100%"></div>
 
-    <button ng-click="ChangeState(0)" style="position: absolute; left: 10px; bottom: 10px; width: 165px;
+    <button ng-click="vm.ChangeState(0)" style="position: absolute; left: 10px; bottom: 10px; width: 165px;
      height: 75px; color: white; text-align: center; line-height: 75px; background: #02a3d5;
       font-size: 30px"><i class="fa fa-arrow-left" aria-hidden="true"></i>  {{'BACK' | i18n}}</button>
 
-    <button ng-click="ChangeState(2)" style="position: absolute; right: 10px; bottom: 10px; width: 165px;
+    <button ng-click="vm.ChangeState(2)" style="position: absolute; right: 10px; bottom: 10px; width: 165px;
      height: 75px; color: white; text-align: center; line-height: 75px; background: #02a3d5;
       font-size: 30px"><i class="fa fa-arrow-right" aria-hidden="true"></i>  {{'NEXT' | i18n}}</button>
 
   </div>
 
-  <div class="ico-third-box" ng-if="State == 2">
+  <div class="ico-third-box" ng-if="vm.State == 2">
 
     <div>{{'SEND_SMART_CONTRACT' | i18n}}</div>
 

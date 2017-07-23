@@ -63,17 +63,17 @@
           <div class="langulage-opened-item" ng-click="ChangeLanguage('Russian', $event)">Russian</div>
         </div>
       </div>
-      <div style="height: 58px; width: 110px; float: right" ng-class="{'selected': MenuItemSelectedIndex == 4}" ng-click="SelectMenuItem(4)">
+      <div style="height: 58px; width: 110px; float: right"  ng-click="SelectMenuItem(4)">
         <div class="action-box-item" ng-class="{'right-border': MenuItemSelectedIndex != 4}">
           <span>INDEX</span>
         </div>
       </div>
-      <div style="height: 58px; width: 110px; float: right" ng-class="{'selected': MenuItemSelectedIndex == 2}" ng-click="SelectMenuItem(2)">
+      <div style="height: 58px; width: 110px; float: right"  ng-click="SelectMenuItem(2)">
         <div class="action-box-item" ng-class="{'right-border': MenuItemSelectedIndex != 2}">
           <span>Whitepaper</span>
         </div>
       </div>
-      <div style="height: 58px; width: 80px; float: right" ng-class="{'selected': MenuItemSelectedIndex == 3}" ng-click="SelectMenuItem(3)">
+      <div style="height: 58px; width: 80px; float: right"  ng-click="SelectMenuItem(3)">
         <div class="action-box-item" ng-class="{'right-border': MenuItemSelectedIndex != 3}">
           <span>ICO</span>
         </div>
@@ -83,28 +83,28 @@
       <div style="position: absolute; width: 100%; height: 235px; background: #02a3d5; z-index: 3; top: 58px" ng-if="MenuItemSelectedIndex == 0">
         <div class="footer-column">
           <div>
-            <a ng-href="#/home" style="font-weight: bold; font-size: 20px">HOME</a>
+            <a ng-click="CloseMenu()" ng-href="#/home" style="font-weight: bold; font-size: 20px">HOME</a>
           </div>
         </div>
         <div class="footer-column">
           <div>
-            <a style="font-weight: bold; font-size: 20px">PRODUCTS</a>
-            <a ng-href="#/crypto-currencies" style="margin-top: 10px">CMI 50</a>
-            <a style="margin-top: 5px">CPI</a>
+            <a ng-click="CloseMenu()" style="font-weight: bold; font-size: 20px">PRODUCTS</a>
+            <a ng-click="CloseMenu()" ng-href="#/crypto-currencies" style="margin-top: 10px">CMI 50</a>
+            <a ng-click="CloseMenu()" style="margin-top: 5px">CPI</a>
           </div>
         </div>
         <div class="footer-column">
           <div>
-            <a style="font-weight: bold; font-size: 20px" href="#/modules">MODULS </a>
-            <a style="margin-top: 10px">CC Pay</a>
-            <a style="margin-top: 5px">CC Data</a>
-            <a style="margin-top: 5px">CC News</a>
-            <a style="margin-top: 5px">CC Analytics</a>
+            <a ng-click="CloseMenu()" style="font-weight: bold; font-size: 20px" href="#/modules">MODULS </a>
+            <a ng-click="CloseMenu()" style="margin-top: 10px">CC Pay</a>
+            <a ng-click="CloseMenu()" style="margin-top: 5px">CC Data</a>
+            <a ng-click="CloseMenu()" style="margin-top: 5px">CC News</a>
+            <a ng-click="CloseMenu()" style="margin-top: 5px">CC Analytics</a>
           </div>
         </div>
         <div class="footer-column">
           <div>
-            <a ng-click="GoToById('footer')" style="font-weight: bold; font-size: 20px">CONTACTS </a>
+            <a ng-click="GoToById('footer'); CloseMenu()" style="font-weight: bold; font-size: 20px">CONTACTS </a>
           </div>
         </div>
       </div>

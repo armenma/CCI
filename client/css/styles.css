@@ -63,7 +63,7 @@ header{
   cursor: pointer;
 }
 .selected{background: #02a3d5}
-.action-box-itemnot:not(.active):hover{color: #16a6c4}
+div:not(.selected) > .action-box-item:hover{color: #16a6c4}
 
 .langulage-opened-box{
   position: absolute; width: 100%; background: #02a3d5; top: 58px

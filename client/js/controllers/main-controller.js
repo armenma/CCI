@@ -17,6 +17,12 @@ angular
 
     }
 
+    $scope.CloseMenu = function ()
+    {
+      $scope.MenuItemSelectedIndex = -1;
+    }
+
+
     $scope.ChangeLanguage = function (value, event)
     {
       event.stopPropagation();
