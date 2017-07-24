@@ -1,10 +1,11 @@
 {
   "name": "CryptoCurrencies",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "forceId": false,
   "properties": {
     "id": {
+      "id": true,
       "type": "string"
     },
     "name": {

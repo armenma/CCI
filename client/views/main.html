@@ -57,7 +57,7 @@
       <td>% 1h</td>
       <td>% 24h</td>
     </tr>
-    <tr ng-repeat="CryptoCurrency in MainCryptoCurrencies | filter : searchText">
+    <tr ng-repeat="CryptoCurrency in CryptoCurrencies | filter : searchText">
       <td>{{$index + 1}}</td>
       <td class="table-blue-item">{{CryptoCurrency.name}}</td>
       <td>{{CryptoCurrency.symbol}}</td>

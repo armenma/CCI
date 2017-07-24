@@ -14,7 +14,7 @@ angular
         .$promise
         .then(function(results) {
           $scope.CryptoCurrencies = results.sort(compare);
-          $scope.MainCryptoCurrencies = $scope.CryptoCurrencies.splice(0, 50);
+          /*$scope.MainCryptoCurrencies = $scope.CryptoCurrencies.splice(0, 50);*/
 
         });
     };

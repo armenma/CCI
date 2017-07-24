@@ -44,16 +44,27 @@ module.exports = function(app) {
 
             data = JSON.parse(buffer);
 
-            CryptoCurrenciesModel.destroyAll({}, function (err, result) {
+            /*for(var i = 0; i < data.length; i++)
+            {
+              delete data[i].id;
+            }*/
 
-              if (err) console.log(new Date() + 'ERROR CryptoCurrenciesModel not destroyed');
+            /*CryptoCurrenciesModel.replaceOrCreate(data, function (err, result)
+            {
+              if (err) console.log(new Date() + 'ERROR CryptoCurrenciesModel updateAll' + err);
 
-              CryptoCurrenciesModel.create(data, function (err, result)
-              {
-                if (err) console.log(new Date() + 'ERROR CryptoCurrenciesModel created');
+            });*/
 
-              });
-            });
+             CryptoCurrenciesModel.destroyAll({}, function (err, result) {
+
+               if (err) console.log(new Date() + 'ERROR CryptoCurrenciesModel not destroyed');
+
+               CryptoCurrenciesModel.create(data.splice(0, 50), function (err, result)
+               {
+                 if (err) console.log(new Date() + 'ERROR CryptoCurrenciesModel created' + err);
+
+               });
+             });
 
 
             CalculateAndSaveIndex(CryptoCurrenciesIndexModel, data);
@@ -98,6 +109,7 @@ function CalculateAndSaveIndex(model, data)
       function(err, result)
       {
         if (err) throw err;
+        else console.log("INDEX MODEL CREATED SUCCESSFULLY");
 
       });
 

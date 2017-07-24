@@ -4,13 +4,13 @@
     "connector": "memory"
   },
   "mongodb": {
-    "host": "localhost",
-    "port": 27017,
-    "url": "",
+    "host": "cci-beta.documents.azure.com",
+    "port": 10255,
+    "url": "mongodb://cci-beta:Es8l3JVCntxSDjckjzsmZB4LekYjnE4fLQerru7PLs6pajkEqil9Kk68QCcTSaHT3AzSUAsG5XXCRdUXu3fGXQ==@cci-beta.documents.azure.com:10255/?ssl=true",
     "database": "crypto_currency_management",
-    "password": "",
+    "password": "Es8l3JVCntxSDjckjzsmZB4LekYjnE4fLQerru7PLs6pajkEqil9Kk68QCcTSaHT3AzSUAsG5XXCRdUXu3fGXQ",
     "name": "mongodb",
-    "user": "armen",
+    "user": "cci-beta",
     "connector": "mongodb"
   }
 }
