@@ -1,5 +1,5 @@
 {
-  "name": "crypto currency management",
+  "name": "cci",
   "version": "1.0.0",
   "description": "crypto currency management",
   "main": "server/server.js",
