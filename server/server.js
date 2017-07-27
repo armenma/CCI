@@ -5,7 +5,7 @@
 
 var loopback = require('loopback');
 var boot = require('loopback-boot');
-var port = process.env.PORT || 8000; // first change
+var port = process.env.PORT || 1337; // first change
 
 var app = module.exports = loopback();
 
