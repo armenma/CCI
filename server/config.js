@@ -1,7 +1,7 @@
-{
+module.exports = {
   "restApiRoot": "/api",
-  "host": "127.0.0.1",
-  "port": 3000,
+  "host": process.env.HOSTNAME,
+  "port": process.env.PORT || 8000,
   "remoting": {
     "context": false,
     "rest": {
@@ -20,4 +20,4 @@
     "handleErrors": false
   },
   "legacyExplorer": false
-}
+};
