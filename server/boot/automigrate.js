@@ -59,7 +59,7 @@ module.exports = function(app) {
 
                if (err) console.log(new Date() + 'ERROR CryptoCurrenciesModel not destroyed');
 
-               CryptoCurrenciesModel.create(data.splice(0, 50), function (err, result)
+               CryptoCurrenciesModel.replaceOrCreate(data.splice(0, 50), function (err, result)
                {
                  if (err) console.log(new Date() + 'ERROR CryptoCurrenciesModel created' + err);
 

@@ -10,7 +10,7 @@ angular
     vm.ETHValue = 0;
 
     vm.ChangeState = function (value) {
-      $scope.State = value;
+      vm.State = value;
     }
     vm.CChange = function ()
     {

@@ -5,7 +5,7 @@
   "forceId": false,
   "properties": {
     "id": {
-      "id": true,
+      "id": 1,
       "type": "string"
     },
     "name": {
