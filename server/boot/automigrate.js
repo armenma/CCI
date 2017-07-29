@@ -55,11 +55,20 @@ module.exports = function(app) {
 
             });*/
 
+            var savedData = data.splice(0, 50);
+
+            for(var i = 0; i < savedData.length; i++)
+            {
+              delete data[i].id;
+            }
+
+
+
              CryptoCurrenciesModel.destroyAll({}, function (err, result) {
 
                if (err) console.log(new Date() + 'ERROR CryptoCurrenciesModel not destroyed');
 
-               CryptoCurrenciesModel.replaceOrCreate(data.splice(0, 50), function (err, result)
+               CryptoCurrenciesModel.create(savedData, function (err, result)
                {
                  if (err) console.log(new Date() + 'ERROR CryptoCurrenciesModel created' + err);
 
@@ -81,7 +90,7 @@ module.exports = function(app) {
 
 
 
-    }, 10000);
+    }, 300000);
 
   });
 };

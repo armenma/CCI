@@ -11,6 +11,13 @@
     "password": "Es8l3JVCntxSDjckjzsmZB4LekYjnE4fLQerru7PLs6pajkEqil9Kk68QCcTSaHT3AzSUAsG5XXCRdUXu3fGXQ",
     "name": "mongodb",
     "user": "cci-beta",
-    "connector": "mongodb"
+    "connector": "mongodb",
+    "server": {
+      "auto_reconnect": true,
+      "autoReconnect": true,
+      "reconnectTries": 2000,
+      "reconnectInterval": 1000
+    }
+
   }
 }
