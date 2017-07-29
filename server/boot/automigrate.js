@@ -76,7 +76,7 @@ module.exports = function(app) {
              });
 
 
-            CalculateAndSaveIndex(CryptoCurrenciesIndexModel, data);
+            CalculateAndSaveIndex(CryptoCurrenciesIndexModel, savedData);
           });
 
         }).on('error', function (err) {
@@ -104,7 +104,8 @@ function CalculateAndSaveIndex(model, data)
 
     for (var i = 0; i < 50; i++)
     {
-      total += Number(data[i].market_cap_usd);
+      if(data[i].market_cap_usd > 0)
+        total += Number(data[i].market_cap_usd);
     }
 
     total = total / 50;
@@ -118,7 +119,7 @@ function CalculateAndSaveIndex(model, data)
       function(err, result)
       {
         if (err) throw err;
-        else console.log("INDEX MODEL CREATED SUCCESSFULLY");
+        else console.log("INDEX MODEL CREATED SUCCESSFULLY " + JSON.stringify(index));
 
       });
 
