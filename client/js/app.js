@@ -40,7 +40,9 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
     });
 
   $urlRouterProvider.otherwise('/home');
-}]).run(['coreFactory', function (coreFactory) {
+}]).run(['coreFactory', '$rootScope', function (coreFactory, $rootScope) {
+  $rootScope.language = language;
   coreFactory.Run();
+
 }]);
 

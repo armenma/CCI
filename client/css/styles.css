@@ -127,7 +127,8 @@ table tr:first-child{font-weight: bold}
 
 /*home section*/
 section.home .home-header-content{
-  background: url("../images/kvadrat.png") repeat;
+  background: url("../images/home-header-bg.png") no-repeat;
+  background-size: cover;
   height: 780px;
   overflow: auto;
 }
@@ -209,7 +210,7 @@ section.home p:nth-of-type(5){font-size: 60px; font-weight: bold; text-align: ce
 .news-data-item-info{font-size: 20px}
 .home-graph-box{background: #f4f4f4; padding-bottom: 110px}
 .home-graph-content{
-  background: url("../images/home-arrow-graph.png") no-repeat center center;
+  /*background: url("../images/home-arrow-graph.png") no-repeat center center;*/
   background-size: contain;
   width: calc(100% - 100px);
   height: 626px;
@@ -271,7 +272,6 @@ section.home p:nth-of-type(5){font-size: 60px; font-weight: bold; text-align: ce
   position: absolute;
   width: 296px;
   height: 144px;
-  background: white;
   font-size: 18px;
   padding: 5px;
 }

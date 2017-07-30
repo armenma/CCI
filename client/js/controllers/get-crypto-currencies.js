@@ -90,7 +90,9 @@ angular
           axisLabel: '',
           tickFormat: function(d){
             return d3.time.format('%Y-%m-%d:%H:%M')(new Date(d));
-          }
+          },
+          ticks: 6
+
         },
         yAxis: {
           axisLabel: '',
