@@ -58,7 +58,7 @@
       <td>% 24h</td>
     </tr>
     <tr ng-repeat="CryptoCurrency in CryptoCurrencies | filter : searchText">
-      <td>{{$index + 1}}</td>
+      <td><img style="margin-right: 10px" ng-src="../images/coin-icons/{{CryptoCurrency.name}}.png">{{$index + 1}}</td>
       <td class="table-blue-item">{{CryptoCurrency.name}}</td>
       <td>{{CryptoCurrency.symbol}}</td>
       <td>${{CryptoCurrency.market_cap_usd}}</td>

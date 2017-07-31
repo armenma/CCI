@@ -127,7 +127,7 @@ table tr:first-child{font-weight: bold}
 
 /*home section*/
 section.home .home-header-content{
-  background: url("../images/home-header-bg.png") no-repeat;
+  background: url("../images/home-header-bg.jpg") no-repeat;
   background-size: cover;
   height: 780px;
   overflow: auto;
@@ -284,11 +284,16 @@ section.home p:nth-of-type(5){font-size: 60px; font-weight: bold; text-align: ce
   background: url("../images/routing.png") no-repeat;
 }
 
+.our-team{
+  background: #f4f4f4;
+  height: 500px;
+}
+
 /*FOOTER AREA*/
 footer{
   height: 112px;
   background: #02a3d5;
-  text-align: center;
+  position: relative;
 }
 .footer-item{
   width: 52px;
@@ -297,6 +302,8 @@ footer{
   margin-left: 30px;
   margin-top: 31px;
 }
+footer span:first-of-type{display: inline-block; position: absolute; left: 50%; top: 50%; transform:  translate(-50%, -50%)}
+footer span:nth-of-type(2){display: inline-block; position: absolute; top: 50%; transform:  translateY(-50%); right: 20px; line-height: normal; text-align: center; width: 400px; margin-right: 0px}
 footer > div .footer-item:first-of-type{background: url("../images/footer/Twitter.png") no-repeat; margin-left: 50px;}
 footer > div .footer-item:nth-of-type(2){background: url("../images/footer/Facebook.png") no-repeat;}
 footer > div .footer-item:nth-of-type(3){background: url("../images/footer/Telegram.png") no-repeat;}
