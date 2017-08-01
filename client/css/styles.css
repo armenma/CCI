@@ -318,12 +318,12 @@ footer span{font-size: 22px; color: white; font-weight: bold; line-height: 112px
 .pre-ico-header{text-align: center; font-size: 20px; color: #b3b1ba; margin-top: 50px}
 .ico-header-left-rate{font-size: 20px; color: #b3b1ba; white-space: pre-wrap; float: left}
 .ico-header-left-rate span, .ico-header-right-rate span{color: #02a3d5}
-.count-down{position: absolute; width: 510px; left: 50%; transform: translateX(-50%); top:170px}
+.count-down{position: absolute; width: 600px; left: 50%; transform: translateX(-50%); top:170px}
 .ico-header-right-rate{font-size: 20px; color: #b3b1ba; white-space: pre-wrap; float: right; margin-right: 30px}
 .count-down-item{float: left; white-space: pre-wrap; text-align: center; font-weight: bold; color: #02a3d5; font-size: 36px}
 .count-down-item span{color: #b3b1ba; font-size: 12px}
 .ico-contribute-far{font-size: 20px; color: #b3b1ba; margin-top: 35px; text-align: center; font-weight: normal}
-.ico-change-box{background: #f4f4f4; overflow: hidden; margin-top: 30px; padding-bottom: 75px}
+.ico-change-box{background: #f4f4f4; overflow: hidden; margin-top: 120px; padding-bottom: 75px}
 .ico-info-box{float: left; padding-top: 30px}
 
 .change-box{width: 600px; height: 480px; background: #0c2a31; float: right; margin-right: 30px; margin-top: 30px}
@@ -338,7 +338,7 @@ footer span{font-size: 22px; color: white; font-weight: bold; line-height: 112px
 margin-right: auto; margin-left: auto; background: #02a3d5; display: block}
 .ico-second-box{position: relative}
 .ico-second-box, .ico-third-box{width: calc(100% - 60px); margin-right: auto; margin-left: auto; background: #0c2a31;
-height: 510px; margin-top: 30px; margin-bottom: 50px}
+height: 510px; margin-top: 110px; margin-bottom: 50px}
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -378,3 +378,55 @@ section.modules > aside p{color: #0aa6d6; font-size: 33px; text-align: center; p
 section.modules > aside:first-of-type{background: white}
 section.modules > aside:first-of-type p{color: black}
 section iframe{height: calc(100vh - 112px)}
+
+
+/*loader*/
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 4s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-300px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-300px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  visibility: hidden;
+}

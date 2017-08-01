@@ -43,6 +43,7 @@
   "HOME_TOKEN_EXCHANGE_RATE":"Token exchange rate",
   "HOME_TOTAL_TOKEN_AMOUNT":"Total token amount",
   "HOME_TOTAL_TOKEN_DISTRIBUTION":"Total tokens for distribution",
+  "DETAILS_ICO":"Details of ICO",
   "FOOTER_INFO":"For more information, please contact info@ccore.io",
   "OUR_TEAM": "Our Team",
   "INVEST_NOW":"Invest Now",
@@ -74,7 +75,8 @@
   "SECONDS": "seconds",
   "CONTRIBUTE_SO_FAR" : "Contributed so far: 5000 ETH",
   "CONTRIBUTE": "CONTRIBUTE",
-  "BECOME_INVESTOR": "Стать Cовладелцом CCI",
+  "CONTRIBUTION":"Contribution",
+  "BECOME_INVESTOR": "Become co-owner Ccore",
   "TERMS_AND_CONDITIONS": "TERMS AND CONDITIONS",
   "TERMS_AND_CONDITIONS_SEC": " for users acquiring CCI Tokens",
   "TERMS_AND_CONDITION_AGREE": "I agree to the terms and conditions and confirm that I am not a citizen of the USA or Hong Kong",
@@ -85,8 +87,8 @@
   "DO_NOT_SEND_FOUND": "DO NOT send funds from exchanges like Coinbase, Poloniex etc. You have to send ETH funds from your personal Ethereum wallets like MyEtherWallet, Metamask, Parity, Mist or Ledger (hardware wallet)",
   "SET_GAS_LIMIT": "Set Gas Limit to 250 000 (during high-load network)",
   "SET_GWEI":"Set the gas price at 60 GWEI (during high-load network)",
-  "SKIN_TOKEN": "SKIN tokens will be sent immediately to the wallet from which the ETH arrived",
-  "HOW_SEND_ETH":"How to send ETH to CCI Token sale Address",
-  "HOW_SEE_CCI":"How to see CCI Token in Wallet",
-  "CONTRACT_ADDRESS": "CONTRACT ADDRESS"
+  "SKIN_TOKEN": "Ccore tokens will be sent to the wallet from which the ETH arrived",
+  "HOW_SEND_ETH":"How to send ETH to Ccore Token sale Address ",
+  "HOW_SEE_CCI":"How to see Ccore Token in Wallet",
+  "CONTRACT_ADDRESS": "Smart-Contract Address"
 }

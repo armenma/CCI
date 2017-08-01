@@ -1,16 +1,8 @@
 <section class="ico-section">
-  <div class="ico-header">{{'ICO_HEADER' | i18n}}</div>
+  <div class="ico-header" ng-if="vm.State == 0">{{'HOME_TOKEN_SALES' | i18n}}</div>
+  <div class="ico-header" ng-if="vm.State == 1">{{'TERMS_AND_CONDITIONS' | i18n}}</div>
+  <div class="ico-header" ng-if="vm.State == 2">{{'CONTRIBUTION' | i18n}}</div>
   <div class="pre-ico-header">{{'PRE_ICO_HEADER' | i18n}}</div>
-  <div class="ico-header-left-rate">
-     {{'CURRENT_RATE' | i18n}}
-    <span>1ETH : 2000 CCI</span>
-  </div>
-
-  <div class="ico-header-right-rate">
-    {{'NEXT_RATE' | i18n}}
-    <span>1ETH : 1500 CCI</span>
-  </div>
-
   <div class="count-down">
     <div class="count-down-item">
       {{vm.Deys}}
@@ -32,8 +24,6 @@
 
   <div class="clear"></div>
 
-  <div class="ico-contribute-far">{{'CONTRIBUTE_SO_FAR' | i18n}}</div>
-
   <div class="ico-change-box" ng-if="vm.State == 0">
 
     <div class="ico-info-box">
@@ -42,24 +32,50 @@
         <span style="font-size: 24px; font-weight: bold">Pre-ICO</span>
       </div>
       <div style="color: black; margin-left: 30px; margin-top: 20px">
-        <span style="font-size: 22px; font-weight: bold">Start:</span> <span style="font-size: 19px">01 August 2017</span>
+        <span style="font-size: 22px; font-weight: bold">{{'START' | i18n}}:</span> <span style="font-size: 19px">{{'HOME_TOKEN_ANNOUNCED_LATTER' | i18n}}</span>
       </div>
       <div style="color: black;margin-left: 30px; margin-top: 20px">
-        <span style="font-size: 22px; font-weight: bold">End:</span> <span style="font-size: 19px">01 September 2017</span>
+        <span style="font-size: 22px; font-weight: bold">{{'END' | i18n}}:</span> <span style="font-size: 19px">{{'HOME_TOKEN_ANNOUNCED_LATTER' | i18n}}</span>
       </div>
       <div style="color: black;margin-left: 30px; margin-top: 20px">
-        <span style="font-size: 22px; font-weight: bold">CCI tokens for distribution:</span> <span style="font-size: 19px">10 000 000 (5 000 ETH)</span>
+        <span style="font-size: 22px; font-weight: bold">{{'HOME_CCORE_FOR_SALE' | i18n}}</span> <span style="font-size: 19px">10 000 000</span>
       </div>
       <div style="color: black;margin-left: 30px; margin-top: 20px">
-        <span style="font-size: 22px; font-weight: bold">Token exchange rate:</span> <span style="font-size: 19px; color: #02a3d5">2000 CCI : 1 ETH</span>
+        <span style="font-size: 22px; font-weight: bold">{{'HOME_CURRENCY_ACCEPTED' | i18n}}</span> <span style="font-size: 19px">BTC,ETH</span>
       </div>
       <div style="color: black;margin-left: 30px; margin-top: 20px">
-        <span style="font-size: 22px; font-weight: bold">Minimum transaction amount:</span> <span style="font-size: 19px; color: #02a3d5">0.1 ETH</span>
+        <span style="font-size: 22px; font-weight: bold">{{'HOME_MIN_TRANSACTION' | i18n}}</span> <span style="font-size: 19px; color: #02a3d5">1 ETH</span>
       </div>
+      <div style="color: black;margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">{{'HOME_TOKEN_EXCHANGE_RATE' | i18n}}:</span>
+      </div>
+
+      <div style="color: white; margin-left: -10px; margin-top: 8px; float: left; white-space: pre-wrap">
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'FROM' | i18n}} 1 {{'TO' | i18n}} 5ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'FROM' | i18n}} 5 {{'TO' | i18n}} 10ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'FROM' | i18n}} 10 {{'TO' | i18n}} 25ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'FROM' | i18n}} 25 {{'TO' | i18n}} 50ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'MORE_THAN' | i18n}} 50ETH</span>
+      </div>
+
+      <div style="color: white; margin-left: 20px; margin-top: 8px; float: left; white-space: pre-wrap">
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">1600 ccore : 1 ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">1800 ccore : 1 ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">2000 ccore : 1 ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">2200 ccore : 1 ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">2500 ccore : 1 ETH</span>
+      </div>
+      <div class="clear"></div>
+
+      <div style="float:right; text-decoration:underline; font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'DETAILS_ICO' | i18n}}</div>
+
+      <div class="clear"></div>
 
 
 
-      <div style="color: black; margin-left: 30px; margin-top: 30px; text-align: center">
+
+
+      <!--<div style="color: black; margin-left: 30px; margin-top: 30px; text-align: center">
         <span style="font-size: 25px; font-weight: bold">ICO</span>
       </div>
       <div style="color: black; margin-left: 30px; margin-top: 20px">
@@ -80,12 +96,12 @@
       </div>
       <div style="color: black;margin-left: 30px; margin-top: 20px">
         <span style="font-size: 22px; font-weight: bold">Minimum transaction amount:</span> <span style="font-size: 19px; color: #02a3d5">0.1 ETH</span>
-      </div>
+      </div>-->
 
 
-      <div style="color: black;margin-left: 30px; margin-top: 40px">
+     <!-- <div style="color: black;margin-left: 30px; margin-top: 40px">
         <span style="font-size: 22px; font-weight: bold">Total token amount:</span> <span style="font-size: 19px;">100 000 000 CCI tokens</span>
-      </div>
+      </div>-->
     </div>
     <div class="change-box">
       <p>{{'BECOME_INVESTOR' | i18n}}</p>
@@ -93,13 +109,13 @@
         <input type="number" ng-model="vm.ETHValue" ng-change="vm.ETHChange()">
         <div>ETH</div>
       </div>
-      <p>{{'CURRENT_RATE' | i18n}} <span>1ETH : 2000 CCI</span></p>
+      <p>{{'CURRENT_RATE' | i18n}} <span>1ETH : ---ccore</span></p>
       <div>
         <input type="number"  ng-model="vm.CCValue" ng-change="vm.CChange()">
         <div>CCI</div>
       </div>
       <div class="clear"></div>
-      <button class="contribute-button" ng-click="vm.ChangeState(1)">{{'CONTRIBUTE' | i18n}}</button>
+      <button class="contribute-button" ng-click="vm.ChangeState(1)">{{'INVEST_NOW' | i18n}}</button>
     </div>
   </div>
 
@@ -123,14 +139,14 @@
       READ THESE TERMS AND CONDITIONS ("Terms") CAREFULLY READ THESE TERMS READS AND CONDITIONS
     </div>
 
-    <div><input type="checkbox">  <span>{{'TERMS_AND_CONDITION_AGREE' | i18n}}</span></div>
+    <div><input type="checkbox" ng-model="TermsChecked">  <span>{{'TERMS_AND_CONDITION_AGREE' | i18n}}</span></div>
     <div style="position: absolute; height: 1px; background: #02a3d5; bottom: 107px; width: 100%"></div>
 
     <button ng-click="vm.ChangeState(0)" style="position: absolute; left: 10px; bottom: 10px; width: 165px;
      height: 75px; color: white; text-align: center; line-height: 75px; background: #02a3d5;
       font-size: 30px"><i class="fa fa-arrow-left" aria-hidden="true"></i>  {{'BACK' | i18n}}</button>
 
-    <button ng-click="vm.ChangeState(2)" style="position: absolute; right: 10px; bottom: 10px; width: 165px;
+    <button ng-click="vm.ChangeState(2)" ng-disabled="!TermsChecked" style="position: absolute; right: 10px; bottom: 10px; width: 165px;
      height: 75px; color: white; text-align: center; line-height: 75px; background: #02a3d5;
       font-size: 30px">{{'NEXT' | i18n}} <i class="fa fa-arrow-right" aria-hidden="true"></i> </button>
 
