@@ -1,12 +1,13 @@
 angular
   .module('app')
-  .controller('HomeController', ['$scope', 'CryptoCurrencyIndexes', function($scope, CryptoCurrencyIndexes)
+  .controller('HomeController', ['$scope', 'CryptoCurrencyIndexes','$interval', '$timeout', function($scope, CryptoCurrencyIndexes, $interval, $timeout)
   {
     $scope.Language = {
 
     };
 
     $scope.CryptoCurrencyIndexes = [];
+    var timeoutPromise;
 
     function GetCryptoCurrencyIndexes() {
       CryptoCurrencyIndexes
@@ -21,11 +22,17 @@ angular
             area: true
           }];
         }, function (err) {
-
+          if(timeoutPromise)$timeout.cancel(timeoutPromise);
+          timeoutPromise = $timeout(function () {
+            GetCryptoCurrencyIndexes();
+          }, 500);
         });
     }
 
     GetCryptoCurrencyIndexes();
+    var intervalPromise = $interval(function () {
+      GetCryptoCurrencyIndexes()
+    }, 300000);
 
     $scope.options = {
       chart: {
@@ -82,6 +89,11 @@ angular
         enable: false,
       }
     };
+
+    $scope.$on('$destroy', function() {
+      if(timeoutPromise)$timeout.cancel(timeoutPromise);
+      if(intervalPromise)$interval.cancel(intervalPromise);
+    });
 
 
   }]);

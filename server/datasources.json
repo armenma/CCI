@@ -12,12 +12,6 @@
     "name": "mongodb",
     "user": "cci-beta",
     "connector": "mongodb",
-    "server": {
-      "auto_reconnect": true,
-      "autoReconnect": true,
-      "reconnectTries": 2000,
-      "reconnectInterval": 1000
-    }
-
+    "lazyConnect" : true
   }
 }

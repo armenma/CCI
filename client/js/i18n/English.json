@@ -62,6 +62,9 @@
   "NOVEMBER":"November",
   "DECEMBER":"December",
   "CCMI50":"CruptoCurrency Market Index (CMI 50)",
+  "CC_IN_INDEX":"CryptoCurrencies in Index",
+  "WHAT_IS_CMI_50":"What is CMI 50",
+  "WHAT_IS_CMI_50_ANSWER":"CMI 50 is a Cryptocurrency Market Index . This index shows the state of Cryptocurrency market in general. CMI 50 is based on a basket composed of 50 chosen cryptocurrencies having the greatest capitalization. It is a free-float capitalization weighted index.",
   "DATA": "Data",
   "NEWS": "News",
   "ANALYTICS": "Analytics",
@@ -90,5 +93,11 @@
   "SKIN_TOKEN": "Ccore tokens will be sent to the wallet from which the ETH arrived",
   "HOW_SEND_ETH":"How to send ETH to Ccore Token sale Address ",
   "HOW_SEE_CCI":"How to see Ccore Token in Wallet",
-  "CONTRACT_ADDRESS": "Smart-Contract Address"
+  "CONTRACT_ADDRESS": "Smart-Contract Address",
+  "NAME": "Name",
+  "SYMBOL": "Symbol",
+  "MARKET_CAP": "Market Cap.",
+  "PRICE": "Price",
+  "CIRCULATING_SUPPLY": "Circulating Supply"
+  "VOLUME": "Volume"
 }

@@ -1,11 +1,12 @@
 angular
   .module('app')
-  .controller('GetCryptoCurrencies', ['$scope', '$state', '$filter', 'CryptoCurrencies', 'CryptoCurrencyIndexes', function($scope,
-      $state, $filter, CryptoCurrencies, CryptoCurrencyIndexes) {
+  .controller('GetCryptoCurrencies', ['$scope', '$state', '$filter', 'CryptoCurrencies', 'CryptoCurrencyIndexes', '$interval', '$timeout', function($scope,
+      $state, $filter, CryptoCurrencies, CryptoCurrencyIndexes, $interval, $timeout) {
 
     $scope.CryptoCurrencies = [];
     $scope.CryptoCurrencyIndexes = [];
     $scope.MainCryptoCurrencies = [];
+    var timeoutPromise;
 
 
     function GetCryptoCurrencies() {
@@ -32,12 +33,24 @@ angular
             color: '#7777ff',
             area: true
           }];
+
+          if(timeoutPromise)$timeout.cancel(timeoutPromise);
+
         }, function (err) {
+
+          if(timeoutPromise)$timeout.cancel(timeoutPromise);
+          timeoutPromise = $timeout(function () {
+            GetCryptoCurrencyIndexes();
+          }, 500);
 
         });
     }
     GetCryptoCurrencies();
     GetCryptoCurrencyIndexes();
+
+    var intervalPromise = $interval(function () {
+      GetCryptoCurrencyIndexes()
+    }, 300000);
 
     $scope.DeleteAllIndexes = function ()
     {
@@ -117,37 +130,10 @@ angular
       }
     };
 
-
-
-    /*Random Data Generator */
-    function sinAndCos() {
-      var sin = [],sin2 = [],
-        cos = [];
-
-      //Data is represented as an array of {x,y} pairs.
-      for (var i = 0; i < 100; i++) {
-        sin.push({x: i, y: Math.sin(i/10)});
-        sin2.push({x: i, y: Math.sin(i/10) *0.25 + 0.5});
-      }
-
-      //Line chart data should be sent as an array of series objects.
-      return [
-        {
-          values: sin2,
-          key: 'Another sine wave',
-          color: '#7777ff',
-          area: true
-        },
-        {
-          values: sin,
-          key: 'test',
-          color: '#ff0000',
-          area: true
-        }
-      ];
-    };
-
-
+    $scope.$on('$destroy', function() {
+      if(timeoutPromise)$timeout.cancel(timeoutPromise);
+      if(intervalPromise)$interval.cancel(intervalPromise);
+    });
 
 
     /* $scope.addTodo = function() {

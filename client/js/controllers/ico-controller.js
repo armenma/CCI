@@ -14,12 +14,27 @@ angular
     }
     vm.CChange = function ()
     {
+     /* var cc_value = Number(vm.CCValue);
+      var divider = 2000;
+      if(cc_value)*/
       vm.ETHValue = Number((vm.CCValue / 2000).toFixed(2));
     }
 
     vm.ETHChange = function ()
     {
-      vm.CCValue = Number((vm.ETHValue * 2000).toFixed(2));
+      var eth_value = Number(vm.ETHValue);
+      var multiplicator = 1;
+      if(eth_value >= 1 && eth_value <= 5)
+        multiplicator = 1600;
+      else if(eth_value > 5 && eth_value <= 10)
+        multiplicator = 1800;
+      else if(eth_value > 10 && eth_value <= 25)
+        multiplicator = 2000;
+      else if(eth_value > 25 && eth_value <= 50)
+        multiplicator = 2200;
+      else if(eth_value > 50)
+        multiplicator = 2500;
+      vm.CCValue = Number((vm.ETHValue * multiplicator).toFixed(2));
     }
 
     function calculate()
