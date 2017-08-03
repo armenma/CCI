@@ -109,7 +109,7 @@
         <input type="number" ng-model="vm.ETHValue" ng-change="vm.ETHChange()">
         <div>ETH</div>
       </div>
-      <p>{{'CURRENT_RATE' | i18n}} <span>1ETH : ---ccore</span></p>
+      <p>{{'CURRENT_RATE' | i18n}} <span>1ETH : {{vm.multiplicator}} ccore</span></p>
       <div>
         <input type="number" ng-disabled="true"  ng-model="vm.CCValue" ng-change="vm.CChange()">
         <div>CCI</div>

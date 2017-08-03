@@ -8,6 +8,7 @@ angular
     vm.State = 0;
     vm.CCValue = 0;
     vm.ETHValue = 0;
+    vm.multiplicator = 0;
 
     vm.ChangeState = function (value) {
       vm.State = value;
@@ -23,18 +24,18 @@ angular
     vm.ETHChange = function ()
     {
       var eth_value = Number(vm.ETHValue);
-      var multiplicator = 1;
-      if(eth_value >= 1 && eth_value <= 5)
-        multiplicator = 1600;
-      else if(eth_value > 5 && eth_value <= 10)
-        multiplicator = 1800;
-      else if(eth_value > 10 && eth_value <= 25)
+      vm.multiplicator = 0;
+      if(eth_value >= 1 && eth_value < 5)
+        vm.multiplicator = 1600;
+      else if(eth_value >= 5 && eth_value < 10)
+        vm.multiplicator = 1800;
+      else if(eth_value >= 10 && eth_value < 25)
         multiplicator = 2000;
-      else if(eth_value > 25 && eth_value <= 50)
-        multiplicator = 2200;
-      else if(eth_value > 50)
-        multiplicator = 2500;
-      vm.CCValue = Number((vm.ETHValue * multiplicator).toFixed(2));
+      else if(eth_value >= 25 && eth_value < 50)
+        vm.multiplicator = 2200;
+      else if(eth_value >= 50)
+        vm.multiplicator = 2500;
+      vm.CCValue = Number((vm.ETHValue * vm.multiplicator).toFixed(2));
     }
 
     function calculate()
