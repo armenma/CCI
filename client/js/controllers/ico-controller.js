@@ -30,7 +30,7 @@ angular
       else if(eth_value >= 5 && eth_value < 10)
         vm.multiplicator = 1800;
       else if(eth_value >= 10 && eth_value < 25)
-        multiplicator = 2000;
+        vm.multiplicator = 2000;
       else if(eth_value >= 25 && eth_value < 50)
         vm.multiplicator = 2200;
       else if(eth_value >= 50)
