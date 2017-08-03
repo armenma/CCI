@@ -14,6 +14,7 @@ angular
       if(index === 3) $state.go('ico');
       if(index === 2) $state.go('whitepaper');
       if(index === 4) $state.go('crypto-currencies');
+      if(index === 5) $state.go('profit');
 
     }
 

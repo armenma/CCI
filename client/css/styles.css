@@ -4,7 +4,15 @@ line-height: 1}
 header, footer, section, nav, aside { display: block; }
 html, body { width: 100%;}
 body{
-  font-family: 'Pragmatica', arial;
+  font-family: Tahoma;
+}
+@font-face {
+  font-family: ArialRounded;
+  src: url(fonts/ARLRDBD.TTF);
+}
+@font-face {
+  font-family: PtSans;
+  src: url(fonts/PT-SANS.CAPTION.TTF);
 }
 /*HEADER PARTS*/
 header{
@@ -14,6 +22,7 @@ header{
   position: fixed;
   width: 100%;
   z-index: 1;
+  font-family: ArialRounded;
 }
 .footer-column{width: 215px; float: left; text-align: left;
   padding-left: 55px; padding-top: 55px;
@@ -141,6 +150,7 @@ section.home .home-header-content > div{
   background: #0c2a31;
   border: 1px solid #16a6c4;
   margin-top: 78px;
+  font-family: PtSans;
 
 }
 section.home .home-header-content  div p:first-of-type{color: white; font-size: 80px; padding-top: 120px; font-weight: bold}

@@ -33,6 +33,11 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
       templateUrl: 'views/whitepaper.html',
       controller: 'StaticPagesController'
     })
+    .state('profit', {
+      url: '/profit',
+      templateUrl: 'views/profit.html',
+      controller: 'StaticPagesController'
+    })
     .state('home', {
       url: '/home',
       templateUrl: 'views/home.html',
