@@ -140,6 +140,7 @@ section.home .home-header-content{
   background-size: cover;
   height: 780px;
   overflow: auto;
+  margin-top: 60px;
 }
 section.home .home-header-content > div{
   width: 470px;
@@ -242,6 +243,9 @@ section.home p:nth-of-type(5){font-size: 60px; font-weight: bold; text-align: ce
   height: 450px;
   background: white;
   margin-right: 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
 }
 .home-graph-footer-item h1{font-size: 22px; font-weight: bold; text-align: center}
 .home-graph-footer-item > div{font-size: 19px; text-align: center; padding-left: 15px; padding-right: 15px}
@@ -439,4 +443,5 @@ section iframe{height: calc(100vh - 112px)}
 
 #myDiv {
   visibility: hidden;
+  overflow: auto;
 }

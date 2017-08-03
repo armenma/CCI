@@ -99,5 +99,6 @@
   "MARKET_CAP": "Market Cap.",
   "PRICE": "Price",
   "CIRCULATING_SUPPLY": "Circulating Supply",
-  "VOLUME": "Volume"
+  "VOLUME": "Volume",
+  "LANG": "English"
 }

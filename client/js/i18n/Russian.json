@@ -102,5 +102,7 @@
   "MARKET_CAP": "MРыночная Кап.",
   "PRICE": "Цена",
   "CIRCULATING_SUPPLY": "Колтчество",
-  "VOLUME": "Oбъем"
+  "VOLUME": "Oбъем",
+  "LANG": "русский"
+
 }
