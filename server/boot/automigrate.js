@@ -9,13 +9,17 @@ var db;
 
 module.exports = function(app) {
 
+
+
   db = app.dataSources.mongodb;
 
   var CryptoCurrenciesModel = app.models.CryptoCurrencies;
 
   var CryptoCurrenciesIndexModel = app.models.CryptoCurrencyIndexes;
 
-  db.autoupdate(function(err) {
+  db.autoupdate(app.models, function(err) {
+
+    console.log('TEST');
 
     process.on('uncaughtException', function (error) {
       console.log(new Date() + 'ERROR STACK: ' + error.stack);
