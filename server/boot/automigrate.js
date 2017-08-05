@@ -31,6 +31,8 @@ module.exports = function(app) {
     console.log(new Date() + 'START DATE');
 
     setInterval(function () {
+
+      return;
       try {
         http.get("https://api.coinmarketcap.com/v1/ticker/", function (response) {
 

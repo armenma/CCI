@@ -26,6 +26,7 @@
   <div class="content-header">{{'CCMI50' | i18n}}</div>
 
   <div class="chart-container">
+    <div style="position: absolute; font-weight: bold; font-size: 20px; margin-top: 17px; margin-left: 97px">CMI {{CurrentIndex}}</div>
     <nvd3 options="options" data="data" class="with-3d-shadow with-transitions"></nvd3>
   </div>
   <div class="intro-container">
@@ -64,8 +65,8 @@
       <td class="table-blue-item">${{CryptoCurrency.price_usd}}</td>
       <td class="table-blue-item">{{CryptoCurrency.available_supply}}</td>
       <td class="table-blue-item">{{CryptoCurrency['24h_volume_usd']}}</td>
-      <td class="table-green-item">{{CryptoCurrency.percent_change_1h}}</td>
-      <td class="table-green-item">{{CryptoCurrency.percent_change_24h}}</td>
+      <td ng-class="{'table-green-item' : CryptoCurrency.percent_change_1h >= 0, 'table-red-item': CryptoCurrency.percent_change_1h < 0}">{{CryptoCurrency.percent_change_1h}}</td>
+      <td ng-class="{'table-green-item' : CryptoCurrency.percent_change_24h >= 0, 'table-red-item': CryptoCurrency.percent_change_24h < 0}">{{CryptoCurrency.percent_change_24h}}</td>
     </tr>
   </table>
 </aside>
