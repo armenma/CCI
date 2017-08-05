@@ -8,6 +8,7 @@ angular
 
     $scope.CryptoCurrencyIndexes = [];
     var timeoutPromise;
+    $scope.CurrentIndex = 0;
 
     function GetCryptoCurrencyIndexes() {
       CryptoCurrencyIndexes
@@ -21,6 +22,7 @@ angular
             color: '#7777ff',
             area: true
           }];
+          $scope.CurrentIndex = $scope.CryptoCurrencyIndexes[$scope.CryptoCurrencyIndexes.length - 1].value.toFixed(2);
         }, function (err) {
           if(timeoutPromise)$timeout.cancel(timeoutPromise);
           timeoutPromise = $timeout(function () {

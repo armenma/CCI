@@ -32,7 +32,7 @@ module.exports = function(app) {
 
     setInterval(function () {
 
-      return;
+      /*return;*/
       try {
         http.get("https://api.coinmarketcap.com/v1/ticker/", function (response) {
 
