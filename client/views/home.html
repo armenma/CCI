@@ -103,7 +103,7 @@
 
   <div class="chart-container" style="float: none; margin-left: auto; margin-right: auto">
     <div ng-show="!CurrentIndex" class="chart-loader"></div>
-    <div ng-show="CurrentIndex" style="position: absolute; font-weight: bold; font-size: 20px; margin-top: 7px; margin-left: 97px">CMI 50 <span style="font-weight: normal">{{CurrentIndex}}<span/>{{CurrentIndex}}<span/></div>
+    <div ng-show="CurrentIndex" style="position: absolute; font-weight: bold; font-size: 20px; margin-top: 7px; margin-left: 97px">CMI 50 <span style="font-weight: normal">{{CurrentIndex}}</span></div>
     <nvd3 options="options" data="data" class="with-3d-shadow with-transitions"></nvd3>
   </div>
   <a ng-href="#/crypto-currencies" style="display: block; font-size: 19px; text-decoration: underline; color: #0aa6d6; position: absolute; right: 20px; padding-top: 70px;">{{"HOME_LEARN_MORE" | i18n}}</a>
