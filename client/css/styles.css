@@ -138,7 +138,7 @@ table tr:first-child{font-weight: bold}
 
 /*home section*/
 section.home .home-header-content{
-  background: url("../images/home-header-bg.jpg") no-repeat;
+  background: url("../images/home-header-bg.png") no-repeat;
   background-size: cover;
   height: 780px;
   overflow: auto;
@@ -153,7 +153,7 @@ section.home .home-header-content > div{
   margin-top: 78px;
 
 }
-section.home .home-header-content  div p:first-of-type{color: white; font-size: 80px; padding-top: 197px; font-weight: bold}
+section.home .home-header-content  div p:first-of-type{color: white; font-size: 80px; padding-top: 142px; font-weight: bold}
 section.home .home-header-content  div p:last-of-type{color: #16a6c4; font-size: 52px; text-align: center; padding-top: 100px}
 section.home p:first-of-type, section.home p:nth-of-type(3){text-align: center; color: #0aa6d6; font-size: 33px; padding: 100px 0 60px}
 section.home p:nth-of-type(2), section.home p:nth-of-type(4), section.home p:nth-of-type(6){min-height: 110px; text-align: center; font-size: 20px}
@@ -307,6 +307,7 @@ section.home p:nth-of-type(5){font-size: 60px; font-weight: bold; text-align: ce
 .our-team{
   background: #f4f4f4;
   height: 500px;
+  display: none;
 }
 
 /*FOOTER AREA*/
