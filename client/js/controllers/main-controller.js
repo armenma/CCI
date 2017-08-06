@@ -3,7 +3,7 @@
  */
 angular
   .module('app')
-  .controller('MainController', ['$scope', '$anchorScroll', '$location', 'coreFactory', '$state', function($scope, $anchorScroll, $location, coreFactory, $state)
+  .controller('MainController', ['$scope', '$anchorScroll', '$location', 'coreFactory', '$state', "$timeout", function($scope, $anchorScroll, $location, coreFactory, $state, $timeout)
   {
     $scope.MenuItemSelectedIndex = -1;
     $scope.SelectedLanguage = coreFactory.Language;
@@ -53,5 +53,18 @@ angular
       ],
       selectedLanguage: {id: '1', name: 'English'}
     };
+
+    var timeoutPromise;
+
+    $scope.$on('go-home-ico', function (event) {
+      $state.go("home");
+     timeoutPromise =  $timeout(function(){$scope.GoToById("home-ico-box")},200);
+    });
+
+    $scope.$on("$destroy", function() {
+      if (timeoutPromise) {
+        $timeout.cancel(timeoutPromise);
+      }
+    });
   }]);
 

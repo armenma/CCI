@@ -65,5 +65,8 @@ angular
         $interval.cancel(intervalPromise);
       }
     });
+    vm.GoToHomeIco = function () {
+      $scope.$emit("go-home-ico");
+    }
     return vm;
   }]);
