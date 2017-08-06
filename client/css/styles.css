@@ -94,7 +94,7 @@ div:not(.selected) > .action-box-item:hover{color: #16a6c4}
   outline: none;
 }
 .chart-container, .intro-container{float: left; border: 1px solid rgba(0, 0, 0, .5); height: 500px}
-.chart-container{width: calc(100% - 270px); margin-right: 20px}
+.chart-container{width: calc(100% - 270px); margin-right: 20px; position: relative}
 .intro-container{width: 240px}
 .index-content{padding: 60px 30px 0 30px; text-align: center}
 .index-content h1{font-size: 20px}
@@ -113,7 +113,8 @@ table tr td{padding: 10px 10px 10px 10px; vertical-align: middle}
 table tr:first-child{font-weight: bold}
 .table-blue-item{color: #428bca}
 
-.table-red-item{color: #009933}
+.table-green-item{color: #009933}
+.table-red-item{color: red}
 
 .add-on .input-group-btn > .btn {
   border-left-width:0;left:-2px;
@@ -453,4 +454,29 @@ section iframe{height: calc(100vh - 112px)}
 
 @media (min-height: 0px) and (max-height: 1366px){
 
+}
+
+
+.chart-loader {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  margin-top: 100px;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: chart-spin 2s linear infinite;
+  animation: chart-spin 2s linear infinite;
+}
+
+@-webkit-keyframes chart-spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes chart-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
