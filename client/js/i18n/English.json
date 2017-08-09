@@ -36,7 +36,8 @@
   "HOME_PAYMENTS_DIVIDENTS":"Payment of dividends ",
   "HOME_PROJECT_SCALING":"Project scaling",
   "HOME_TOKEN_SALES":"Token Sales ccore (ICO)",
-  "HOME_TOKEN_ANNOUNCED_LATTER":"Will be announced later",
+  "HOME_TOKEN_ANNOUNCED_LATTER":"15 August 2017",
+  "HOME_TOKEN_ANNOUNCED_LATTER2":"15 August 2017",
   "HOME_CCORE_FOR_SALE":"ccore tokens for sale",
   "HOME_CURRENCY_ACCEPTED":"Currency accepted",
   "HOME_MIN_TRANSACTION":"Minimum transaction",
@@ -102,5 +103,8 @@
   "PRICE": "Price",
   "CIRCULATING_SUPPLY": "Circulating Supply",
   "VOLUME": "Volume",
-  "LANG": "English"
+  "LANG": "English",
+  "ON_ICO":"on ICO",
+  "RESERVED_FUND":"reserved in the fund of project development for attracting investments if scaling is necessary",
+  "DISTRIBUTED_AMONG":"distributed amongst the ccore team"
 }

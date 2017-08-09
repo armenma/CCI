@@ -370,7 +370,7 @@ input[type=number]::-webkit-outer-spin-button {
 .input-group .form-control{z-index: -1; position: static}
 .ico-second-box > div:first-of-type {white-space: pre-wrap; font-size: 20px; text-align: center; color: white}
 .ico-second-box > div:nth-of-type(2) > span:first-of-type{text-transform: uppercase}
-.ico-second-box > div:nth-of-type(2){font-size: 20px; color: white; padding: 20px; max-height: 250px;  overflow-y: auto}
+.ico-second-box > div:nth-of-type(2){font-size: 20px; color: white; padding: 20px; max-height: 335px;  overflow-y: auto}
 .ico-second-box > div:nth-of-type(3){font-size: 20px; color: white; padding: 20px; text-align: center; white-space: nowrap}
 
 .ico-third-box{color: white; font-size: 20px; overflow: hidden;}

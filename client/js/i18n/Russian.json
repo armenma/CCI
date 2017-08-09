@@ -36,7 +36,8 @@
   "HOME_PAYMENTS_DIVIDENTS":"Выплаты дивидендов",
   "HOME_PROJECT_SCALING":"Масштабирование проекта",
   "HOME_TOKEN_SALES":"Продажа Токенов ccore (ICO)",
-  "HOME_TOKEN_ANNOUNCED_LATTER":"Будет объявлено позже",
+  "HOME_TOKEN_ANNOUNCED_LATTER":"15 Августа 2017",
+  "HOME_TOKEN_ANNOUNCED_LATTER2":"31 Августа 2017",
   "HOME_CCORE_FOR_SALE":"ccore токены на продажу",
   "HOME_CURRENCY_ACCEPTED":"Принимается к оптлате",
   "HOME_MIN_TRANSACTION":"Минимальная транзакция",
@@ -105,6 +106,8 @@
   "PRICE": "Цена",
   "CIRCULATING_SUPPLY": "Колтчество",
   "VOLUME": "Oбъем",
-  "LANG": "русский"
-
+  "LANG": "русский",
+  "ON_ICO":"на продажу",
+  "RESERVED_FUND":"останется  в фонде развития проекта для привлечения инвестиций при необходимости масштабирования",
+  "DISTRIBUTED_AMONG":"распределяется между командой ccore"
 }

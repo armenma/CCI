@@ -3,11 +3,11 @@ angular
   .controller('ICOController', ['$scope', '$interval',  function($scope, $interval)
   {
     var vm = this;
-    var countDownDate = new Date("Aug 5, 2017 15:37:25").getTime();
+    var countDownDate = new Date("Aug 15, 2017 00:00:00").getTime();
 
     vm.State = 0;
     vm.CCValue = 0;
-    vm.ETHValue = 0;
+    /*vm.ETHValue = 0;*/
     vm.multiplicator = 0;
 
     vm.ChangeState = function (value) {
@@ -24,8 +24,8 @@ angular
     vm.ETHChange = function ()
     {
       var eth_value = Number(vm.ETHValue);
-      vm.multiplicator = 0;
-      if(eth_value >= 1 && eth_value < 5)
+      vm.multiplicator = 2000;
+      /*if(eth_value >= 1 && eth_value < 5)
         vm.multiplicator = 1600;
       else if(eth_value >= 5 && eth_value < 10)
         vm.multiplicator = 1800;
@@ -34,7 +34,7 @@ angular
       else if(eth_value >= 25 && eth_value < 50)
         vm.multiplicator = 2200;
       else if(eth_value >= 50)
-        vm.multiplicator = 2500;
+        vm.multiplicator = 2500;*/
       vm.CCValue = Number((vm.ETHValue * vm.multiplicator).toFixed(2));
     }
 
