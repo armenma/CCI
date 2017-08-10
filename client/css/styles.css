@@ -70,9 +70,15 @@ header{
   text-align: center;
   color: white;
   cursor: pointer;
+  text-decoration: none;
+}
+.action-box-item a{
+  text-decoration: none;
+  color: white;
 }
 .selected{background: #02a3d5}
 div:not(.selected) > .action-box-item:hover{color: #16a6c4}
+div:not(.selected) > .action-box-item:hover a{color: #16a6c4}
 
 .langulage-opened-box{
   position: absolute; width: 100%; background: #02a3d5; top: 58px

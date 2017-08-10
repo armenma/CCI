@@ -38,13 +38,13 @@
         <span style="font-size: 22px; font-weight: bold">{{'END' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">{{'HOME_TOKEN_ANNOUNCED_LATTER2' | i18n}}</span>
       </div>
       <div style="color: black;margin-left: 30px; margin-top: 20px">
-        <span style="font-size: 22px; font-weight: bold">{{'HOME_CCORE_FOR_SALE' | i18n}}</span> <span style="font-size: 19px; color: #02a3d5">20 000 000</span>
+        <span style="font-size: 22px; font-weight: bold">{{'HOME_CCORE_FOR_SALE' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">20 000 000</span>
       </div>
       <div style="color: black;margin-left: 30px; margin-top: 20px">
-        <span style="font-size: 22px; font-weight: bold">{{'HOME_CURRENCY_ACCEPTED' | i18n}}</span> <span style="font-size: 19px; color: #02a3d5">ETH</span>
+        <span style="font-size: 22px; font-weight: bold">{{'HOME_CURRENCY_ACCEPTED' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">ETH</span>
       </div>
       <div style="color: black;margin-left: 30px; margin-top: 20px">
-        <span style="font-size: 22px; font-weight: bold">{{'HOME_MIN_TRANSACTION' | i18n}}</span> <span style="font-size: 19px; color: #02a3d5">0.1 ETH</span>
+        <span style="font-size: 22px; font-weight: bold">{{'HOME_MIN_TRANSACTION' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">0.1 ETH</span>
       </div>
       <div style="color: black;margin-left: 30px; margin-top: 20px">
         <span style="font-size: 22px; font-weight: bold">{{'HOME_TOKEN_EXCHANGE_RATE' | i18n}}:</span><span style="font-size: 19px; color: #02a3d5">2000 ccore : 1 ETH</span>
@@ -67,7 +67,7 @@
       </div>
       <div class="clear"></div>-->
 
-      <div ng-click="vm.GoToHomeIco()" style="float:right; margin-top: 40px; cursor: pointer; text-decoration:underline; font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'DETAILS_ICO' | i18n}}</div>
+      <div ng-click="vm.GoToHomeIco()" style="float:left; margin-top: 80px; margin-left: 30px; cursor: pointer; text-decoration:underline; font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'DETAILS_ICO' | i18n}}</div>
 
       <div class="clear"></div>
 
@@ -106,12 +106,12 @@
     <div class="change-box">
       <p>{{'BECOME_INVESTOR' | i18n}}</p>
       <div>
-        <input type="number" min="1" ng-model="vm.ETHValue" placeholder="min 0.1 ETH" ng-change="vm.ETHChange()">
+        <input type="number" min="1" style="background: #cfcfcf; font-size: 25px" ng-model="vm.ETHValue" placeholder="min 0.1 ETH" ng-change="vm.ETHChange()">
         <div>ETH</div>
       </div>
-      <p>{{'CURRENT_RATE' | i18n}} <span>1ETH : {{vm.multiplicator}} ccore</span></p>
+      <p>{{'CURRENT_RATE' | i18n}} <span>1ETH : 2000 ccore</span></p>
       <div>
-        <input type="number" ng-disabled="true"  ng-model="vm.CCValue" ng-change="vm.CChange()">
+        <input type="number" ng-disabled="true" style="background: #cfcfcf; font-size: 25px"  ng-model="vm.CCValue" ng-change="vm.CChange()">
         <div>ccore</div>
       </div>
       <div class="clear"></div>

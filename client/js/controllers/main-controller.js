@@ -7,6 +7,8 @@ angular
   {
     $scope.MenuItemSelectedIndex = -1;
     $scope.SelectedLanguage = coreFactory.Language;
+
+    $scope.Whitepaper = $scope.SelectedLanguage === "English" ? "English-whitepaper.pdf" : "Russian-whitepaper.pdf";
     $scope.SelectMenuItem = function (index)
     {
       $scope.MenuItemSelectedIndex = index ==  $scope.MenuItemSelectedIndex ? -1 : index;

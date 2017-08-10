@@ -13,7 +13,7 @@
   "HOME_CC_INFORMATION_ANSWER": "CC Information is extension, which furnishes complete information about market of cryptocurrencies in real time. It is developed for investors and traders.",
   "HOME_INTER_MARKET_PARTICIPANT":"Intercommunion of ccore with market participants",
   "HOME_CORP_CUSTOMER":"ccore-corporate customer",
-  "HOME_CORP_CUSTOMER_ANSWER":"Корпоративные клиенты интегрируя расширение CC Pay на свой интернет-магазин получают возможность продавать товары и услуги за криптовалюты, при этом ccore обеспечивает возможность автоматического обмена криптовалюты на фиатные деньги по желанию предпринемателя.",
+  "HOME_CORP_CUSTOMER_ANSWER":"The corporate costomers by integrating extension of CC Pay on own online-store, get possibility selling products and services against criptocurrency, while ccore secures possibility for automatically exchanging criptocurrencies into fiat currencies at the wish of the entrepreneur.",
   "HOME_CCORE_CUSTOMER":"ccore-consumer",
   "HOME_CCORE_CUSTOMER_ANSWER":"ccore offers favorable operating terms not only to entrepreneurs but the consumers. At payment for product or service by cryptocurrency the consumer doesn’t pay transaction commission fee, if he/she has account in CC Wallet. The consumer shouldn’t also wait for transaction confirmation, because transfer is made amongst the accounts CC Wallet.",
   "HOME_TRADER_INVESTOR":"ccore-trader, investor",
@@ -106,5 +106,7 @@
   "LANG": "English",
   "ON_ICO":"on ICO",
   "RESERVED_FUND":"reserved in the fund of project development for attracting investments if scaling is necessary",
-  "DISTRIBUTED_AMONG":"distributed amongst the ccore team"
+  "DISTRIBUTED_AMONG":"distributed amongst the ccore team",
+  "WILL":"Will be announced later",
+  "FOR_DETAILS":"For details on the work of ccore, see paragraph 1.3. Whiteppaper"
 }
