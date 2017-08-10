@@ -106,12 +106,12 @@
     <div class="change-box">
       <p>{{'BECOME_INVESTOR' | i18n}}</p>
       <div>
-        <input type="number" min="1" style="background: #cfcfcf; font-size: 25px" ng-model="vm.ETHValue" placeholder="min 0.1 ETH" ng-change="vm.ETHChange()">
+        <input type="number" min="1" style="font-size: 25px" ng-model="vm.ETHValue" placeholder="min 0.1 ETH" ng-change="vm.ETHChange()">
         <div>ETH</div>
       </div>
       <p>{{'CURRENT_RATE' | i18n}} <span>1ETH : 2000 ccore</span></p>
       <div>
-        <input type="number" ng-disabled="true" style="background: #cfcfcf; font-size: 25px"  ng-model="vm.CCValue" ng-change="vm.CChange()">
+        <input type="number" ng-disabled="true" style="font-size: 25px"  ng-model="vm.CCValue" ng-change="vm.CChange()">
         <div>ccore</div>
       </div>
       <div class="clear"></div>
@@ -157,11 +157,11 @@
     </ul>
 
     <div>
-      <div class="qr-code"></div>
+      <!--<div class="qr-code"></div>
       <div class="qr-code-info-box">
         <span style="color: #b3b1ba">{{'CONTRACT_ADDRESS' | i18n}}</span>
         <span style="color: black">5465115186565165/66165165161</span>
-      </div>
+      </div>-->
     </div>
 
     <div>
