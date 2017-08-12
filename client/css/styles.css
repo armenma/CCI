@@ -488,3 +488,18 @@ section iframe{height: calc(100vh - 112px)}
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+input::placeholder {
+  color: #cfcfcf;
+}
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #cfcfcf;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #cfcfcf;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: #cfcfcf;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: #cfcfcf;
+}
