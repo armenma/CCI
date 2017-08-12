@@ -1,13 +1,24 @@
 angular
   .module('app')
-  .controller('GetCryptoCurrencies', ['$scope', '$state', '$filter', 'CryptoCurrencies', 'CryptoCurrencyIndexes', '$interval', '$timeout', function($scope,
-      $state, $filter, CryptoCurrencies, CryptoCurrencyIndexes, $interval, $timeout) {
+  .controller('GetCryptoCurrencies', ['$scope', '$state', '$filter', 'CryptoCurrencies', '$rootScope', function($scope,
+      $state, $filter, CryptoCurrencies, $rootScope) {
 
     $scope.CryptoCurrencies = [];
-    $scope.CryptoCurrencyIndexes = [];
     $scope.MainCryptoCurrencies = [];
     $scope.CurrentIndex = 0;
-    var timeoutPromise;
+    var scope = $rootScope;
+
+    scope.$watch('CryptoCurrencyIndexes', function(newValue, oldValue) {
+      $scope.data = [{
+        values: newValue,
+        key: 'Indexes',
+        color: '#7777ff',
+        area: true
+      }];
+
+      if(newValue.length > 0)$scope.CurrentIndex = newValue[newValue.length - 1].value.toFixed(2);
+
+    });
 
 
     function GetCryptoCurrencies() {
@@ -22,46 +33,16 @@ angular
         });
     };
 
-    function GetCryptoCurrencyIndexes() {
-      CryptoCurrencyIndexes
-        .find()
-        .$promise
-        .then(function(results) {
-          $scope.CryptoCurrencyIndexes = results;
-          $scope.data = [{
-            values: $scope.CryptoCurrencyIndexes,
-            key: 'Indexes',
-            color: '#7777ff',
-            area: true
-          }];
-
-          $scope.CurrentIndex = $scope.CryptoCurrencyIndexes[$scope.CryptoCurrencyIndexes.length - 1].value.toFixed(2);
-
-          if(timeoutPromise)$timeout.cancel(timeoutPromise);
-
-        }, function (err) {
-
-          if(timeoutPromise)$timeout.cancel(timeoutPromise);
-          timeoutPromise = $timeout(function () {
-            GetCryptoCurrencyIndexes();
-          }, 500);
-
-        });
-    }
     GetCryptoCurrencies();
-    GetCryptoCurrencyIndexes();
 
-    var intervalPromise = $interval(function () {
-      GetCryptoCurrencyIndexes()
-    }, 300000);
 
-    $scope.DeleteAllIndexes = function ()
-    {
-      CryptoCurrencyIndexes.destroyAll().$promise
-        .then(function(results) {
-          console.log("All data deleted");
-        });
-    }
+    // $scope.DeleteAllIndexes = function ()
+    // {
+    //   CryptoCurrencyIndexes.destroyAll().$promise
+    //     .then(function(results) {
+    //       console.log("All data deleted");
+    //     });
+    // }
 
     function compare(a, b) {
 
@@ -132,11 +113,6 @@ angular
         enable: false,
       }
     };
-
-    $scope.$on('$destroy', function() {
-      if(timeoutPromise)$timeout.cancel(timeoutPromise);
-      if(intervalPromise)$interval.cancel(intervalPromise);
-    });
 
 
     /* $scope.addTodo = function() {

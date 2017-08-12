@@ -1,40 +1,23 @@
 angular
   .module('app')
-  .controller('HomeController', ['$scope', 'CryptoCurrencyIndexes','$interval', '$timeout', function($scope, CryptoCurrencyIndexes, $interval, $timeout)
+  .controller('HomeController', ['$scope', '$rootScope', function($scope, $rootScope)
   {
     $scope.Language = {
 
     };
 
-    $scope.CryptoCurrencyIndexes = [];
-    var timeoutPromise;
+    var scope = $rootScope;
     $scope.CurrentIndex = 0;
 
-    function GetCryptoCurrencyIndexes() {
-      CryptoCurrencyIndexes
-        .find()
-        .$promise
-        .then(function(results) {
-          $scope.CryptoCurrencyIndexes = results;
-          $scope.data = [{
-            values: $scope.CryptoCurrencyIndexes,
-            key: 'Indexes',
-            color: '#7777ff',
-            area: true
-          }];
-          $scope.CurrentIndex = $scope.CryptoCurrencyIndexes[$scope.CryptoCurrencyIndexes.length - 1].value.toFixed(2);
-        }, function (err) {
-          if(timeoutPromise)$timeout.cancel(timeoutPromise);
-          timeoutPromise = $timeout(function () {
-            GetCryptoCurrencyIndexes();
-          }, 500);
-        });
-    }
-
-    GetCryptoCurrencyIndexes();
-    var intervalPromise = $interval(function () {
-      GetCryptoCurrencyIndexes()
-    }, 300000);
+    scope.$watch('CryptoCurrencyIndexes', function(newValue, oldValue) {
+      $scope.data = [{
+        values: newValue,
+        key: 'Indexes',
+        color: '#7777ff',
+        area: true
+      }];
+      if(newValue.length > 0)$scope.CurrentIndex = newValue[newValue.length - 1].value.toFixed(2);
+    });
 
     $scope.options = {
       chart: {
@@ -91,13 +74,5 @@ angular
         enable: false,
       }
     };
-
-    $scope.$on('$destroy', function() {
-      if(timeoutPromise)$timeout.cancel(timeoutPromise);
-      if(intervalPromise)$interval.cancel(intervalPromise);
-    });
-
-
-
 
   }]);

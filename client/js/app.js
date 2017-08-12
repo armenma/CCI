@@ -45,8 +45,31 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
     });
 
   $urlRouterProvider.otherwise('/home');
-}]).run(['coreFactory', '$rootScope', function (coreFactory, $rootScope) {
+}]).run(['coreFactory', '$rootScope', 'CryptoCurrencyIndexes', '$interval', '$timeout', function (coreFactory, $rootScope, CryptoCurrencyIndexes, $interval, $timeout) {
   $rootScope.language = language;
+  $rootScope.CryptoCurrencyIndexes = [];
+
+  var timeoutPromise;
+
+  function GetCryptoCurrencyIndexes() {
+    CryptoCurrencyIndexes
+      .find()
+      .$promise
+      .then(function(results) {
+        $rootScope.CryptoCurrencyIndexes = results;
+      }, function (err) {
+        if(timeoutPromise)$timeout.cancel(timeoutPromise);
+        timeoutPromise = $timeout(function () {
+          GetCryptoCurrencyIndexes();
+        }, 200);
+      });
+  }
+
+  GetCryptoCurrencyIndexes();
+  var intervalPromise = $interval(function () {
+    GetCryptoCurrencyIndexes();
+  }, 300000);
+
   coreFactory.Run();
 
 }]);
