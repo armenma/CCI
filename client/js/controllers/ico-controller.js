@@ -35,7 +35,7 @@ angular
         vm.multiplicator = 2200;
       else if(eth_value >= 50)
         vm.multiplicator = 2500;*/
-      vm.CCValue = Number((vm.ETHValue * vm.multiplicator).toFixed(2));
+      vm.CCValue = vm.ETHValue * vm.multiplicator;
     }
 
     function calculate()
