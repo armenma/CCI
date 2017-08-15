@@ -315,8 +315,8 @@ section.home p:nth-of-type(5){font-size: 60px; font-weight: bold; text-align: ce
 
 .our-team{
   background: #f4f4f4;
-  height: 500px;
-  display: none;
+  height: auto;
+  padding-bottom: 100px;
 }
 
 /*FOOTER AREA*/
@@ -408,6 +408,35 @@ section.modules > aside p{color: #0aa6d6; font-size: 33px; text-align: center; p
 section.modules > aside:first-of-type{background: white}
 section.modules > aside:first-of-type p{color: black}
 section iframe{height: calc(100vh - 112px)}
+
+.team-row, .team-row2, .team-row3{
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.team-row2, .team-row3{margin-top: 120px}
+
+.team-row >  .team-member:first-of-type{background: url("../images/teams/Артак.png");}
+.team-row >  .team-member:nth-of-type(2){background: url("../images/teams/Армен.png");}
+.team-row >  .team-member:nth-of-type(3){background: url("../images/teams/Hasmik.png");}
+
+.team-row2 >  .team-member:first-of-type{background: url("../images/teams/Narin.png");}
+.team-row2 >  .team-member:nth-of-type(2){background: url("../images/teams/Арут.png");}
+.team-row2 >  .team-member:nth-of-type(3){background: url("../images/teams/Ara.png");}
+
+.team-row3 >  .team-member:first-of-type{background: url("../images/teams/Ivan.png");}
+.team-row3 >  .team-member:nth-of-type(2){background: url("../images/teams/Edo.png");}
+.team-row3 >  .team-member:nth-of-type(3){background: url("../images/teams/Ruzan.png");}
+
+.team-member{
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+.team-member-title{bottom: -35px; white-space: nowrap; position: absolute; font-weight: bold; transform: translateX(-50%); left: 50%; font-size: 20px}
 
 
 /*loader*/
