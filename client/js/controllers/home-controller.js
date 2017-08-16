@@ -2,6 +2,9 @@ angular
   .module('app')
   .controller('HomeController', ['$scope', '$rootScope', function($scope, $rootScope)
   {
+
+    if(IsFirstTime)document.getElementById("bgvid").play();
+
     $scope.Language = {
 
     };

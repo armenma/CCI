@@ -54,7 +54,7 @@
           </div>
         </div>
         <div style="text-transform:uppercase;height: 58px; width: 115px; float: right">
-          <div class="action-box-item right-border" ng-click="GoToById('our-team')">
+          <div class="action-box-item right-border" ng-click="GoToTeam()">
             <span>The Team</span>
           </div>
         </div>
@@ -141,13 +141,17 @@
   <script>
     var myVar;
 
+    var IsFirstTime = false;
+
     function myFunction() {
       myVar = setTimeout(showPage, 3000);
     }
 
     function showPage() {
+      IsFirstTime = true;
       document.getElementById("loader").style.visibility = "hidden";
       document.getElementById("myDiv").style.visibility = "visible";
+      document.getElementById("bgvid").play();
     }
   </script>
   </body>

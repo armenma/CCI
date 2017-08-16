@@ -35,6 +35,12 @@ angular
       location.reload();
     }
 
+    $scope.GoToTeam = function ()
+    {
+      $state.go("home");
+      timeoutPromise =  $timeout(function(){$scope.GoToById("our-team")},200);
+    }
+
     $scope.GoToById = function (id)
     {
       var newHash = id;
@@ -63,6 +69,11 @@ angular
       $state.go("home");
      timeoutPromise =  $timeout(function(){$scope.GoToById("home-ico-box")},200);
     });
+
+    $scope.$on('go-home-team', function (event) {
+    $state.go("home");
+    timeoutPromise =  $timeout(function(){$scope.GoToById("our-team")},200);
+  });
 
     $scope.$on("$destroy", function() {
       if (timeoutPromise) {

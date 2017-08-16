@@ -3,7 +3,7 @@ angular
   .controller('ICOController', ['$scope', '$interval',  function($scope, $interval)
   {
     var vm = this;
-    var countDownDate = new Date("Aug 15, 2017 00:00:00").getTime();
+    var countDownDate = new Date("Aug 20, 2017 00:00:00").getTime();
 
     vm.State = 0;
     vm.CCValue = 0;
