@@ -3,7 +3,7 @@ angular
   .controller('HomeController', ['$scope', '$rootScope', function($scope, $rootScope)
   {
 
-    if(IsFirstTime)document.getElementById("bgvid").play();
+    /*if(IsFirstTime)document.getElementById("bgvid").play();*/
 
     $scope.Language = {
 

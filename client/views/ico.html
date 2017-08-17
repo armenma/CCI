@@ -28,17 +28,20 @@
 
     <div class="ico-info-box">
 
-      <div style="color: black; margin-left: 30px; text-align: center;">
-        <span style="font-size: 24px; font-weight: bold">Pre-ICO</span>
+      <div style="color: black; margin-left: 30px;">
+        <span style="font-size: 24px; font-weight: bold; text-decoration: underline">Pre-ICO</span>
       </div>
       <div style="color: black; margin-left: 30px; margin-top: 20px">
-        <span style="font-size: 22px; font-weight: bold">{{'START' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">{{'WILL' | i18n}}</span>
+        <span style="font-size: 22px; font-weight: bold">{{'START' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">{{'HOME_TOKEN_ANNOUNCED_LATTER' | i18n}}</span>
       </div>
       <div style="color: black;margin-left: 30px; margin-top: 20px">
-        <span style="font-size: 22px; font-weight: bold">{{'END' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">{{'WILL' | i18n}}</span>
+        <span style="font-size: 22px; font-weight: bold">{{'END' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">{{'HOME_TOKEN_ANNOUNCED_LATTER2' | i18n}}</span>
       </div>
       <div style="color: black;margin-left: 30px; margin-top: 20px">
-        <span style="font-size: 22px; font-weight: bold">{{'HOME_CCORE_FOR_SALE' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">20 000 000</span>
+        <span style="font-size: 22px; font-weight: bold">{{'HOME_CCORE_FOR_SALE' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">3 000 000</span>
+      </div>
+      <div style="color: black;margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">{{'HOME_TOKEN_EXCHANGE_RATE' | i18n}}:</span><span style="font-size: 19px; color: #02a3d5">3000 ccore : 1 ETH</span>
       </div>
       <div style="color: black;margin-left: 30px; margin-top: 20px">
         <span style="font-size: 22px; font-weight: bold">{{'HOME_CURRENCY_ACCEPTED' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">ETH</span>
@@ -46,9 +49,7 @@
       <div style="color: black;margin-left: 30px; margin-top: 20px">
         <span style="font-size: 22px; font-weight: bold">{{'HOME_MIN_TRANSACTION' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">0.1 ETH</span>
       </div>
-      <div style="color: black;margin-left: 30px; margin-top: 20px">
-        <span style="font-size: 22px; font-weight: bold">{{'HOME_TOKEN_EXCHANGE_RATE' | i18n}}:</span><span style="font-size: 19px; color: #02a3d5">2000 ccore : 1 ETH</span>
-      </div>
+
 
       <!--<div style="color: white; margin-left: -10px; margin-top: 8px; float: left; white-space: pre-wrap">
         <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'FROM' | i18n}} 1 {{'TO' | i18n}} 5ETH</span>
@@ -66,6 +67,14 @@
         <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">2500 ccore : 1 ETH</span>
       </div>
       <div class="clear"></div>-->
+
+      <div style="color: black; margin-left: 30px; margin-top: 30px;">
+        <span style="font-size: 24px; font-weight: bold; text-decoration: underline">ICO</span>
+      </div>
+
+      <div style="color: black;margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">{{'HOME_TOKEN_EXCHANGE_RATE' | i18n}}:</span><span style="font-size: 19px; color: #02a3d5">1000 ccore : 1 ETH</span>
+      </div>
 
       <div ng-click="vm.GoToHomeIco()" style="float:left; margin-top: 80px; margin-left: 30px; cursor: pointer; text-decoration:underline; font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'DETAILS_ICO' | i18n}}</div>
 
@@ -109,7 +118,7 @@
         <input type="number" style="font-size: 25px" ng-model="vm.ETHValue" placeholder="min 0.1 ETH" ng-change="vm.ETHChange()">
         <div>ETH</div>
       </div>
-      <p>{{'CURRENT_RATE' | i18n}} <span>1ETH : 2000 ccore</span></p>
+      <p>{{'CURRENT_RATE' | i18n}} <span>1ETH : 3000 ccore</span></p>
       <div>
         <input type="number" ng-disabled="true" style="font-size: 25px"  ng-model="vm.CCValue" ng-change="vm.CChange()">
         <div>ccore</div>
