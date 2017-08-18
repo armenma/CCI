@@ -351,10 +351,11 @@ footer{
 }
 footer span:first-of-type{display: inline-block; position: absolute; left: 50%; top: 50%; transform:  translate(-50%, -50%)}
 footer span:nth-of-type(2){display: inline-block; position: absolute; top: 50%; transform:  translateY(-50%); right: 20px; line-height: normal; text-align: center; width: 400px; margin-right: 0px}
-footer > div .footer-item:first-of-type{background: url("../images/footer/Twitter.png") no-repeat; margin-left: 50px;}
-footer > div .footer-item:nth-of-type(2){background: url("../images/footer/Facebook.png") no-repeat;}
-footer > div .footer-item:nth-of-type(3){background: url("../images/footer/Telegram.png") no-repeat;}
-footer > div .footer-item:nth-of-type(4){background: url("../images/footer/Slack.png") no-repeat;}
+footer > div .footer-item:first-of-type{background: url("../images/footer/bitcointalk.png") no-repeat; margin-left: 50px;}
+footer > div .footer-item:nth-of-type(2){background: url("../images/footer/Twitter.png") no-repeat;}
+footer > div .footer-item:nth-of-type(3){background: url("../images/footer/Facebook.png") no-repeat;}
+footer > div .footer-item:nth-of-type(4){background: url("../images/footer/Telegram.png") no-repeat;}
+footer > div .footer-item:nth-of-type(5){background: url("../images/footer/Slack.png") no-repeat;}
 footer span{font-size: 22px; color: white; font-weight: bold; line-height: 112px;
   display: inline-block;
   margin-right: 310px;

@@ -1,8 +1,10 @@
 ﻿{
   "HOME_WHAT_IS_CCORE": "What is ccore?",
-  "HOME_WHAT_IS_CCORE_ANSWER": "Ccore is a Crypto Payment Platform that allows people who have cryptocoins / altcoins to spend them on various fiat based online services and stores without losing value on the exchange.  ",
+  "HOME_WHAT_IS_CCORE_ANSWER": "Ccore is a Crypto Payment Platform that allows people who have cryptocoins / altcoins to spend them on various fiat based online services and stores without losing value on the exchange. And the owners of online-stores will be able to accept cryptocurrency for payment, while not losing part of their profit due to variation of cryptocurrency rate.",
   "HOME_STRUCTURE_OF_CCORE": "Structure of ccore",
   "HOME_STRUCTURE_OF_CCORE_ANSWER":"Ccore platform has a module structure, which enables to connect multiple extensions (modules) to platform. 4 main extensions of platform over which our team is currently working:",
+  "WHAT_IS_CORE_TOKEN_ANSWER":"Tokens ccore are digital currencies, through which it will be possible to pay in online-stores for products or services.",
+  "WHAT_IS_CORE_TOKEN":"What is Ccore Token?",
   "HOME_CC_EXCHANGE":"C Exchange",
   "HOME_CC_WALLET":"C Wallet",
   "HOME_CC_PAY":"C Pay",

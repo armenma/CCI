@@ -53,7 +53,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
 
   function GetCryptoCurrencyIndexes() {
     CryptoCurrencyIndexes
-      .find()
+      .find(/*{"where": { "value": {"gt": "10"}  }}*/)
       .$promise
       .then(function(results) {
         $rootScope.CryptoCurrencyIndexes = results;
