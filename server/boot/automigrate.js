@@ -96,7 +96,7 @@ module.exports = function(app) {
 
 
 
-    }, 300000);
+    }, 900000);
 
   });
 };
@@ -122,12 +122,12 @@ function CalculateAndSaveIndex(model, data)
     }
 
     model.create(index,
-      function(err, result)
-      {
-        if (err) throw err;
-        else console.log("INDEX MODEL CREATED SUCCESSFULLY " + JSON.stringify(index));
+    function(err, result)
+    {
+      if (err) throw err;
+      else console.log("INDEX MODEL CREATED SUCCESSFULLY " + JSON.stringify(index));
 
-      });
+    });
 
    /* var t = model.getDataSource().connector.collection("CryptoCurrencyIndexes");
 
