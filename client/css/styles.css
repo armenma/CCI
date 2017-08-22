@@ -417,7 +417,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: calc(100% - 40px);
 }
 .ico-third-box .qr-code{width: 95px; height: 95px;
-  background: url("../images/QRcod.png") no-repeat; position: absolute; left: 85px; top:50%; transform: translateY(-50%) }
+  background: url("../images/qr.jpg") no-repeat; position: absolute; left: 85px; top:50%; transform: translateY(-50%) }
 .ico-third-box .qr-code-info-box{white-space: pre-wrap; text-align: center}
 /*MODULES AREA*/
 section.modules{padding-top:  60px}
