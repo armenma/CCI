@@ -416,7 +416,7 @@ input[type=number]::-webkit-outer-spin-button {
 .ico-third-box > div:nth-of-type(4){background: #02a3d5; height: 80px; margin-left: auto; margin-right: auto;
   width: calc(100% - 40px);
 }
-.ico-third-box .qr-code{width: 95px; height: 95px;
+.ico-third-box .qr-code{width: 120px; height: 120px;
   background: url("../images/qr.jpg") no-repeat; position: absolute; left: 85px; top:50%; transform: translateY(-50%) }
 .ico-third-box .qr-code-info-box{white-space: pre-wrap; text-align: center}
 /*MODULES AREA*/
