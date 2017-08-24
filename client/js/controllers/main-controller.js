@@ -26,6 +26,12 @@ angular
       $scope.MenuItemSelectedIndex = -1;
     }
 
+    $scope.Email = {text:""}
+
+    $scope.SendEmail = function () {
+      window.open('mailto:armen.mardoyan@outlook.com?subject=subject&body=' + $scope.Email.text);
+    }
+
 
     $scope.ChangeLanguage = function (value, event)
     {
