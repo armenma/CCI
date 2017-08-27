@@ -291,6 +291,7 @@ section.home p:nth-of-type(5){font-size: 60px; font-weight: bold; text-align: ce
   flex-flow: row nowrap;
   justify-content: center;
   margin-top: 80px;
+  position: relative;
 }
 .home-our-products-item{
   width: 300px;
@@ -299,12 +300,12 @@ section.home p:nth-of-type(5){font-size: 60px; font-weight: bold; text-align: ce
   background: white;
   margin-right: 20px;
   text-align: center;
-  position: relative;
 }
 .home-our-products-item > div:first-of-type{height: 190px; line-height: 190px; font-size: 49px; font-weight: bold; background: #102c35; color: white; white-space: nowrap}
 .home-our-products-item > div:nth-of-type(2){background: #f4f4f4; font-size: 19px; height: 260px; padding-top: 20px; padding-left: 15px; padding-right: 15px}
 .home-ico-box{
   background: #0c2a31;
+  position: relative;
 }
 .routing-box{
   position: relative;
