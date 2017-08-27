@@ -43,5 +43,9 @@
   "CryptoCurrencyIndexes": {
     "dataSource": "mongodb",
     "public": true
+  },
+  "UserEmails": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }

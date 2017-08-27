@@ -3,7 +3,7 @@
  */
 angular
   .module('app')
-  .controller('MainController', ['$scope', '$anchorScroll', '$location', 'coreFactory', '$state', "$timeout", function($scope, $anchorScroll, $location, coreFactory, $state, $timeout)
+  .controller('MainController', ['$scope', '$anchorScroll', '$location', 'coreFactory', '$state', "$timeout", "UserEmails", function($scope, $anchorScroll, $location, coreFactory, $state, $timeout, UserEmails)
   {
     $scope.MenuItemSelectedIndex = -1;
     $scope.SelectedLanguage = coreFactory.Language;
@@ -21,6 +21,16 @@ angular
 
     }
 
+    $scope.AddEmail = function ()
+    {
+      UserEmails
+        .create({'content': $scope.Email.text})
+        .$promise
+        .then(function() {
+          $scope.Email.text = '';
+        });
+    }
+
     $scope.CloseMenu = function ()
     {
       $scope.MenuItemSelectedIndex = -1;
@@ -28,9 +38,9 @@ angular
 
     $scope.Email = {text:""}
 
-    $scope.SendEmail = function () {
+    /*$scope.SendEmail = function () {
       window.open('mailto:armen.mardoyan@outlook.com?subject=subject&body=' + $scope.Email.text);
-    }
+    }*/
 
 
     $scope.ChangeLanguage = function (value, event)
