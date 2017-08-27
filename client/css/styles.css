@@ -457,7 +457,7 @@ section iframe{height: calc(100vh - 112px)}
 }
 .team-member-title{bottom: -35px; white-space: nowrap; position: absolute; font-weight: bold; transform: translateX(-50%); left: 50%; font-size: 20px}
 .subscribe-news{position: fixed; bottom: 0; left: 10px;}
-.subscribe-news input{width: 250px; float: left}
+.subscribe-news input{width: 300px; float: left; border: 1px solid #02a3d5}
 .subscribe-news button{float: left; background: #02a3d5; color: white; height: 34px; margin-bottom: -1px}
 
 /*loader*/
