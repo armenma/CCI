@@ -119,10 +119,10 @@
 
       </footer>
 
-      <div class="subscribe-news">
-        <input class="form-control" ng-model="Email.text" placeholder="Enter your email address" type="text">
-        <button ng-click="AddEmail()" class="btn btn-default" type="submit">Subscribe for news</button>
-      </div>
+      <form name="form" class="subscribe-news" >
+        <input class="form-control"  ng-model="Email.text" placeholder="Enter your email address" type="email">
+        <button ng-click="AddEmail(form)" class="btn btn-default">Subscribe for news</button>
+      </form>
     </div>
 
 

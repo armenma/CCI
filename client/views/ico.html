@@ -1,30 +1,30 @@
 <section class="ico-section">
-  <div class="ico-header" ng-if="vm.State == 0">{{'HOME_TOKEN_SALES' | i18n}}</div>
-  <div class="ico-header" ng-if="vm.State == 1">{{'TERMS_AND_CONDITIONS' | i18n}}</div>
-  <div class="ico-header" ng-if="vm.State == 2">{{'CONTRIBUTION' | i18n}}</div>
+  <div class="ico-header" ng-if="State == 0">{{'HOME_TOKEN_SALES' | i18n}}</div>
+  <div class="ico-header" ng-if="State == 1">{{'TERMS_AND_CONDITIONS' | i18n}}</div>
+  <div class="ico-header" ng-if="State == 2">{{'CONTRIBUTION' | i18n}}</div>
   <div class="pre-ico-header">{{'PRE_ICO_HEADER' | i18n}}</div>
   <div class="count-down">
     <div class="count-down-item">
-      {{vm.Deys}}
+      {{Deys}}
       <span>{{'DAYS' | i18n}}</span>
     </div>
     <div class="count-down-item">
-      {{vm.Hours}}
+      {{Hours}}
       <span>{{'Hours' | i18n}}</span>
     </div>
     <div class="count-down-item">
-      {{vm.Minutes}}
+      {{Minutes}}
       <span>{{'MINUTES' | i18n}}</span>
     </div>
     <div class="count-down-item">
-      {{vm.Seconds}}
+      {{Seconds}}
       <span>{{'SECONDS' | i18n}}</span>
     </div>
   </div>
 
   <div class="clear"></div>
 
-  <div class="ico-change-box" ng-if="vm.State == 0">
+  <div class="ico-change-box" ng-if="State == 0">
 
     <div class="ico-info-box">
 
@@ -76,7 +76,7 @@
         <span style="font-size: 22px; font-weight: bold">{{'HOME_TOKEN_EXCHANGE_RATE' | i18n}}:</span><span style="font-size: 19px; color: #02a3d5">1000 ccore : 1 ETH</span>
       </div>
 
-      <div ng-click="vm.GoToHomeIco()" style="float:left; margin-top: 80px; margin-left: 30px; cursor: pointer; text-decoration:underline; font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'DETAILS_ICO' | i18n}}</div>
+      <div ng-click="GoToHomeIco()" style="float:left; margin-top: 80px; margin-left: 30px; cursor: pointer; text-decoration:underline; font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'DETAILS_ICO' | i18n}}</div>
 
       <div class="clear"></div>
 
@@ -115,20 +115,20 @@
     <div class="change-box">
       <p>{{'BECOME_INVESTOR' | i18n}}</p>
       <div>
-        <input type="number" style="font-size: 25px" ng-model="vm.ETHValue" placeholder="min 0.1 ETH" ng-change="vm.ETHChange()">
+        <input type="number" style="font-size: 25px" ng-model="ETHValue.Value" placeholder="min 0.1 ETH" ng-change="ETHChange()">
         <div>ETH</div>
       </div>
-      <p>{{'CURRENT_RATE' | i18n}} <span>1ETH : 3000 ccore</span></p>
+      <p style="min-height: 48px">{{'CURRENT_RATE' | i18n}} <span>1ETH : 3000 ccore</span></p>
       <div>
-        <input type="number" ng-disabled="true" style="font-size: 25px"  ng-model="vm.CCValue" ng-change="vm.CChange()">
+        <input type="number" ng-disabled="true" style="font-size: 25px"  ng-model="CCValue.Value" ng-change="CChange()">
         <div>ccore</div>
       </div>
       <div class="clear"></div>
-      <button class="contribute-button" ng-click="vm.ChangeState(1)">{{'INVEST_NOW' | i18n}}</button>
+      <button class="contribute-button" ng-click="ChangeState(1)">{{'INVEST_NOW' | i18n}}</button>
     </div>
   </div>
 
-  <div class="ico-second-box" ng-if="vm.State == 1">
+  <div class="ico-second-box" ng-if="State == 1">
 
     <div style="display: none">
       <span>{{'TERMS_AND_CONDITIONS' | i18n}}</span>
@@ -142,17 +142,17 @@
     <div><input type="checkbox" ng-model="TermsChecked">  <span style="color: #02a3d5">{{'TERMS_AND_CONDITION_AGREE' | i18n}}</span></div>
     <div style="position: absolute; height: 1px; background: #02a3d5; bottom: 107px; width: 100%"></div>
 
-    <button ng-click="vm.ChangeState(0)" style="position: absolute; left: 10px; bottom: 10px; width: 165px;
+    <button ng-click="ChangeState(0)" style="position: absolute; left: 10px; bottom: 10px; width: 165px;
      height: 75px; color: white; text-align: center; line-height: 75px; background: #02a3d5;
       font-size: 30px"><i class="fa fa-arrow-left" aria-hidden="true"></i>  {{'BACK' | i18n}}</button>
 
-    <button ng-click="vm.ChangeState(2)" ng-disabled="!TermsChecked" style="position: absolute; right: 10px; bottom: 10px; width: 165px;
+    <button ng-click="ChangeState(2)" ng-disabled="!TermsChecked" style="position: absolute; right: 10px; bottom: 10px; width: 165px;
      height: 75px; color: white; text-align: center; line-height: 75px; background: #02a3d5;
       font-size: 30px">{{'NEXT' | i18n}} <i class="fa fa-arrow-right" aria-hidden="true"></i> </button>
 
   </div>
 
-  <div class="ico-third-box" ng-if="vm.State == 2">
+  <div class="ico-third-box" ng-if="State == 2">
 
     <div>{{'SEND_SMART_CONTRACT' | i18n}}</div>
 

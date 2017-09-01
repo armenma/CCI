@@ -5,26 +5,27 @@ angular
     var vm = this;
     var countDownDate = new Date(Date.UTC(2017, 08, 15, 18, 14)).getTime();
 
-    vm.State = 0;
-    vm.CCValue = 0;
+    $scope.State = 0;
+    $scope.CCValue = {Value:0};
     /*vm.ETHValue = 0;*/
-    vm.multiplicator = 0;
+    $scope.multiplicator = 0;
+    $scope.ETHValue = {Value:''};
 
-    vm.ChangeState = function (value) {
-      vm.State = value;
+    $scope.ChangeState = function (value) {
+      $scope.State = value;
     }
-    vm.CChange = function ()
+    $scope.CChange = function ()
     {
      /* var cc_value = Number(vm.CCValue);
       var divider = 2000;
       if(cc_value)*/
-      vm.ETHValue = Number((vm.CCValue / 2000).toFixed(2));
+      $scope.ETHValue.Value = Number(($scope.CCValue.Value / 2000).toFixed(2));
     }
 
-    vm.ETHChange = function ()
+    $scope.ETHChange = function ()
     {
-      var eth_value = Number(vm.ETHValue);
-      vm.multiplicator = 3000;
+      var eth_value = Number($scope.ETHValue.Value);
+      $scope.multiplicator = 3000;
       /*if(eth_value >= 1 && eth_value < 5)
         vm.multiplicator = 1600;
       else if(eth_value >= 5 && eth_value < 10)
@@ -35,7 +36,7 @@ angular
         vm.multiplicator = 2200;
       else if(eth_value >= 50)
         vm.multiplicator = 2500;*/
-      vm.CCValue = vm.ETHValue * vm.multiplicator;
+      $scope.CCValue.Value = $scope.ETHValue.Value * $scope.multiplicator;
     }
 
     function calculate()
@@ -46,10 +47,10 @@ angular
       var distance = countDownDate - now;
 
       // Time calculations for days, hours, minutes and seconds
-      vm.Deys = Math.floor(distance / (1000 * 60 * 60 * 24));
-      vm.Hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      vm.Minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      vm.Seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      $scope.Deys = Math.floor(distance / (1000 * 60 * 60 * 24));
+      $scope.Hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      $scope.Minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      $scope.Seconds = Math.floor((distance % (1000 * 60)) / 1000);
     }
     calculate();
 
@@ -65,8 +66,8 @@ angular
         $interval.cancel(intervalPromise);
       }
     });
-    vm.GoToHomeIco = function () {
+    $scope.GoToHomeIco = function () {
       $scope.$emit("go-home-ico");
     }
-    return vm;
+    /*return vm;*/
   }]);

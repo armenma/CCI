@@ -21,14 +21,17 @@ angular
 
     }
 
-    $scope.AddEmail = function ()
+    $scope.AddEmail = function (form)
     {
-      UserEmails
-        .create({'content': $scope.Email.text})
-        .$promise
-        .then(function() {
-          $scope.Email.text = '';
-        });
+      if(form.$valid)
+      {
+        UserEmails
+          .create({'content': $scope.Email.text})
+          .$promise
+          .then(function() {
+            $scope.Email.text = '';
+          });
+      }
     }
 
     $scope.CloseMenu = function ()

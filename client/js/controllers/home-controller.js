@@ -1,9 +1,11 @@
 angular
   .module('app')
-  .controller('HomeController', ['$scope', '$rootScope', function($scope, $rootScope)
+  .controller('HomeController', ['$scope', '$rootScope', '$controller', function($scope, $rootScope, $controller)
   {
 
     /*if(IsFirstTime)document.getElementById("bgvid").play();*/
+
+    $controller('ICOController', { $scope: $scope });
 
     $scope.Language = {
 

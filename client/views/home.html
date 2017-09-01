@@ -1,6 +1,6 @@
 <section class="home">
 
-  <div class="home-header-content">
+  <!--<div class="home-header-content">
 
     <div>
 
@@ -15,15 +15,19 @@
       </p>
 
     </div>
+  </div>-->
+  <div ng-include="'../views/ico.html'" ></div>
 
-  </div>
 
   <div class="videoContainer">
-    <video poster="" id="bgvid" playsinline controls>
+    <iframe style="display: block; margin-top: 50px; margin-left: auto; margin-right: auto" width="854" height="480" src="https://www.youtube.com/embed/jNov2_PlTFw" frameborder="0" allowfullscreen></iframe>
+    <!--<video poster="" id="bgvid" playsinline controls>
 
       <source src="../images/video.mp4" type="video/mp4">
-    </video>
+    </video>-->
   </div>
+
+
 
   <p>{{"HOME_WHAT_IS_CCORE" | i18n}}</p>
 
