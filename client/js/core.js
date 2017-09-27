@@ -20,7 +20,7 @@ var i18n = {
 };
 var language = localStorage.getItem('language');
 
-if (!language)language = 'English';
+if (!language)language = 'EN';
 
 app.filter('i18n', [function () {
 
