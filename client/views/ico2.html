@@ -1,0 +1,187 @@
+<section class="ico-section">
+  <div class="ico-header" ng-if="State == 0">{{'HOME_TOKEN_SALES' | i18n}}</div>
+  <div class="ico-header" ng-if="State == 1">{{'TERMS_AND_CONDITIONS' | i18n}}</div>
+  <div class="ico-header" ng-if="State == 2">{{'CONTRIBUTION' | i18n}}</div>
+  <div class="pre-ico-header">{{'PRE_ICO_HEADER' | i18n}}</div>
+  <div class="count-down">
+    <div class="count-down-item">
+      {{Deys}}
+      <span>{{'DAYS' | i18n}}</span>
+    </div>
+    <div class="count-down-item">
+      {{Hours}}
+      <span>{{'Hours' | i18n}}</span>
+    </div>
+    <div class="count-down-item">
+      {{Minutes}}
+      <span>{{'MINUTES' | i18n}}</span>
+    </div>
+    <div class="count-down-item">
+      {{Seconds}}
+      <span>{{'SECONDS' | i18n}}</span>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <div class="ico-change-box" ng-if="State == 0">
+
+    <div class="ico-info-box">
+
+      <div style="color: black; margin-left: 30px;">
+        <span style="font-size: 24px; font-weight: bold; text-decoration: underline">Pre-ICO</span>
+      </div>
+      <div style="color: black; margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">{{'START' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">{{'HOME_TOKEN_ANNOUNCED_LATTER' | i18n}}</span>
+      </div>
+      <div style="color: black;margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">{{'END' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">{{'HOME_TOKEN_ANNOUNCED_LATTER2' | i18n}}</span>
+      </div>
+      <div style="color: black;margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">{{'HOME_CCORE_FOR_SALE' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">3 000 000 Ccoin (1 000 ETH)</span>
+      </div>
+      <div style="color: black;margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">{{'HOME_TOKEN_EXCHANGE_RATE' | i18n}}:</span><span style="font-size: 19px; color: #02a3d5">3000 Ccoin : 1 ETH</span>
+      </div>
+      <div style="color: black;margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">{{'HOME_CURRENCY_ACCEPTED' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">ETH</span>
+      </div>
+      <div style="color: black;margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">{{'HOME_MIN_TRANSACTION' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">0.1 ETH</span>
+      </div>
+
+
+      <!--<div style="color: white; margin-left: -10px; margin-top: 8px; float: left; white-space: pre-wrap">
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'FROM' | i18n}} 1 {{'TO' | i18n}} 5ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'FROM' | i18n}} 5 {{'TO' | i18n}} 10ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'FROM' | i18n}} 10 {{'TO' | i18n}} 25ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'FROM' | i18n}} 25 {{'TO' | i18n}} 50ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'MORE_THAN' | i18n}} 50ETH</span>
+      </div>
+
+      <div style="color: white; margin-left: 20px; margin-top: 8px; float: left; white-space: pre-wrap">
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">1600 ccore : 1 ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">1800 ccore : 1 ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">2000 ccore : 1 ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">2200 ccore : 1 ETH</span>
+        <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">2500 ccore : 1 ETH</span>
+      </div>
+      <div class="clear"></div>-->
+
+      <div style="color: black; margin-left: 30px; margin-top: 30px;">
+        <span style="font-size: 24px; font-weight: bold; text-decoration: underline">ICO</span>
+      </div>
+
+      <div style="color: black;margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">{{'HOME_TOKEN_EXCHANGE_RATE' | i18n}}:</span><span style="font-size: 19px; color: #02a3d5">1000 Ccoin : 1 ETH</span>
+      </div>
+
+      <div ng-click="GoToHomeIco()" style="float:left; margin-top: 80px; margin-left: 30px; cursor: pointer; text-decoration:underline; font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'DETAILS_ICO' | i18n}}</div>
+
+      <div class="clear"></div>
+
+
+
+
+
+      <!--<div style="color: black; margin-left: 30px; margin-top: 30px; text-align: center">
+        <span style="font-size: 25px; font-weight: bold">ICO</span>
+      </div>
+      <div style="color: black; margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">Start:</span> <span style="font-size: 19px">05 August 2017</span>
+      </div>
+      <div style="color: black;margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">End:</span> <span style="font-size: 19px">01 September 2017</span>
+      </div>
+      <div style="color: black;margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">CCI tokens for distribution:</span> <span style="font-size: 19px">50 000 000 </span>
+      </div>
+      <div style="color: black;margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">Token exchange rate first week:</span> <span style="font-size: 19px; color: #02a3d5">1500 CCI : 1 ETH</span>
+      </div>
+
+      <div style="color: black;margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">Token exchange rate after:</span> <span style="font-size: 19px; color: #02a3d5">1000 CCI : 1 ETH</span>
+      </div>
+      <div style="color: black;margin-left: 30px; margin-top: 20px">
+        <span style="font-size: 22px; font-weight: bold">Minimum transaction amount:</span> <span style="font-size: 19px; color: #02a3d5">0.1 ETH</span>
+      </div>-->
+
+
+     <!-- <div style="color: black;margin-left: 30px; margin-top: 40px">
+        <span style="font-size: 22px; font-weight: bold">Total token amount:</span> <span style="font-size: 19px;">100 000 000 CCI tokens</span>
+      </div>-->
+    </div>
+    <div class="change-box">
+      <p>{{'BECOME_INVESTOR' | i18n}}</p>
+      <div>
+        <input type="number" style="font-size: 25px" ng-model="ETHValue.Value" placeholder="min 0.1 ETH" ng-change="ETHChange()">
+        <div>ETH</div>
+      </div>
+      <p style="min-height: 48px">{{'CURRENT_RATE' | i18n}} <span>1ETH : 3000 Ccoin</span></p>
+      <div>
+        <input type="number" ng-disabled="true" style="font-size: 25px"  ng-model="CCValue.Value" ng-change="CChange()">
+        <div>ccore</div>
+      </div>
+      <div class="clear"></div>
+      <button class="contribute-button" ng-click="ChangeState(1)">{{'INVEST_NOW' | i18n}}</button>
+    </div>
+  </div>
+
+  <div class="ico-second-box" ng-if="State == 1">
+
+    <div style="display: none">
+      <span>{{'TERMS_AND_CONDITIONS' | i18n}}</span>
+      <span>{{'TERMS_AND_CONDITIONS_SEC' | i18n}}</span>
+    </div>
+
+    <div>
+      <div ng-include="'Term&Conditions.htm'"></div>
+    </div>
+
+    <div><input type="checkbox" ng-model="TermsChecked">  <span style="color: #02a3d5">{{'TERMS_AND_CONDITION_AGREE' | i18n}}</span></div>
+    <div style="position: absolute; height: 1px; background: #02a3d5; bottom: 107px; width: 100%"></div>
+
+    <button ng-click="ChangeState(0)" style="position: absolute; left: 10px; bottom: 10px; width: 165px;
+     height: 75px; color: white; text-align: center; line-height: 75px; background: #02a3d5;
+      font-size: 30px"><i class="fa fa-arrow-left" aria-hidden="true"></i>  {{'BACK' | i18n}}</button>
+
+    <button ng-click="ChangeState(2)" ng-disabled="!TermsChecked" style="position: absolute; right: 10px; bottom: 10px; width: 165px;
+     height: 75px; color: white; text-align: center; line-height: 75px; background: #02a3d5;
+      font-size: 30px">{{'NEXT' | i18n}} <i class="fa fa-arrow-right" aria-hidden="true"></i> </button>
+
+  </div>
+
+  <div class="ico-third-box" ng-if="State == 2">
+
+    <div>{{'SEND_SMART_CONTRACT' | i18n}}</div>
+
+    <div>{{'IMPORTANT' | i18n}}</div>
+
+    <ul>
+      <li><span>{{'DO_NOT_SEND_FOUND' | i18n}}</span></li>
+      <li><span>{{'SET_GAS_LIMIT' | i18n}}</span></li>
+      <li><span>{{'SET_GWEI' | i18n}}</span></li>
+      <li><span>{{'SKIN_TOKEN' | i18n}}</span></li>
+    </ul>
+
+    <div>
+      <img src="../images/qr.jpg" width="120" height="120" style="display: block; float: left; margin-left: 30px; margin-top: 5px;">
+      <!--<div class="qr-code"></div>-->
+      <div class="qr-code-info-box">
+
+        <!--<span style="color: #b3b1ba">{{'CONTRACT_ADDRESS' | i18n}}</span>-->
+        <span style="color: black">0xa5a4A64ffc60Bb371B86Ca565242b7096b05B6e4</span>
+      </div>
+    </div>
+
+    <div>
+      <a style="text-decoration:underline; float: left; color: white; line-height: 80px; margin-left: 150px; cursor: pointer" target="_blank" href="../HowToSee.pdf">{{'HOW_SEE_CCI' | i18n}}</a>
+      <a target="_blank" href="../HowToContribut.pdf" style="text-decoration:underline; float: right; color: white; line-height: 80px; margin-right: 150px; cursor: pointer">{{'HOW_SEND_ETH' | i18n}}</a>
+    </div>
+
+  </div>
+
+
+
+</section>

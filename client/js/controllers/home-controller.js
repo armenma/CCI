@@ -1,6 +1,6 @@
 angular
   .module('app')
-  .controller('HomeController', ['$scope', '$rootScope', '$controller', function($scope, $rootScope, $controller)
+  .controller('HomeController', ['$scope', '$rootScope', '$controller', '$document', function($scope, $rootScope, $controller, $document)
   {
 
     /*if(IsFirstTime)document.getElementById("bgvid").play();*/
@@ -11,7 +11,7 @@ angular
 
     };
 
-    var scope = $rootScope;
+    /*var scope = $rootScope;
     $scope.CurrentIndex = 0;
 
     scope.$watch('CryptoCurrencyIndexes', function(newValue, oldValue) {
@@ -36,7 +36,6 @@ angular
         },
         x: function(d){
           var t = new Date(d.date);
-          /*var n = t.toLocaleDateString();*/
           return t;
         },
         y: function(d){
@@ -78,6 +77,17 @@ angular
       caption: {
         enable: false,
       }
-    };
+    };*/
+
+    setTimeout(function(){
+      jQuery('.ccore-team-slick_slider-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false
+      });
+    }, 10);
 
   }]);

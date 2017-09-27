@@ -1,0 +1,409 @@
+<section class="home">
+
+  <!--<div class="home-header-content">
+
+    <div>
+
+      <p style="font-family: ArialRounded; font-size: 60pt">
+        ccore
+      </p>
+
+      <p style="font-family: 'PT Sans Caption'; font-size: 57px; padding-top: 0px; margin-top: -20px">
+        CryptoCurrency
+        Payment
+        Platform
+      </p>
+
+    </div>
+  </div>-->
+  <div ng-include="'../views/ico.html'" ></div>
+
+
+  <div class="videoContainer">
+    <iframe style="display: block; height: 478px; margin-top: 50px; margin-left: auto; margin-right: auto" width="860" height="480" src="https://www.youtube.com/embed/jNov2_PlTFw" frameborder="0" allowfullscreen></iframe>
+    <!--<video poster="" id="bgvid" playsinline controls>
+
+      <source src="../images/video.mp4" type="video/mp4">
+    </video>-->
+  </div>
+
+
+
+  <p>{{"HOME_WHAT_IS_CCORE" | i18n}}</p>
+
+  <p>{{"HOME_WHAT_IS_CCORE_ANSWER" | i18n}}</p>
+
+  <div style="text-align: center; color: #0aa6d6; font-size: 33px; padding: 10px 0 60px;">{{"WHAT_IS_CORE_TOKEN" | i18n}}</div>
+
+  <div style="text-align: center; font-size: 20px">{{"WHAT_IS_CORE_TOKEN_ANSWER" | i18n}}</div>
+
+  <p style="margin-top: 60px">{{"HOME_STRUCTURE_OF_CCORE" | i18n}}</p>
+
+  <p>{{"HOME_STRUCTURE_OF_CCORE_ANSWER" | i18n}}</p>
+
+  <div class="home-graph-content" ng-style="{ 'background': 'url(../images/' + $root.language + '-ccore-schema.png' + ') no-repeat center center'}"></div>
+
+  <div class="news-data-box">
+
+    <div class="news-data-item">
+      <div class="news-data-item-title">1. {{'HOME_CC_EXCHANGE' | i18n}}</div>
+      <div class="news-data-item-info">
+        {{'HOME_CC_EXCHANGE_ANSWER' | i18n}}
+      </div>
+    </div>
+
+    <div class="news-data-item">
+      <div class="news-data-item-title">2. {{'HOME_CC_WALLET' | i18n}}</div>
+      <div class="news-data-item-info">
+        {{'HOME_CC_WALLET_ANSWER' | i18n}}
+      </div>
+    </div>
+
+    <div class="news-data-item">
+      <div class="news-data-item-title">3. {{'HOME_CC_PAY' | i18n}}</div>
+      <div class="news-data-item-info">
+        {{'HOME_CC_PAY_ANSWER' | i18n}}
+      </div>
+    </div>
+
+    <div class="news-data-item">
+      <div class="news-data-item-title">4. {{'HOME_CC_INFORMATION' | i18n}}</div>
+      <div class="news-data-item-info">
+        {{'HOME_CC_INFORMATION_ANSWER' | i18n}}
+      </div>
+    </div>
+  </div>
+
+  <div class="home-graph-box">
+    <p>
+      {{'HOME_INTER_MARKET_PARTICIPANT' | i18n}}
+    </p>
+
+    <div class="home-graph-content" ng-style="{ 'background': 'url(../images/' + $root.language + '-ccore-schema2.png' + ') no-repeat center center'}"></div>
+
+    <div style="clear: both"></div>
+
+    <div class="home-graph-footer">
+      <div class="home-graph-footer-item">
+        <h1>{{'HOME_CORP_CUSTOMER' | i18n}}</h1>
+         <div>
+           {{'HOME_CORP_CUSTOMER_ANSWER' | i18n}}
+         </div>
+      </div>
+
+      <div class="home-graph-footer-item">
+        <h1>{{'HOME_CCORE_CUSTOMER' | i18n}}</h1>
+        <div>
+          {{'HOME_CCORE_CUSTOMER_ANSWER' | i18n}}
+        </div>
+      </div>
+
+      <div class="home-graph-footer-item">
+        <h1>{{'HOME_TRADER_INVESTOR' | i18n}}</h1>
+        <div>
+          {{'HOME_TRADER_INVESTOR_ANSWER' | i18n}}
+          <div style="white-space: pre-line; text-align: left; text-transform: lowercase">
+            <span>- {{'DATA' | i18n}}</span>
+            <span>- {{'NEWS' | i18n}}</span>
+            <span>- {{'ANALYTICS' | i18n}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="white-paper-href" ng-href="{{Whitepaper}}" target="_blank" style="display: block; font-size: 19px; text-decoration: underline;  position: absolute; right: 20px; padding-top: 70px;">{{"FOR_DETAILS" | i18n}}</a>
+  </div>
+
+  <p style="font-size: 33px; padding-top: 100px; font-weight: normal; color: #0aa6d6">{{"CCMI50" | i18n}}</p>
+
+  <p style="text-align: left; padding-left: 20px">{{"HOME_CMI_DESC" | i18n}}</p>
+
+  <div class="chart-container" style="float: none; margin-left: auto; margin-right: auto">
+    <div ng-show="!CurrentIndex" class="chart-loader"></div>
+    <div ng-show="CurrentIndex" style="position: absolute; font-weight: bold; font-size: 20px; margin-top: 7px; margin-left: 97px">CMI 50 <span style="font-weight: normal">{{CurrentIndex}}</span></div>
+    <nvd3 options="options" data="data" class="with-3d-shadow with-transitions"></nvd3>
+  </div>
+  <a ng-href="#/crypto-currencies" class="white-paper-href" style="display: block; font-size: 19px; text-decoration: underline;  position: absolute; right: 20px; padding-top: 70px;">{{"HOME_LEARN_MORE" | i18n}}</a>
+  <div style="clear: both"></div>
+
+  <!--<p style="text-align: center; color: #0aa6d6; font-size: 33px; padding: 100px 0 60px">Наши Разработки</p>
+
+  <div class="home-our-products">
+    <div class="home-our-products-item">
+      <div>
+        CMI 50
+      </div>
+      <div>
+        CCI и трейдеры
+        взаимосвязаны таким
+        образом: CCI, предоставляя
+        трейдерам в реальном
+        времени последние
+        новости и данные
+        о состоянии рынка
+        криптовалют.
+      </div>
+      <div style="position: absolute; bottom: 10px; right: 10px; color: #0aa6d6; font-size: 19px">Перейти</div>
+    </div>
+
+    <div class="home-our-products-item">
+      <div>
+        CMI 50
+      </div>
+      <div>
+        CCI и трейдеры
+        взаимосвязаны таким
+        образом: CCI, предоставляя
+        трейдерам в реальном
+        времени последние
+        новости и данные
+        о состоянии рынка
+        криптовалют.
+      </div>
+      <div style="position: absolute; bottom: 10px; right: 10px; color: #0aa6d6; font-size: 19px">Перейти</div>
+    </div>
+
+    <div class="home-our-products-item">
+      <div style="font-size: 40px">
+        In Developing
+      </div>
+      <div>
+
+      </div>
+    </div>
+  </div>-->
+
+  <div style="background: #f4f4f4;  margin-top: 110px;">
+    <!--<p style="text-align: center; color: #0aa6d6; font-size: 33px; padding: 100px 0 60px">{{'ROADMAP' |i18n}}</p>-->
+
+    <div class="home-road-map-content" ng-style="{ 'background': '#e6ecf0 url(../images/' + $root.language + '-road-map.png' + ') no-repeat center'}"></div>
+
+    <!--<div>
+      <div class="routing-box">
+        <div class="routing-box-item" style="top:0px; left: 0px">
+          <span style="margin-bottom:20px; padding-bottom: 5px; font-size: 24px; color: #0aa6d6; display: block; border-bottom: 1px dotted #0aa6d6;">{{'AUGUST' |i18n}} 2017</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_CONDUCTION_ICO' |i18n}}</span>
+          <span style="font-size: 20px; display: block;">. {{'SITE_OPTIMIZATION' |i18n}}</span>
+        </div>
+
+        <div class="routing-box-item" style="top:144px; right: 0px">
+          <span style="margin-bottom:20px; padding-bottom: 5px; font-size: 24px; color: #0aa6d6; display: block; border-bottom: 1px dotted #0aa6d6;">{{'SEPTEMBER' |i18n}} 2017</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_REP_OF_TEAM' |i18n}}</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_REP_OF_TEAM_ANSWER' |i18n}}</span>
+        </div>
+
+        <div class="routing-box-item" style="top:288px; left: 0px">
+          <span style="margin-bottom:20px; padding-bottom: 5px; font-size: 24px; color: #0aa6d6; display: block; border-bottom: 1px dotted #0aa6d6;">{{'OCTOBER' |i18n}} 2017</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_TEST_PLATFORM_STARTUP' |i18n}}</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_DEV_PAY_INFO' |i18n}}</span>
+        </div>
+
+        <div class="routing-box-item" style="top:432px; right: 0px">
+          <span style="margin-bottom:20px; padding-bottom: 5px; font-size: 24px; color: #0aa6d6; display: block; border-bottom: 1px dotted #0aa6d6;">{{'NOVEMBER' |i18n}} 2017</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_OFF_STARTUP' |i18n}}</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_COMM_STOCK_CHANGE' |i18n}}</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_INC_STOCK_CHANGE' |i18n}}</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_TEST_PAY_CC' |i18n}}</span>
+        </div>
+        <div class="routing-box-item" style="top:576px; left: 0px">
+          <span style="margin-bottom:20px; padding-bottom: 5px; font-size: 24px; color: #0aa6d6; display: block; border-bottom: 1px dotted #0aa6d6;">{{'DECEMBER' |i18n}} 2017</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_OFFIC_STARTUP_PAY_AND_INFO' |i18n}}</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_CONNECTION_ONLINE_STORES' |i18n}}</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_DEV_DIVIDENT' |i18n}}</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_EXTENSION_SOLID_EXCH' |i18n}}</span>
+        </div>
+
+        <div class="routing-box-item" style="top:720px; right: 0px">
+          <span style="margin-bottom:20px; padding-bottom: 5px; font-size: 24px; color: #0aa6d6; display: block; border-bottom: 1px dotted #0aa6d6;">2018</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_DEV_NEW_EXTENSIONS' |i18n}}</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_PAYMENTS_DIVIDENTS' |i18n}}</span>
+          <span style="font-size: 20px; display: block;">. {{'HOME_PROJECT_SCALING' |i18n}}</span>
+        </div>
+
+        <div class="routing-seporator"></div>
+
+      </div>
+    </div>-->
+  </div>
+
+
+
+
+
+  <div id="home-ico-box" class="home-ico-box">
+
+    <p style="text-align: center; color: white; font-size: 33px; padding: 100px 0 60px">{{'HOME_TOKEN_SALES' | i18n}}</p>
+
+    <div style="color: white; margin-left: 50px">
+      <span style="font-size: 25px; font-weight: bold">Pre-ICO</span>
+    </div>
+    <div style="color: white; margin-left: 50px; margin-top: 20px">
+      <span style="font-size: 22px; font-weight: bold">{{'START' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">{{'HOME_TOKEN_ANNOUNCED_LATTER' | i18n}}</span>
+    </div>
+    <div style="color: white;margin-left: 50px; margin-top: 20px">
+      <span style="font-size: 22px; font-weight: bold">{{'END' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">{{'HOME_TOKEN_ANNOUNCED_LATTER2' | i18n}}</span>
+    </div>
+    <div style="color: white;margin-left: 50px; margin-top: 20px">
+      <span style="font-size: 22px; font-weight: bold">{{'HOME_CCORE_FOR_SALE' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">3 000 000 ccore (1 000 ETH) </span>
+    </div>
+    <div style="color: white;margin-left: 50px; margin-top: 20px;">
+      <span style="font-size: 22px; font-weight: bold">{{'HOME_TOKEN_EXCHANGE_RATE' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">3000 Ccoin : 1 ETH</span>
+    </div>
+    <div style="color: white;margin-left: 50px; margin-top: 20px">
+      <span style="font-size: 22px; font-weight: bold">{{'HOME_CURRENCY_ACCEPTED' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">ETH</span>
+    </div>
+    <div style="color: white;margin-left: 50px; margin-top: 20px">
+      <span style="font-size: 22px; font-weight: bold">{{'HOME_MIN_TRANSACTION' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">0.1 ETH</span>
+    </div>
+
+    <!--<div style="color: white; margin-left: -20px; margin-top: 8px; float: left; white-space: pre-wrap">
+      <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'FROM' | i18n}} 1 {{'TO' | i18n}} 5ETH</span>
+      <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'FROM' | i18n}} 5 {{'TO' | i18n}} 10ETH</span>
+      <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'FROM' | i18n}} 10 {{'TO' | i18n}} 25ETH</span>
+      <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'FROM' | i18n}} 25 {{'TO' | i18n}} 50ETH</span>
+      <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">{{'MORE_THAN' | i18n}} 50ETH</span>
+    </div>
+
+    <div style="color: white; margin-left: 20px; margin-top: 8px; float: left; white-space: pre-wrap">
+      <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">1600 ccore : 1 ETH</span>
+      <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">1800 ccore : 1 ETH</span>
+      <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">2000 ccore : 1 ETH</span>
+      <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">2200 ccore : 1 ETH</span>
+      <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">2500 ccore : 1 ETH</span>
+    </div>-->
+
+    <div style="clear: both"></div>
+
+
+    <div style="width: 50%; display: table; padding-left: 30px; padding-right: 30px; height: 500px; text-align: center; font-size: 22px; color: white; top: 217px; border-left: 1px solid #02a3d5; position: absolute; right: 0">
+      <span style="display: table-cell; vertical-align: middle; text-align: left">{{'YOBIT_TEXT'| i18n}}</span>
+    </div>
+
+
+
+    <div style="color: white; margin-left: 50px; margin-top: 60px">
+      <span style="font-size: 25px; font-weight: bold">ICO</span>
+    </div>
+    <div style="color: white; margin-left: 50px; margin-top: 20px">
+      <span style="font-size: 22px; font-weight: bold">{{'START' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">{{'HOME_TOKEN_ANNOUNCED_LATTER3' | i18n}}</span>
+    </div>
+    <div style="color: white;margin-left: 50px; margin-top: 20px">
+      <span style="font-size: 22px; font-weight: bold">{{'END' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">{{'HOME_TOKEN_ANNOUNCED_LATTER4' | i18n}}</span>
+    </div>
+    <div style="color: white;margin-left: 50px; margin-top: 20px">
+      <span style="font-size: 22px; font-weight: bold">{{'HOME_CCORE_FOR_SALE' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">57 000 000 ccore (50 000 ETH)  </span>
+    </div>
+    <div style="color: white;margin-left: 50px; margin-top: 20px;">
+      <span style="font-size: 22px; font-weight: bold">{{'HOME_TOKEN_EXCHANGE_RATE' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">1000 Ccoin : 1 ETH</span>
+    </div>
+    <div style="color: white;margin-left: 50px; margin-top: 20px">
+      <span style="font-size: 22px; font-weight: bold">{{'HOME_CURRENCY_ACCEPTED' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">ETH</span>
+    </div>
+    <div style="color: white;margin-left: 50px; margin-top: 20px">
+      <span style="font-size: 22px; font-weight: bold">{{'HOME_MIN_TRANSACTION' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">0.01 ETH</span>
+    </div>
+
+    <div style="color: white;margin-left: 50px; margin-top: 20px; float: left">
+      <span style="font-size: 22px; font-weight: bold">{{'BONUS' | i18n}}:</span>
+    </div>
+    <div style="color: white; margin-left: -20px; margin-top: 8px; float: left; white-space: pre-wrap">
+      <span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">20% {{'FIRST_WEEK' | i18n}}</span>
+      <!--span style="font-size: 19px; color: #02a3d5; display: inline-block; padding-bottom: 5px">20% {{'SECOND_WEEK' | i18n}}</span>-->
+    </div>
+    <div style="clear: both"></div>
+
+    <div style="color: white;margin-left: 50px; margin-top: 20px">
+      <span style="font-size: 22px; font-weight: bold">{{'HOME_TOTAL_TOKEN_AMOUNT' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">100 000 000 ccore {{'TOKENS' | i18n}}</span>
+    </div>
+   <!-- <div style="color: white;margin-left: 50px; margin-top: 20px; padding-bottom: 10px; border-bottom: 1px solid #02a3d5">
+      <span style="font-size: 22px; font-weight: bold">{{'HOME_TOTAL_TOKEN_DISTRIBUTION' | i18n}}:</span> <span style="font-size: 19px; color: #02a3d5">60 000 000 ccore {{'TOKENS' | i18n}}</span>
+    </div>-->
+    <ul style="list-style: disc; margin-left: 65px; margin-top: 20px;">
+      <li style="font-size: 19px; margin-top: 5px; color: #ffffff">60 000 000 - {{'ON_ICO' | i18n}}</li>
+      <li style="font-size: 19px; margin-top: 5px; color: #ffffff">20 000 000 - {{'RESERVED_FUND' | i18n}}</li>
+      <li style="font-size: 19px; margin-top: 5px; color: #ffffff">20 000 000 - {{'DISTRIBUTED_AMONG' | i18n}}</li>
+    </ul>
+    <div style="height: 1px; background: #02a3d5"></div>
+
+    <a ui-sref="ico" style="text-decoration: none; float: right; margin-right: 100px; margin-top: 10px; margin-bottom: 20px; background: #02a3d5; text-align: center; line-height: 70px; color: white; font-size: 30px; width: 265px; height: 70px; cursor: pointer">{{'INVEST_NOW' | i18n}}</a>
+
+    <div style="clear: both"></div>
+    <div class="our-team" id="our-team">
+      <p style="padding-top: 50px; text-align: center; color: #02a3d5">{{'OUR_TEAM' | i18n}}</p>
+      <div class="team-row">
+        <div class="team-member">
+          <div class="team-member-title">Artak Navoyan</div>
+          <div class="team-member-title" style="bottom: -60px; font-size: 18px; font-weight: normal">Founder/Finance</div>
+          <a class="team-member-title" href="https://www.facebook.com/profile.php?id=100020087680554" target="_blank" style="bottom: -85px; color: black; cursor: pointer; font-size: 18px; font-weight: bold">f</a>
+        </div>
+        <div class="team-member">
+          <div class="team-member-title">Armen Mardoyan</div>
+          <div class="team-member-title" style="bottom: -60px; font-size: 18px; font-weight: normal">Co-Founder/Core Developer</div>
+          <a class="team-member-title" href="https://www.linkedin.com/in/armenmardoyan/" target="_blank" style="bottom: -85px; color: black; cursor: pointer; font-size: 18px; font-weight: bold">in</a>
+        </div>
+        <div class="team-member">
+          <div class="team-member-title">Hasmik Harutyunyan</div>
+          <div class="team-member-title" style="bottom: -60px; font-size: 18px; font-weight: normal">Content Manager</div>
+        </div>
+      </div>
+
+
+      <div class="team-row2">
+        <div class="team-member">
+          <div class="team-member-title">Narine Tutundjan</div>
+          <div class="team-member-title" style="bottom: -60px; font-size: 18px; font-weight: normal">Marketing manager</div>
+        </div>
+        <div class="team-member">
+          <div class="team-member-title">Harutyun Harutyunyan</div>
+          <div class="team-member-title" style="bottom: -60px; font-size: 18px; font-weight: normal">QA Engineer</div>
+          <a class="team-member-title" href="https://www.linkedin.com/in/harutyun-harutyunyan-183b37101/" target="_blank" style="bottom: -85px; color: black; cursor: pointer; font-size: 18px; font-weight: bold">in</a>
+        </div>
+        <div class="team-member">
+          <div class="team-member-title">Ara Sargsyan</div>
+          <div class="team-member-title" style="bottom: -60px; font-size: 18px; font-weight: normal">UI/UX Designer</div>
+          <a class="team-member-title" href="https://www.linkedin.com/in/arasargsyan/" target="_blank" style="bottom: -85px; color: black; cursor: pointer; font-size: 18px; font-weight: bold">in</a>
+        </div>
+      </div>
+
+
+      <div class="team-row3">
+        <div class="team-member">
+          <div class="team-member-title">Ivan Ivanyan</div>
+          <div class="team-member-title" style="bottom: -60px; font-size: 18px; font-weight: normal">Frontend Developer</div>
+          <a class="team-member-title" href="https://www.linkedin.com/in/ivanyan-ivan-75449653/" target="_blank" style="bottom: -85px; color: black; cursor: pointer; font-size: 18px; font-weight: bold">in</a>
+        </div>
+        <div class="team-member">
+          <div class="team-member-title">Eduard Sargsyan</div>
+          <div class="team-member-title" style="bottom: -60px; font-size: 18px; font-weight: normal">Backend Developer</div>
+          <a class="team-member-title" href="https://www.linkedin.com/in/eduard-sargsyan-17390625/" target="_blank" style="bottom: -85px; color: black; cursor: pointer; font-size: 18px; font-weight: bold">in</a>
+        </div>
+        <div class="team-member">
+          <div class="team-member-title">Ruzan Safaryan</div>
+          <div class="team-member-title" style="bottom: -60px; font-size: 18px; font-weight: normal">Community Manager</div>
+        </div>
+
+      </div>
+      <div class="team-member" style="background: url('../images/teams/Dino.png'); margin-left: auto; margin-right: auto; margin-top: 120px">
+        <div class="team-member-title">Dino Pastos</div>
+        <div class="team-member-title" style="bottom: -60px; font-size: 18px; font-weight: normal">Advisor</div>
+        <a class="team-member-title" href="https://www.linkedin.com/in/dino-pastos-61b4041/" target="_blank" style="bottom: -85px; color: black; cursor: pointer; font-size: 18px; font-weight: bold">in</a>
+      </div>
+
+      <div style="margin-top: 95px; font-size: 18px; width: 350px; margin-left: auto; margin-right: auto; text-align: center">
+        His key competences are Research
+        and Development, Digital Security,
+        Startups, Politics, CryptoCurrencies,
+        Blockchain and FinTech. His major
+        vision is to eliminate bureaucratic
+        procedures of the past by implementing
+        and enabling Blockchain technology
+        for government and public use.
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+</section>

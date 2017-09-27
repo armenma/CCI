@@ -7,18 +7,16 @@ angular
 
     $scope.State = 0;
     $scope.CCValue = {Value:0};
-    /*vm.ETHValue = 0;*/
     $scope.multiplicator = 0;
     $scope.ETHValue = {Value:''};
+
+    $scope.TermsChecked = {Value:true};
 
     $scope.ChangeState = function (value) {
       $scope.State = value;
     }
     $scope.CChange = function ()
     {
-     /* var cc_value = Number(vm.CCValue);
-      var divider = 2000;
-      if(cc_value)*/
       $scope.ETHValue.Value = Number(($scope.CCValue.Value / 2000).toFixed(2));
     }
 
@@ -26,16 +24,6 @@ angular
     {
       var eth_value = Number($scope.ETHValue.Value);
       $scope.multiplicator = 3000;
-      /*if(eth_value >= 1 && eth_value < 5)
-        vm.multiplicator = 1600;
-      else if(eth_value >= 5 && eth_value < 10)
-        vm.multiplicator = 1800;
-      else if(eth_value >= 10 && eth_value < 25)
-        vm.multiplicator = 2000;
-      else if(eth_value >= 25 && eth_value < 50)
-        vm.multiplicator = 2200;
-      else if(eth_value >= 50)
-        vm.multiplicator = 2500;*/
       $scope.CCValue.Value = $scope.ETHValue.Value * $scope.multiplicator;
     }
 

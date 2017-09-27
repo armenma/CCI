@@ -13,9 +13,9 @@ module.exports = function(app) {
 
   db = app.dataSources.mongodb;
 
-  var CryptoCurrenciesModel = app.models.CryptoCurrencies;
+ /* var CryptoCurrenciesModel = app.models.CryptoCurrencies;
 
-  var CryptoCurrenciesIndexModel = app.models.CryptoCurrencyIndexes;
+  var CryptoCurrenciesIndexModel = app.models.CryptoCurrencyIndexes;*/
 
   db.autoupdate(app.models, function(err) {
 
@@ -30,9 +30,8 @@ module.exports = function(app) {
     console.log('Automigrate complete');
     console.log(new Date() + 'START DATE');
 
-    setInterval(function () {
+    /*setInterval(function () {
 
-      /*return;*/
       try {
         http.get("https://api.coinmarketcap.com/v1/ticker/", function (response) {
 
@@ -49,27 +48,12 @@ module.exports = function(app) {
             if (err) console.log(new Date() + 'ERROR Request not complete');
 
             data = JSON.parse(buffer);
-
-            /*for(var i = 0; i < data.length; i++)
-            {
-              delete data[i].id;
-            }*/
-
-            /*CryptoCurrenciesModel.replaceOrCreate(data, function (err, result)
-            {
-              if (err) console.log(new Date() + 'ERROR CryptoCurrenciesModel updateAll' + err);
-
-            });*/
-
             var savedData = data.splice(0, 50);
 
             for(var i = 0; i < savedData.length; i++)
             {
               delete data[i].id;
             }
-
-
-
              CryptoCurrenciesModel.destroyAll({}, function (err, result) {
 
                if (err) console.log(new Date() + 'ERROR CryptoCurrenciesModel not destroyed');
@@ -96,7 +80,7 @@ module.exports = function(app) {
 
 
 
-    }, 900000);
+    }, 900000);*/
 
   });
 };

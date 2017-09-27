@@ -2,7 +2,7 @@
 // Node module: loopback-example-angular
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
-var app = angular.module('app', ['lbServices', 'ui.router', 'nvd3', 'ngOnload']);
+var app = angular.module('app', ['lbServices', 'ui.router', 'nvd3']);
 
 app.factory('localFactory', ['coreFactory', function (coreFactory) {
 
@@ -42,18 +42,30 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
       url: '/home',
       templateUrl: 'views/home.html',
       controller: 'HomeController'
-    });
+    })
+    .state('login', {
+    url: '/login',
+    templateUrl: 'views/login.view.html',
+    controller: 'LoginController'
+    })
+    .state('register', {
+    url: '/register',
+    templateUrl: 'views/register.view.html',
+    controller: 'RegisterController'
+  });
 
   $urlRouterProvider.otherwise('/home');
-}]).run(['coreFactory', '$rootScope', 'CryptoCurrencyIndexes', '$interval', '$timeout', function (coreFactory, $rootScope, CryptoCurrencyIndexes, $interval, $timeout) {
+}]).run(['coreFactory', '$rootScope', 'User', function (coreFactory, $rootScope, User) {
   $rootScope.language = language;
   $rootScope.CryptoCurrencyIndexes = [];
 
-  var timeoutPromise;
+  console.log("USER: " + User.isAuthenticated());
+
+  /*var timeoutPromise;
 
   function GetCryptoCurrencyIndexes() {
     CryptoCurrencyIndexes
-      .find(/*{"where": { "value": {"gt": "10"}  }}*/)
+      .find()
       .$promise
       .then(function(results) {
         $rootScope.CryptoCurrencyIndexes = results;
@@ -68,7 +80,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
   GetCryptoCurrencyIndexes();
   var intervalPromise = $interval(function () {
     GetCryptoCurrencyIndexes();
-  }, 300000);
+  }, 300000);*/
 
   coreFactory.Run();
 

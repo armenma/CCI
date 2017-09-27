@@ -3,13 +3,40 @@
  */
 angular
   .module('app')
-  .controller('MainController', ['$scope', '$anchorScroll', '$location', 'coreFactory', '$state', "$timeout", "UserEmails", function($scope, $anchorScroll, $location, coreFactory, $state, $timeout, UserEmails)
+  .controller('MainController', ['$scope', '$anchorScroll', '$location', 'coreFactory', '$state', "$timeout", "UserEmails", "$interval", "$rootScope", function($scope, $anchorScroll, $location, coreFactory, $state, $timeout, UserEmails, $interval, $rootScope)
   {
+    var countDownDate = new Date(Date.UTC(2017, 9, 1, 18, 14)).getTime();
+
+    function calculate()
+    {
+      var now = new Date().getTime();
+
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      $scope.Deys = Math.floor(distance / (1000 * 60 * 60 * 24));
+      $scope.Hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      $scope.Minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      $scope.Seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    }
+    calculate();
+
+    var intervalPromise = $interval(function () {
+
+      calculate();
+
+    }, 1000);
+
     $scope.MenuItemSelectedIndex = -1;
     $scope.SelectedLanguage = coreFactory.Language;
 
-    $scope.Whitepaper = $scope.SelectedLanguage === "English" ? "English-whitepaper.pdf" : "Russian-whitepaper.pdf";
-    $scope.Benefits = $scope.SelectedLanguage === "English" ? "English-profit.pdf" : "Russian-profit.pdf";
+    $scope.Whitepaper = $scope.SelectedLanguage === "EN" ? "EN-whitepaper.pdf" : "РУ-whitepaper.pdf";
+    $scope.Benefits = $scope.SelectedLanguage === "EN" ? "EN-profit.pdf" : "РУ-profit.pdf";
+
+    $scope.Comming = function () {
+      alert('Coming Soon')
+    }
     $scope.SelectMenuItem = function (index)
     {
       $scope.MenuItemSelectedIndex = index ==  $scope.MenuItemSelectedIndex ? -1 : index;
@@ -45,12 +72,23 @@ angular
       window.open('mailto:armen.mardoyan@outlook.com?subject=subject&body=' + $scope.Email.text);
     }*/
 
+    $scope.Languages = {
+      availableLanguages: [
+        {id: '1', name: 'EN'},
+        {id: '2', name: 'РУ'}
+      ],
+      selectedLanguage: {id: '1', name: 'EN'}
+    };
 
-    $scope.ChangeLanguage = function (value, event)
+    if($rootScope.language == 'EN')
+      $scope.Languages.selectedLanguage = {id: '1', name: 'EN'}
+      else $scope.Languages.selectedLanguage = {id: '2', name: 'РУ'}
+
+
+
+    $scope.ChangeLanguage = function ()
     {
-      event.stopPropagation();
-      //$scope.SelectedLanguage = value;
-      coreFactory.SetLanguage(value);
+      coreFactory.SetLanguage($scope.Languages.selectedLanguage.name);
       location.reload();
     }
 
@@ -97,6 +135,9 @@ angular
     $scope.$on("$destroy", function() {
       if (timeoutPromise) {
         $timeout.cancel(timeoutPromise);
+      }
+      if (intervalPromise) {
+        $interval.cancel(intervalPromise);
       }
     });
   }]);
