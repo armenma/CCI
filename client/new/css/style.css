@@ -1645,7 +1645,7 @@ select#languages {
   -webkit-user-select: none;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0);
-  background: #14a9ee 37px center;
+  background: transparent 37px center;
   background-size: 20px 30px;
   font-size: inherit;
   overflow: hidden;
@@ -1654,6 +1654,9 @@ select#languages {
   white-space: nowrap;
   width: 65px;
   margin-top: -2px;
+}
+select#languages option{
+  background-color: #14a9ee;
 }
 #S8QGIaJ-1506502045842 #tawkchat-minified-container{right: 30px}
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
