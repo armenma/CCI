@@ -100,6 +100,12 @@ angular
 
     $scope.GoToById = function (id)
     {
+      $("#ccore-header-menu_button-button-opened").hide();
+      $("#ccore-header-menu_button-button-closed").show();
+
+      $( '.ccore-menu' ).slideToggle( "slow", function() {
+
+      });
       var newHash = id;
       if ($location.hash() !== newHash) {
         // set the $location.hash to `newHash` and

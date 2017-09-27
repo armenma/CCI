@@ -1687,5 +1687,9 @@ select#languages {
     display: block;
     float: right;
   }
+  .ccore-terms-agreement-second a{
+    width: 120px;
+    padding: 5px 0 5px 0;
+  }
 }
 
