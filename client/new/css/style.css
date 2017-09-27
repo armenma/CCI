@@ -1281,14 +1281,20 @@ h4{
 @media (max-width: 374px) {
 	.ccore-footer-form form button{
 		width: 122px;
-		padding: 0px 6px;
+		padding: 0px 5px;
 
 	}
 	.ccore-footer-form form input{
-		width: 145px;
+		width: 156px;
 		padding: 0px 6px;
+    height: 60px;
 	}
+
+  img {
+    max-width: 300px;
+  }
 }
+
 /*-------------------------------------------------PERSONAL-------------------------------------------------------------------------*/
 .ccore-personal_panel{
 	display: inline-block;
