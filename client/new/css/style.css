@@ -610,7 +610,7 @@ h4{
 	position: absolute;
 	left: 0;
 	border: none;
-	color: #b2bac3;
+	color: black;
 }
 .ccore-about_ICO-form div{
 	width: 90%;
@@ -807,15 +807,15 @@ h4{
 	position: absolute;
 }
 .ccore-roadmap-map-1{
-	top: 77px;
+	top: 130px;
 	left: 15px;
 }
 .ccore-roadmap-map-2{
-	top: 300px;
+	top: 370px;
 	left: 15px;
 }
 .ccore-roadmap-map-3{
-	top: 670px;
+	top: 680px;
 	left: 15px;
 }
 .ccore-roadmap-map-4{
@@ -823,11 +823,11 @@ h4{
 	right: 0px;
 }
 .ccore-roadmap-map-5{
-	top: 195px;
+	top: 234px;
 	right: 0px;
 }
 .ccore-roadmap-map-6{
-	top: 470px;
+	top: 516px;
 	right: 0px;
 }
 @media (max-width: 1200px) {
@@ -1385,7 +1385,7 @@ h4{
 	position: fixed;
 	bottom: 0;
 	float: left;
-	width: 1440px;
+	width: 100vw;
 	display: inline-block;
 }
 @media (max-width: 1200px) {
@@ -1486,6 +1486,7 @@ h4{
 	float: left;
 	width: 300px;
 	margin: 40px;
+  font-size: 20px;
 }
 .ccore-terms-2-qr img{
 	height: 90px;
@@ -1694,5 +1695,20 @@ select#languages option{
     width: 120px;
     padding: 5px 0 5px 0;
   }
+}
+input::placeholder {
+  color: #cfcfcf;
+}
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #cfcfcf;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: #cfcfcf;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: #cfcfcf;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: #cfcfcf;
 }
 
