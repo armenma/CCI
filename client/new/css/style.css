@@ -75,8 +75,6 @@ light{
 h2{
 	 font-family: Roboto;
 	 font-size: 24px;
-	 font-weight: 500;
-	 text-align: left;
 	 color: #49586c;
 	 text-align: center;
 	 font-weight: 700;
@@ -84,7 +82,6 @@ h2{
 h4{
 	font-family: Roboto;
 	font-size: 15px;
-	text-align: left;
 	color: #6b7c93;
 	text-align: center;
 }
@@ -199,7 +196,7 @@ h4{
 	border-radius: 4px;
 	background-color: #16d086;
 	box-shadow: 0 2px 7px 0 rgba(73, 88, 108, 0.29);
-	width: 220.8px;
+	width: 221px;
 	height: 51px;
 	display: inline-block;
 	padding-top: 9px;
@@ -260,7 +257,7 @@ h4{
 .ccore-header-logo{
 	width: 91px;
 	height: 37px;
-	margin-left: 0px; /*170*/
+	margin-left: 0; /*170*/
 	margin-top: 25px;
 }
 .ccore-header-menu {
@@ -568,7 +565,7 @@ h4{
 	margin-top: 10px;
 }
 .ccore-about_ICO-form{
-	width: 299.6px;
+	width: 300px;
 	height: 292px;
 	border-radius: 4px;
 	background-color: #ffffff;
@@ -984,7 +981,7 @@ h4{
 		height: 350px;
 	}
 	.ccore-team-inner{
-		margin: 30px 0px;
+		margin: 30px 0;
 		width: 100%;
 	}
 	.ccore-team-slick_slider{
@@ -1069,8 +1066,7 @@ h4{
 	float: left;
 	width: 100%;
 	display: inline-block;
-	padding: 50px 0;
-	padding-bottom: 130px;
+	padding: 50px 0 130px 0;
 	border-left: 1px solid #f1f1f1;
 	border-right: 1px solid #f1f1f1;
 	background: rgba(250, 250, 250, 0.86);
@@ -1078,11 +1074,10 @@ h4{
 }
 .ccore-parthers-inner{
 	position: relative;
-	margin: 0 0px; /*170*/
+	margin: 0;
 	text-align: center;
 	float: left;
 	width: 100%;
-}
 }
 .ccore-parthers-inner .text-center{
 	margin-bottom: 30px;
@@ -1188,7 +1183,7 @@ h4{
 .ccore-footer-form form input, .ccore-footer-form form button{
 	display: inline-block;
 	margin: 0;
-	padding: 0px 10px;
+	padding: 0 10px;
 	border: none;
 	height: 48px;
 }
@@ -1279,7 +1274,7 @@ h4{
 @media (max-width: 374px) {
 	.ccore-footer-form form button{
 		width: 122px;
-		padding: 0px 5px;
+		padding: 0 5px;
 
 	}
 	.ccore-footer-form form input{
@@ -1309,7 +1304,7 @@ h4{
 	width: 200px;
 	height: 126px;
 	margin: 20px 7px;
-	border-radius: 2.7px;
+	border-radius: 3px;
 	background-color: #ffffff;
 	box-shadow: 1px 3px 8px 0 rgba(178, 201, 224, 0.37);
 	border: solid 0.9px rgba(217, 226, 235, 0.76);
@@ -1580,9 +1575,8 @@ h4{
 	width: 13px;
 	height: 13px;
 	display: inline-block;
-	background-color: #1a85ef;
+  background: #1a85ef url(../images/checkmark.png);
 	border: 1px solid #fff;
-	background-image: url(../images/checkmark.png);
 	background-size: 100% 100%;
 }
 
