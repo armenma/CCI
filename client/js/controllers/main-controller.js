@@ -95,17 +95,21 @@ angular
     $scope.GoToTeam = function ()
     {
       $state.go("home");
-      timeoutPromise =  $timeout(function(){$scope.GoToById("our-team")},200);
+      timeoutPromise =  $timeout(function(){$scope.GoToById("our-team", true)},200);
     }
 
-    $scope.GoToById = function (id)
+    $scope.GoToById = function (id, isClose)
     {
-      $("#ccore-header-menu_button-button-opened").hide();
-      $("#ccore-header-menu_button-button-closed").show();
+      if(isClose)
+      {
+        $("#ccore-header-menu_button-button-opened").hide();
+        $("#ccore-header-menu_button-button-closed").show();
 
-      $( '.ccore-menu' ).slideToggle( "slow", function() {
+        $( '.ccore-menu' ).slideToggle( "slow", function() {
 
-      });
+        });
+      }
+
       var newHash = id;
       if ($location.hash() !== newHash) {
         // set the $location.hash to `newHash` and
