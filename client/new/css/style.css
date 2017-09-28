@@ -1640,8 +1640,8 @@ select#languages {
   -webkit-user-select: none;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0);
-  background: transparent 37px center;
-  background-size: 20px 30px;
+  background: transparent url("../images/arrow.png") no-repeat 37px center;
+  /*background-size: 20px 30px;*/
   font-size: inherit;
   overflow: hidden;
   padding: 5px 10px;

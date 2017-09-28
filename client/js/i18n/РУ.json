@@ -42,7 +42,7 @@
   "HOME_TOKEN_ANNOUNCED_LATTER2":"1 Октября 2017",
   "HOME_TOKEN_ANNOUNCED_LATTER3":"15 Октября 2017",
   "HOME_TOKEN_ANNOUNCED_LATTER4":"15 Ноября 2017",
-  "HOME_CCORE_FOR_SALE":"ccore токены на продажу",
+  "HOME_CCORE_FOR_SALE":"Ccoin токены на продажу",
   "HOME_CURRENCY_ACCEPTED":"Принимается к оптлате",
   "HOME_MIN_TRANSACTION":"Минимальная транзакция",
   "HOME_TOKEN_EXCHANGE_RATE":"Курс обмена",
@@ -65,7 +65,7 @@
   "FIRST_WEEK": "первая неделя",
   "SECOND_WEEK": "вторая неделя",
   "BONUS":"Бонус",
-  "OCTOBER": "October",
+  "OCTOBER": "Октябрь",
   "SEPTEMBER": "Сентябрь",
   "AUGUST":"Август",
   "NOVEMBER":"Ноябрь",
@@ -122,7 +122,7 @@
   "ROADMAP_2":"Проведение ICO",
   "ROADMAP_3":"Platform development including extansions of Cchange and Cwallet",
   "ROADMAP_4":"Начало разработки платформы",
-  "ROADMAP_5":"Test platform startup",
+  "ROADMAP_5":"Включение Ccoin токенов в криптовалютные биржи",
   "ROADMAP_6":"Development of extension of C Pay and C information",
   "ROADMAP_7":"Разработка приложений cWallet для iOS и Android",
   "ROADMAP_8":"Официальный запуск cWallet",
@@ -131,5 +131,8 @@
   "ROADMAP_11":"Начало торгов на cExchange",
   "ROADMAP_12":"Extension of types of cryptocurrencies sold on stock exchange",
   "ROADMAP_13":"Официальный запуск cPay",
-  "ROADMAP_14":"Подключение первых интернет-магазинов к Ccore"
+  "ROADMAP_14":"Подключение первых интернет-магазинов к Ccore",
+  "QUARTER":"Квартал",
+  "DETAILS_OF_ICO":"Детали ICO",
+  "OUR_TEAM":"Наша Команда"
 }
