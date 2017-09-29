@@ -98,6 +98,11 @@ angular
       timeoutPromise =  $timeout(function(){$scope.GoToById("our-team", true)},200);
     }
 
+    $scope.GoToRoadMap = function () {
+      $state.go("home");
+      timeoutPromise =  $timeout(function(){$scope.GoToById("roadmap", true)},200);
+    }
+
     $scope.GoToById = function (id, isClose)
     {
       if(isClose)
