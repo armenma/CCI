@@ -5,9 +5,14 @@ angular
   .module('app')
   .controller('MainController', ['$scope', '$anchorScroll', '$location', 'coreFactory', '$state', "$timeout", "UserEmails", "$interval", "$rootScope", function($scope, $anchorScroll, $location, coreFactory, $state, $timeout, UserEmails, $interval, $rootScope)
   {
+
+    $scope.Deys = 0;
+    $scope.Hours = 0;
+    $scope.Minutes = 0;
+    $scope.Seconds = 0;
     var countDownDate = new Date(Date.UTC(2017, 9, 1, 18, 14)).getTime();
 
-    function calculate()
+    /*function calculate()
     {
       var now = new Date().getTime();
 
@@ -26,7 +31,7 @@ angular
 
       calculate();
 
-    }, 1000);
+    }, 1000);*/
 
     $scope.MenuItemSelectedIndex = -1;
     $scope.SelectedLanguage = coreFactory.Language;
