@@ -1,0 +1,353 @@
+<div class="content">
+  <div class="ccore-personal_panel">
+    <div class="text-center">
+      <p class="ccore-personal_panel-h1">cWallet</p>
+    </div>
+    <div class="ccore-personal_panel-inner_menu">
+
+      <div ng-click="ChangeSelectedTabIndex(0)" ng-class="{'ccore-personal_panel-inner_menu-item-active': SelectedTabIndex == 0}" class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-balance">
+        <div class="ccore-personal_panel-inner_menu-img">
+        </div>
+        <p class="ccore-personal_panel-inner_menu-p">BALANCE</p>
+      </div>
+
+      <div ng-click="ChangeSelectedTabIndex(1)" ng-class="{'ccore-personal_panel-inner_menu-item-active': SelectedTabIndex == 1}" class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-deposit">
+        <div class="ccore-personal_panel-inner_menu-img">
+        </div>
+        <p class="ccore-personal_panel-inner_menu-p">DEPOSIT</p>
+      </div>
+
+      <div ng-click="ChangeSelectedTabIndex(2)" ng-class="{'ccore-personal_panel-inner_menu-item-active': SelectedTabIndex == 2}" class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-pay">
+        <div class="ccore-personal_panel-inner_menu-img">
+        </div>
+        <p class="ccore-personal_panel-inner_menu-p">PAY</p>
+      </div>
+
+      <div ng-click="ChangeSelectedTabIndex(3)" ng-class="{'ccore-personal_panel-inner_menu-item-active': SelectedTabIndex == 3}" class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-send">
+        <div class="ccore-personal_panel-inner_menu-img">
+        </div>
+        <p class="ccore-personal_panel-inner_menu-p">SEND</p>
+      </div>
+
+      <div ng-click="ChangeSelectedTabIndex(4)" ng-class="{'ccore-personal_panel-inner_menu-item-active': SelectedTabIndex == 4}" class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-history">
+        <div class="ccore-personal_panel-inner_menu-img">
+        </div>
+        <p class="ccore-personal_panel-inner_menu-p">HISTORY</p>
+      </div>
+
+    </div>
+
+    <div ng-click="ChangeSelectedTabIndex(0)" class="ccore-personal_panel-inner_menu-mobile">
+      <div class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-balance">
+        <div class="ccore-personal_panel-inner_menu-img">
+        </div>
+        <p class="ccore-personal_panel-inner_menu-p">BALANCE</p>
+        <div class="ccore-personal_panel-inner_menu-arrow"></div>
+      </div>
+    </div>
+    <div ng-style="{'display': SelectedTabIndex == 0 ? 'block' : 'none'}" class="ccore-personal_panel-block ccore-personal_panel-balance-block">
+      <div class="ccore-personal_panel-balance-block-table">
+        <table>
+          <tr><th class="text-left">Currency</th><th class="text-right">Balance</th></tr>
+          <tr class="ccore-personal_panel-balance_table-gray"><td>Bitcoin</td><td class="text-right">0.00000243</td></tr>
+          <tr                                                ><td>Bitcoin Cash</td><td class="text-right">0</td></tr>
+          <tr class="ccore-personal_panel-balance_table-gray"><td>Ccoin</td><td class="text-right">0</td></tr>
+          <tr                                                ><td>Ethereum</td><td class="text-right">0</td></tr>
+          <tr class="ccore-personal_panel-balance_table-gray"><td>Litecoin</td><td class="text-right">0</td></tr>
+          <tr                                                ><td>USD</td><td class="text-right">0</td></tr>
+          <tr class="ccore-personal_panel-balance_table-gray"><td>EUR</td><td class="text-right">0</td></tr>
+          <tr                                                ><td>RUB</td><td class="text-right">0</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div ng-click="ChangeSelectedTabIndex(1)" class="ccore-personal_panel-inner_menu-mobile">
+      <div class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-deposit">
+        <div class="ccore-personal_panel-inner_menu-img">
+        </div>
+        <p class="ccore-personal_panel-inner_menu-p">DEPOSIT</p>
+        <div class="ccore-personal_panel-inner_menu-arrow"></div>
+      </div>
+    </div>
+    <div ng-style="{'display': SelectedTabIndex == 1 ? 'block' : 'none'}" class="ccore-personal_panel-block ccore-personal_panel-deposit-block">
+      <div class="ccore-personal_panel-block-inner">
+        <p>Share this address with others, and they can send you BTC directly to your wallet.</p>
+        <br>
+        <div class="ccore-personal_panel-deposit-block-left">
+          <label for="Currency"><span>SELECT CURRENCY</span>
+            <select name="Currency">
+              <option>Bitcoin BTC</option>
+              <option>Bitcoin BTC</option>
+            </select>
+          </label>
+          <label for="Deposit"><span>BITCOIN DEPOSIT ADDRESS</span>
+            <input name="Deposit" type="text" value="0x263F19BFc32751676D5B37F2e932Ed9F66A174d0"/>
+            <span class="ccore-personal_panel-deposit-copy">Copy address</span>
+          </label>
+          <p>Minimum deposit amount: 0.0001 BTC</p>
+        </div>
+        <div class="ccore-personal_panel-deposit-block-right">
+          <p>OR SCAN QR CODE</p>
+          <img src="new/images/qr_example.png"/>
+        </div>
+      </div>
+    </div>
+
+    <div ng-click="ChangeSelectedTabIndex(2)" class="ccore-personal_panel-inner_menu-mobile">
+      <div class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-pay">
+        <div class="ccore-personal_panel-inner_menu-img">
+        </div>
+        <p class="ccore-personal_panel-inner_menu-p">PAY</p>
+        <div class="ccore-personal_panel-inner_menu-arrow"></div>
+      </div>
+    </div>
+    <div ng-style="{'display': SelectedTabIndex == 2 ? 'block' : 'none'}" class="ccore-personal_panel-block ccore-personal_panel-pay-block">
+      <div class="ccore-personal_panel-block-inner">
+        <div class="ccore-personal_panel-block-inner-tab">
+          <span ng-click="ChangeSelectedPaymentTabIndex(0)" ng-class="{'ccore-personal_panel-block-inner-tab-active': SelectedPaymentTabIndex == 0}"  class="Services-and-payments-tab">Services and payments</span>
+          <span ng-click="ChangeSelectedPaymentTabIndex(1)" ng-class="{'ccore-personal_panel-block-inner-tab-active': SelectedPaymentTabIndex == 1}"  class="Invoices-tab">Invoices</span>
+        </div>
+        <div ng-style="{'display': SelectedPaymentTabIndex == 0 ? 'block' : 'none'}" class="ccore-personal_panel-block-inner-2 ccore-personal_panel-block-inner-2-active Services-and-payments">
+          <div class="Services-and-payments-block Services-and-payments-block-1">
+            <img src="new/images/phone.png"><p>Mobile</p>
+            <hr>
+            <a href="">In the phone number</a>
+          </div>
+          <div class="Services-and-payments-block Services-and-payments-block-2">
+            <img src="new/images/game.png"><p>Games and Entertainment</p>
+            <hr>
+            <a href="">World of Tanks</a><br>
+            <a href="">Steam</a><br>
+            <a href="">4game</a><br>
+            <hr>
+            <div class="text-center"><a href="">All Games and Entertainment</a></div>
+          </div>
+        </div>
+        <div ng-style="{'display': SelectedPaymentTabIndex == 1 ? 'block' : 'none'}" class="ccore-personal_panel-block-inner-2 Invoices">
+          <div class="ccore-personal_panel-balance-block-table">
+            <table>
+              <tr><th>Creation Date / Payment Date</th><th>From</th><th>Amount</th><th></th><th></th></tr>
+              <tr class="Invoices-table-gray"><td><img src="new/images/in-yellow.png"/>12.07.2017 17.07.2017</td><td>Google Adwords</td>
+                <td>1 000.00 $</td><td><span class="Invoices-pay">Pay</span></td>
+                <td><span class="Invoices-cancel">Cancel</span></td>
+              </tr>
+              <tr><td><img src="new/images/in-green.png"/>12.07.2017 17.07.2017</td><td>Google Adwords</td>
+                <td>1 000.00 $</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="Invoices-table-gray"><td><img src="new/images/in-yellow.png"/>12.07.2017 17.07.2017</td><td>Google Adwords</td>
+                <td>1 000.00 $</td><td><span class="Invoices-pay">Pay</span></td>
+                <td><span class="Invoices-cancel">Cancel</span></td>
+              </tr>
+              <tr><td><img src="new/images/in-red.png"/>12.07.2017 17.07.2017</td><td>Google Adwords</td>
+                <td>1 000.00 $</td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+          <div class="Invoices-mobile">
+            <div class="text-right"><p>Amount |<blue>1 000.00 $</blue> </p></div>
+            <p class="Invoices-mobile-header">Creation Date / Payment Date</p>
+            <p><img src="new/images/in-yellow.png"/> 12.07.2017 17.07.2017</p>
+            <p class="Invoices-mobile-header">Creation Date / Payment Date</p>
+            <p>Amazon</p>
+            <div class="text-right">
+              <hr>
+              <span class="Invoices-pay">Pay</span>
+              <span class="Invoices-cancel">Cancel</span>
+            </div>
+          </div>
+          <div class="Invoices-mobile">
+            <div class="text-right"><p>Amount |<blue>1 000.00 $</blue> </p></div>
+            <p class="Invoices-mobile-header">Creation Date / Payment Date</p>
+            <p><img src="new/images/in-green.png"/> 12.07.2017 17.07.2017</p>
+            <p class="Invoices-mobile-header">Creation Date / Payment Date</p>
+            <p>Amazon</p>
+          </div>
+          <div class="Invoices-mobile">
+            <div class="text-right"><p>Amount |<blue>1 000.00 $</blue> </p></div>
+            <p class="Invoices-mobile-header">Creation Date / Payment Date</p>
+            <p><img src="new/images/in-red.png"/> 12.07.2017 17.07.2017</p>
+            <p class="Invoices-mobile-header">Creation Date / Payment Date</p>
+            <p>Amazon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div ng-click="ChangeSelectedTabIndex(3)" class="ccore-personal_panel-inner_menu-mobile">
+      <div class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-send">
+        <div class="ccore-personal_panel-inner_menu-img">
+        </div>
+        <p class="ccore-personal_panel-inner_menu-p">SEND</p>
+        <div class="ccore-personal_panel-inner_menu-arrow"></div>
+      </div>
+    </div>
+    <div ng-style="{'display': SelectedTabIndex == 3 ? 'block' : 'none'}" class="ccore-personal_panel-block ccore-personal_panel-send-block">
+      <div class="ccore-personal_panel-block-inner">
+        <div class="ccore-send-form">
+          <form action="" method="">
+            <label for="Currency"><span>SELECT CURRENCY</span>
+              <select name="Currency">
+                <option>Bitcoin BTC</option>
+                <option>Bitcoin BTC</option>
+              </select>
+            </label>
+            <label for="Adr"><span>TO</span>
+              <input name="Adr" type="text" placeholder="Paste address"/>
+            </label>
+            <br>
+            <br><br>
+            <label for="Templates">
+              <select name="Templates">
+                <option>Templates BTC</option>
+                <option>Bitcoin BTC</option>
+              </select>
+            </label>
+            <br><br><br>
+            <div class="send-amount">
+              <div  class="send-amount-1">
+                <label for="Adr"><span>AMOUNT:</span>
+                  <input name="Adr" type="text" placeholder="min 0.0001 BTC"/>
+                </label>
+                <span  class="send-amount-1-class">0 BTC available</span>
+              </div>
+              <div class="send-amount-2">
+                <label for="Adr"><span>TRANSACTION FEE</span>
+                  <input name="Adr" type="text" placeholder=""/>
+                </label>
+              </div>
+              <div class="send-amount-3">
+                <label for="Adr"><span>YOU WILL GET</span>
+                  <input name="Adr" type="text" placeholder="0"/>
+                </label>
+                <span  class="send-amount-3-class">BTC</span>
+              </div>
+            </div>
+            <p>
+              <label class="ccore-send-form-check_label">
+                <input type="checkbox" name=""/>
+                <span></span>
+              </label>
+              &nbsp;
+              <gray>Save to my templates</gray></p>
+            <br><br>
+            <input type="submit" value="Send"/>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div ng-click="ChangeSelectedTabIndex(4)" class="ccore-personal_panel-inner_menu-mobile">
+      <div class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-history">
+        <div class="ccore-personal_panel-inner_menu-img">
+        </div>
+        <p class="ccore-personal_panel-inner_menu-p">HISTORY</p>
+        <div class="ccore-personal_panel-inner_menu-arrow"></div>
+      </div>
+    </div>
+    <div ng-style="{'display': SelectedTabIndex == 4 ? 'block' : 'none'}" class="ccore-personal_panel-block ccore-personal_panel-history-block">
+      <div class="ccore-personal_panel-block-inner">
+        <div class="ccore-personal_panel-block-inner-tab">
+          <span  class="All-tab ccore-personal_panel-block-inner-tab-active">All</span>
+          <span  class="Sent-tab">Sent</span>
+          <span  class="Received-tab">Received</span>
+          <span  class="Transferred-tab">Transferred</span>
+        </div>
+        <div class="ccore-personal_panel-block-inner-2 ccore-personal_panel-block-inner-2-active All">
+          <div class="ccore-personal_panel-balance-block-table ccore-personal_panel-history">
+            <table>
+              <thead>
+              <tr>
+                <th>Date/Time</th>
+                <th>Operation</th>
+                <th>Currency</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Payment System</th>
+                <th>Information</th>
+              </tr>
+              </thead>
+              <tr class="Invoices-table-gray">
+                <td data-label="Date/Time"><span>10.09 07:00</span></td>
+                <td data-label="Operation"><span><green>Deposit</green></span></td>
+                <td data-label="Currency"><span>ETH</span></td>
+                <td data-label="Amount"><span>-0.11053136</span></td>
+                <td data-label="Status"><span>Sent</span></td>
+                <td data-label="Payment System"><span>ETH</span></td>
+                <td data-label="Information"><span>0xCFe66A7339bd08469bB2Fc6ab4CAED4C022Fc6ac</span></td>
+              </tr>
+              <tr>
+                <td data-label="Date/Time"><span>10.09 07:00</span></td>
+                <td data-label="Operation"><span><green>Deposit</green></span></td>
+                <td data-label="Currency"><span>ETH</span></td>
+                <td data-label="Amount"><span>-0.11053136</span></td>
+                <td data-label="Status"><span>Sent</span></td>
+                <td data-label="Payment System"><span>ETH</span></td>
+                <td data-label="Information"><span>0xCFe66A7339bd08469bB2Fc6ab4CAED4C022Fc6ac</span></td>
+              </tr>
+              <tr class="Invoices-table-gray">
+                <td data-label="Date/Time"><span>10.09 07:00</span></td>
+                <td data-label="Operation"><span><green>Deposit</green></span></td>
+                <td data-label="Currency"><span>ETH</span></td>
+                <td data-label="Amount"><span>-0.11053136</span></td>
+                <td data-label="Status"><span>Sent</span></td>
+                <td data-label="Payment System"><span>ETH</span></td>
+                <td data-label="Information"><span>0xCFe66A7339bd08469bB2Fc6ab4CAED4C022Fc6ac</span></td>
+              </tr>
+              <tr>
+                <td data-label="Date/Time"><span>10.09 07:00</span></td>
+                <td data-label="Operation"><span><green>Deposit</green></span></td>
+                <td data-label="Currency"><span>ETH</span></td>
+                <td data-label="Amount"><span>-0.11053136</span></td>
+                <td data-label="Status"><span>Sent</span></td>
+                <td data-label="Payment System"><span>ETH</span></td>
+                <td data-label="Information"><span>0xCFe66A7339bd08469bB2Fc6ab4CAED4C022Fc6ac</span></td>
+              </tr>
+              <tr class="Invoices-table-gray">
+                <td data-label="Date/Time"><span>10.09 07:00</span></td>
+                <td data-label="Operation"><span><green>Deposit</green></span></td>
+                <td data-label="Currency"><span>ETH</span></td>
+                <td data-label="Amount"><span>-0.11053136</span></td>
+                <td data-label="Status"><span>Sent</span></td>
+                <td data-label="Payment System"><span>ETH</span></td>
+                <td data-label="Information"><span>0xCFe66A7339bd08469bB2Fc6ab4CAED4C022Fc6ac</span></td>
+              </tr>
+              <tr>
+                <td data-label="Date/Time"><span>10.09 07:00</span></td>
+                <td data-label="Operation"><span><green>Deposit</green></span></td>
+                <td data-label="Currency"><span>ETH</span></td>
+                <td data-label="Amount"><span>-0.11053136</span></td>
+                <td data-label="Status"><span>Sent</span></td>
+                <td data-label="Payment System"><span>ETH</span></td>
+                <td data-label="Information"><span>0xCFe66A7339bd08469bB2Fc6ab4CAED4C022Fc6ac</span></td>
+              </tr>
+            </table>
+          </div>
+          <div class="ccore-personal_panel-pagination">
+            <ul>
+              <li>&#8592; Prev</li>
+              <li  class="ccore-personal_panel-pagination-active">1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>Next &#8594;</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ccore-personal_panel-block-inner-2 Sent">
+
+        </div>
+        <div class="ccore-personal_panel-block-inner-2 Received">
+
+        </div>
+        <div class="ccore-personal_panel-block-inner-2 Transferred">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

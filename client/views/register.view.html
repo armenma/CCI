@@ -1,4 +1,4 @@
-<div class="col-md-6 col-md-offset-3">
+<!--<div class="col-md-6 col-md-offset-3">
     <h2>Register</h2>
     <form name="form" ng-submit="register()" role="form">
         <div class="form-group" ng-class="{ 'has-error': form.email.$dirty && form.email.$error.required }">
@@ -17,4 +17,81 @@
             <a href="#!/login" class="btn btn-link">Cancel</a>
         </div>
     </form>
+</div>-->
+<div class="ccore-create_account-bg">
+  <form class="container">
+    <div class="content">
+      <div class="ccore-create_account">
+        <div class="ccore-create_account-name">
+          <p>cWallet</p>
+        </div>
+        <div class="ccore-create_account-close">
+          <img src="images/form-close.png"/>
+        </div>
+        <div class="ccore-create_account-form">
+          <div ng-style="{'min-height': IsBusinnes.value ? '640px':'510px'}" class="ccore-create_account-form-blue">
+            <p class="ccore-create_account-h1">What type of account?</p>
+            <p class="ccore-create_account-h2 ccore-create_account-h2-pesonal">Personal</p>
+            <p class="ccore-create_account-text ccore-create_account-text-personal">
+              Send free internal transfers, <br>
+              fund your account and withdraw <br>
+              money with minimal fees, create <br>
+              a virtual card for secure online <br>
+              spending and use your plastic <br>
+              Mastercard in ATMs.</p>
+            <p class="ccore-create_account-h2 ccore-create_account-h2-business ccore-create_account-h2-opacity">Business</p>
+            <p class="ccore-create_account-text ccore-create_account-text-business ccore-create_account-hidden">
+              Proccess payments on your site<br>
+              and automate mass payments to<br>
+              your customers and partners.<br>
+              Low rates and full integration<br>
+              assistance.</p>
+          </div>
+          <div class="ccore-create_account-form-white">
+            <p class="ccore-create_account-form-white-h1">Create An Account</p>
+
+            <span ng-click="ChangeFormType(false)" ng-class="{'ccore-create_account-active' : !IsBusinnes.value}"  class="ccore-create_account-form-personal_span">Personal Account</span>
+            <span ng-click="ChangeFormType(true)" ng-class="{'ccore-create_account-active' : IsBusinnes.value}"  class="ccore-create_account-form-business_span">Business Account</span>
+
+            <form id="form2" name="form2" novalidate>
+              <label ng-if="IsBusinnes.value" for="CompanyName"  class="ccore-create_account-form-business-input"><span>Company Name*</span>
+                <input name="CompanyName" ng-model="User.companyName" required type="text" class="ccore-create_account-form-business-input"
+                       placeholder="Company Name*"/>
+              </label>
+              <br>
+              <label ng-if="IsBusinnes.value" for="Country"  class="ccore-create_account-form-business-input"><span>Country</span>
+                <input name="Country" ng-model="User.country" required type="text" class="ccore-create_account-form-business-input"
+                       placeholder="Country"/>
+              </label>
+              <br>
+              <label for="Email"><span>Email*</span>
+                <input name="email" ng-model="User.email" required type="email" placeholder="Email*"/>
+              </label>
+              <br>
+              <label for="Password"><span>Password*</span>
+                <input name="password" ng-model="User.password" required type="password" placeholder="Password*"/>
+              </label>
+              <br>
+              <label for="UserName"><span>User Name*</span>
+                <input name="userName" type="text"  ng-model="User.username" required placeholder="User Name*"/>
+              </label>
+
+              <div class="text-center">
+                <br><br>
+                <p><gray2>By clicking "Sign Up" I agree to Cwallet</gray2> <a href="">Terms of Service.</a></p>
+
+                <input ng-click="register(form2)" type="submit" value="Sign up"/>
+
+                <hr>
+                <br>
+                <p>Don't have an account? <a href="">Sign up</a></p>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
 </div>

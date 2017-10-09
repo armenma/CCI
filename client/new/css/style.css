@@ -215,6 +215,12 @@ h4{
 .ccore-button-green:hover{
 	background: #16b771;
 }
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
 .text-center{
 	width: 100%;
 	text-align: center;
@@ -250,7 +256,8 @@ h4{
   	background-image: linear-gradient(273deg, #14a9ee, #2457f2);
 	font-size: 16px;
 }
-.ccore-header-logo, .ccore-header-menu, .ccore-header-buttons, .ccore-header-language, .ccore-header-menu_button{
+.ccore-header-logo, .ccore-header-menu, .ccore-header-buttons, .ccore-header-language, .ccore-header-menu_button,
+.ccore-header-username{
 	display: inline-block;
 	float: left;
 }
@@ -288,7 +295,9 @@ h4{
 	margin-left: 10px;
 	border-radius: 3px;
 	text-transform: uppercase;
+  text-decoration: none;
 	cursor: pointer;
+  color: #ffffff;
 	box-shadow: 0 2px 4px 0 rgba(73, 88, 108, 0.24);
 }
 .ccore-header-buttons-button:hover{
@@ -308,7 +317,7 @@ h4{
 }
 .ccore-header-language-button-triangle{
 	border: 7px solid transparent; border-top: 7px solid #fff;
-	top: 10px;
+	top: 6px;
 	position: absolute;
 	right: 5px;
 }
@@ -348,6 +357,55 @@ h4{
 
   .ccore-header-menu-item-2 a{cursor: pointer}
 }
+/*--------personal-----------------*/
+.ccore-header-username{
+  position: relative;
+  margin-left: 90px;
+  margin-top: 25px;
+}
+.ccore-header-username span{
+  text-transform: none!important;
+}
+.ccore-header-personal_menu {
+  position: absolute;
+  width: 160px;
+  padding: 10px 0;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #dae3ec;
+  right: 0;
+  top: 50px;
+  z-index: 100;
+  display: none;
+}
+.ccore-header-personal_menu hr, .Invoices-mobile hr{
+  border-bottom: 1px solid #dae3ec;
+}
+.ccore-header-personal_menu img{
+  height: 19px;
+  width: auto;
+  margin-right: 12px;
+}
+.ccore-header-personal_menu a{
+  line-height: 30px;
+  padding-left: 15px;
+  padding-right: 25px;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  color: #49586c;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .ccore-header-username {
+    display: none;
+  }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
 /*-----------------------------------------------------------------------------------------------------------------------*/
 .ccore-menu{
 	position: relative;
@@ -357,6 +415,7 @@ h4{
 	border-bottom: 1px solid #49586c;
 	padding: 30px 0;
 	display: none;
+  z-index: 1;
 }
 .ccore-menu ul {
 	margin-left: 0px; /*170*/
@@ -507,7 +566,7 @@ h4{
 .ccore-about_ICO{
 	width: 100%;
 	height: 411px;
-	background: url(../images/banner-bg.png);
+	background: url(../images1/banner-bg.png);
 	background-size: 100% 100%;
 }
 /*--------------*/
@@ -782,7 +841,7 @@ h4{
 	display: inline-block;
 	width: 779px;
 	height: 853px;
-	background: url(../images/roadmap.png);
+	background: url(../images1/roadmap.png);
 	background-size: 100% 100%;
 	margin-top: 30px;
 	position: relative;
@@ -1576,12 +1635,13 @@ h4{
 }
 
 .ccore-terms-agreement-check_label span {
-	width: 13px;
-	height: 13px;
-	display: inline-block;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
   background: #1a85ef url(../images/checkmark.png);
-	border: 1px solid #fff;
-	background-size: 100% 100%;
+  border: 1px solid #ffffff;
+  background-size: 100% 100%;
+  opacity: 1;
 }
 
 .ccore-terms-agreement-check_label input:checked + span {
@@ -1591,14 +1651,14 @@ h4{
 .slick-prev {
 	left: 10px;
 	top: 110px;
-	background: url(../images/slider-prev.png);
+	background: url(../images1/slider-prev.png);
 	width: 40px;
 	height: 90px;
 	background-size: 100% 100%;
 	z-index: 9000;
 }
 .slick-prev:hover {
-	background: url(../images/slider-prev-hover.png);
+	background: url(../images1/slider-prev-hover.png);
 	background-size: 100% 100%;
 }
 .slick-prev::before {
@@ -1607,14 +1667,14 @@ h4{
 .slick-next {
 	right: 10px;
 	top: 110px;
-	background: url(../images/slider-next.png);
+	background: url(../images1/slider-next.png);
 	width: 40px;
 	height: 90px;
 	background-size: 100% 100%;
 	z-index: 9000;
 }
 .slick-next:hover {
-	background: url(../images/slider-next-hover.png);
+	background: url(../images1/slider-next-hover.png);
 	background-size: 100% 100%;
 }
 .slick-next::before {
@@ -1644,7 +1704,7 @@ select#languages {
   -webkit-user-select: none;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0);
-  background: transparent url("../images/arrow.png") no-repeat 37px center;
+  background: transparent url("../images1/arrow.png") no-repeat 37px center;
   /*background-size: 20px 30px;*/
   font-size: inherit;
   overflow: hidden;
@@ -1652,7 +1712,7 @@ select#languages {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 65px;
-  margin-top: -2px;
+  margin-top: -8px;
 }
 select#languages option{
   background-color: #14a9ee;
@@ -1694,6 +1754,1089 @@ select#languages option{
     padding: 5px 0 5px 0;
   }
 }
+
+
+/*----------------------------CREATE ACCOUNT FORM---------------------------------------------------------------------------*/
+gray2{
+  color: #adbdce;
+}
+.ccore-create_account-bg{
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+}
+.ccore-create_account{
+  width: 1093px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+.ccore-create_account a, .ccore-sign-form a{
+  text-decoration: none;
+  color: #57a4ff;
+}
+.ccore-create_account-name{
+  display: inline-block;
+  float: left;
+}
+.ccore-create_account-name  p{
+  height: 38px;
+  font-family: Roboto;
+  font-size: 32px;
+  text-align: left;
+  color: #49586c;
+}
+.ccore-create_account-close{
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+.ccore-create_account-close img{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.ccore-create_account-form{
+  display: inline-block;
+  float: left;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 14px 1px rgba(200, 220, 235, 0.43);
+  border: solid 1px #deebf8;
+  overflow: hidden;
+}
+.ccore-create_account-form-blue{
+  width: 340px;
+  min-height: 510px;
+  background: url(../images/form-create-blue.png);
+  background-size: 100% auto;
+  float: left;
+  display: inline-block;
+  padding: 58px 45px 10px 45px;
+}
+.ccore-create_account-form-white{
+  width: 543px;
+  background: #fff;
+  float: right;
+  padding: 30px 60px 10px 60px;
+  display: inline-block;
+}
+.ccore-create_account-form-white-h1{
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 200;
+  color: #6b7c93;
+  margin-bottom: 20px;
+}
+.ccore-create_account-form-white p, .ccore-sign-form p{
+  color: #49586c;
+}
+
+.ccore-sign-form-left .ccore-sign-check_label input, .ccore-send-form-check_label input {
+  display: none;
+  position: relative;
+  z-index: -9999;
+}
+.ccore-sign-form-left .ccore-sign-check_label span, .ccore-send-form-check_label span {
+  opacity: 1!important;
+}
+.ccore-sign-form-left .ccore-sign-check_label span, .ccore-send-form-check_label span {
+  width: 17px!important;
+  height: 17px!important;
+  padding: 0!important;
+  display: inline-block!important;
+  border-radius: 4px;
+  background-color: #f0f6fc;
+}
+
+.ccore-sign-form-left .ccore-sign-check_label input:checked + span, .ccore-send-form-check_label input:checked + span {
+  background-image: url(../images/checkmark_gray.png);
+  background-size: 100% 100%;
+}
+
+.ccore-create_account-form-white input[type="text"], .ccore-sign-form input,
+.ccore-create_account-form-white input[type="password"], .ccore-create_account-form-white input[type="email"]{
+  width: 98%;
+  border: none;
+  border-bottom: 1px solid #d9e2eb;
+  padding: 7px 0;
+  margin-top: 0px;
+  margin-bottom: 18px;
+  font-family: Roboto;
+  font-size: 16px;
+  text-align: left;
+  color: #adbdce;
+  outline: none;
+}
+
+@keyframes border-run {
+  0%   { border-color: rgba(36, 87, 242, 0.25); }
+  100% { border-color: #1a85ef; }
+}
+
+.ccore-create_account-form-white input[type="text"]:focus,  .ccore-sign-form input:focus,
+.ccore-create_account-form-white input[type="password"]:focus{
+  border-bottom: 2px solid #1a85ef;
+  animation: border-run 2s;
+  color: #6b7c93;
+}
+label span
+{
+  font-family: Roboto;
+  font-size: 12px;
+  text-align: left;
+  color: #adbdce;
+  opacity: 0;
+}
+label:hover span, label:focus span, label:active span{
+  opacity: 1;
+}
+.ccore-create_account-form-white input[type="submit"], .ccore-sign-form input[type="submit"]{
+  width: 162px;
+  height: 50px;
+  border-radius: 3px;
+  background-image: linear-gradient(284deg, rgba(21, 168, 238, 0.83), #2457f2);
+  box-shadow: 0 2px 5px 0 rgba(193, 208, 221, 0.43);
+  border: none;
+  font-family: Roboto;
+  font-size: 18px;
+  text-align: left;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  margin: 25px 0;
+}
+.ccore-create_account-h1{
+  font-family: Roboto;
+  font-size: 32px;
+  text-align: left;
+  color: #ffffff;
+}
+.ccore-create_account-h2{
+  opacity: 1;
+  font-family: Roboto;
+  font-size: 28px;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.ccore-create_account-h2-opacity{
+  opacity: 0.5;
+}
+.ccore-create_account-text{
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: left;
+  color: #ffffff;
+}
+
+.ccore-create_account-form-personal_span, .ccore-create_account-form-business_span{
+  width: 49%;
+  display: inline-block;
+  float: left;
+  padding: 14px 0;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f6f6f7;
+  border: solid 1px rgba(178, 201, 224, 0.53);
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #6b7c93;
+}
+.ccore-create_account-form-personal_span{
+  border-radius: 3px 0px 0 3px;
+}
+.ccore-create_account-form-business_span{
+  border-radius: 0 3px 3px 0;
+}
+.ccore-create_account-active{
+  background-color: #e0eaf4;
+}
+hr{
+  background-color: #fff;
+  border: none;
+  color: #fff;
+  border-bottom: 1px dashed #dae3ec;
+}
+@media (max-width: 1200px) {
+  .ccore-create_account-bg{
+    background: #fff;
+  }
+  .ccore-create_account{
+    width: 100%;
+    padding: 0;
+  }
+  .ccore-create_account-form{
+    width: 100%;
+    border: none;
+    box-shadow: none;
+  }
+  .ccore-create_account-form-blue{
+    display: none;
+  }
+  .ccore-create_account-form-white{
+    width: 90%;
+    float: none;
+    padding: 5%;
+  }
+  .ccore-create_account-close{
+    display: none;
+  }
+  .ccore-create_account-name, .ccore-create_account-form-white-h1{
+    width: 100%;
+    text-align: center;
+  }
+  .ccore-create_account-form-white-h1 {
+    font-size: 24px;
+  }
+  .ccore-create_account-name p {
+    text-align: center;
+    font-size: 29px;
+  }
+}
+/*----------------------------Sign FORM---------------------------------------------------------------------------*/
+.ccore-sign{
+  width: 504px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+.ccore-sign-name{
+  display: none;
+}
+.ccore-sign-form{
+  display: inline-block;
+  float: left;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 14px 1px rgba(200, 220, 235, 0.43);
+  border: solid 1px #deebf8;
+  overflow: hidden;
+  padding: 44px;
+}
+.ccore-sign-form-left, .ccore-sign-form-right{
+  display: inline-block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  margin-top: 30px;
+}
+.ccore-sign-form-right{
+  text-align: right;
+}
+.ccore-sign-form-left input{
+  width: auto;
+  margin-right: 15px;
+}
+.ccore-sign-form-left span{
+  font-size: 14px;
+  text-align: left;
+  color: #6b7c93;
+}
+@media (max-width: 1200px) {
+  .ccore-sign{
+    width: 95%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+  }
+  .ccore-sign-form{
+    width: 90%;
+    padding: 20px 5%;
+    border-radius: 0;
+  }
+  .ccore-sign-name{
+    display: block;
+    font-size: 29px;
+    letter-spacing: 0.2px;
+    color: #49586c;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .ccore-sign-form-left, .ccore-sign-form-right, .ccore-sign-form-left span{
+    font-size: 12px;
+  }
+}
+/*-------------------------------------------------PERSONAL-------------------------------------------------------------------------*/
+.ccore-personal_panel{
+  display: inline-block;
+  float: left;
+  width: 100%;
+  min-height: 70vh;
+  margin-bottom: 30px;
+}
+.ccore-personal_panel-h1{
+  font-family: Roboto;
+  font-size: 52px;
+  color: #49586c;
+  margin: 50px 0;
+}
+@media (max-width: 1200px) {
+  .ccore-personal_panel-h1{
+    font-size: 32px;
+    margin: 30px 0;
+  }
+}
+.ccore-personal_panel-inner_menu{
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ccore-personal_panel-inner_menu-item{
+  width: 200px;
+  height: 126px;
+  margin: 20px 9px;
+  border-radius: 2.7px;
+  background-color: #ffffff;
+  box-shadow: 1px 3px 8px 0 rgba(178, 201, 224, 0.37);
+  border: solid 0.9px rgba(217, 226, 235, 0.76);
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+.ccore-personal_panel-inner_menu-item:hover{
+  background-image: linear-gradient(300deg, #38bbf9, #1a85ef);
+}
+.ccore-personal_panel-inner_menu-item:hover .ccore-personal_panel-inner_menu-p{
+  color: #fff;
+}
+
+.ccore-personal_panel-inner_menu-img{
+  height: 47px;
+  width: 47px;
+  display: inline-block;
+  margin: 17px 0;
+}
+.ccore-personal_panel-inner_menu-balance .ccore-personal_panel-inner_menu-img{  background: url(../images/wallet.png);  background-size: 100% 100%; }
+.ccore-personal_panel-inner_menu-balance:hover .ccore-personal_panel-inner_menu-img,
+.ccore-personal_panel-inner_menu-balance.ccore-personal_panel-inner_menu-item-active  .ccore-personal_panel-inner_menu-img
+{  background: url(../images/wallet-white.png);  background-size: 100% 100%; }
+
+.ccore-personal_panel-inner_menu-deposit .ccore-personal_panel-inner_menu-img{  background: url(../images/deposit.png);  background-size: 100% 100%; }
+.ccore-personal_panel-inner_menu-deposit:hover .ccore-personal_panel-inner_menu-img,
+.ccore-personal_panel-inner_menu-deposit.ccore-personal_panel-inner_menu-item-active  .ccore-personal_panel-inner_menu-img
+{  background: url(../images/deposit-white.png);  background-size: 100% 100%; }
+
+.ccore-personal_panel-inner_menu-pay .ccore-personal_panel-inner_menu-img{  background: url(../images/pay.png);  background-size: 100% 100%; }
+.ccore-personal_panel-inner_menu-pay:hover .ccore-personal_panel-inner_menu-img,
+.ccore-personal_panel-inner_menu-pay.ccore-personal_panel-inner_menu-item-active  .ccore-personal_panel-inner_menu-img
+{  background: url(../images/pay-white.png);  background-size: 100% 100%; }
+
+.ccore-personal_panel-inner_menu-send .ccore-personal_panel-inner_menu-img{  background: url(../images/send.png);  background-size: 100% 100%; }
+.ccore-personal_panel-inner_menu-send:hover .ccore-personal_panel-inner_menu-img,
+.ccore-personal_panel-inner_menu-send.ccore-personal_panel-inner_menu-item-active  .ccore-personal_panel-inner_menu-img
+{  background: url(../images/send-white.png);  background-size: 100% 100%; }
+
+.ccore-personal_panel-inner_menu-history .ccore-personal_panel-inner_menu-img{  background: url(../images/history.png);  background-size: 100% 100%; }
+.ccore-personal_panel-inner_menu-history:hover .ccore-personal_panel-inner_menu-img,
+.ccore-personal_panel-inner_menu-history.ccore-personal_panel-inner_menu-item-active  .ccore-personal_panel-inner_menu-img
+{  background: url(../images/history-white.png);  background-size: 100% 100%; }
+
+.ccore-personal_panel-inner_menu-arrow{
+  background: url(../images/menu-arrow-down-2.png);
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  right: 20px;
+  top: 20px;
+  background-size: 100% 100%;
+}
+.ccore-personal_panel-inner_menu-item-active .ccore-personal_panel-inner_menu-arrow,
+.ccore-personal_panel-inner_menu-item:hover .ccore-personal_panel-inner_menu-arrow{
+  background: url(../images/menu-arrow-down.png);
+  background-size: 100% 100%;
+}
+.ccore-personal_panel-inner_menu-item p{
+  color: #1a85ef;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+}
+.ccore-personal_panel-inner_menu-item-active{
+  background-image: linear-gradient(300deg, #38bbf9, #1a85ef);
+}
+.ccore-personal_panel-inner_menu-item-active p{
+  color: #FFFFFF;
+}
+
+.ccore-personal_panel-inner_menu-mobile{
+  display: none;
+}
+.ccore-personal_panel-block{
+  display: none;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ccore-personal_panel-block-inner{
+  display: inline-block;
+  width: 100%;
+  float: left;
+  margin-bottom: 200px;
+}
+.ccore-personal_panel-balance-block{
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 200px;
+  display: block;
+}
+@media (max-width: 1200px) {
+  .ccore-personal_panel-block{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ccore-personal_panel-balance-block{
+    margin-bottom: 20px;
+  }
+}
+.ccore-personal_panel-balance-block-table{
+  /*width: 1063px;*/
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 14px 1px rgba(200, 220, 235, 0.42);
+  padding: 0 15px;
+}
+.ccore-personal_panel-balance-block table{
+  width: 100%;
+}
+.ccore-personal_panel-balance_table-gray{
+  background-color: #f8faff;
+}
+.ccore-personal_panel-balance-block table tr td{
+  padding: 10px 15px;
+  border-top: 1px solid #dedef8;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: #4a4a4a;
+}
+.ccore-personal_panel-balance-block table tr th{
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: bold;
+  color: #1a85ef;
+  padding: 15px 15px;
+}
+@media (max-width: 1200px) {
+  .ccore-personal_panel-inner_menu{
+    display: none;
+  }
+  .ccore-personal_panel-inner_menu-mobile{
+    display: block;
+  }
+  .ccore-personal_panel-balance-block{
+    display: none;
+  }
+}
+/*--------------------------------PERSONAL MOBILE MENU-----------------------------------------*/
+.ccore-personal_panel-inner_menu-mobile {
+  width: 100%;
+}
+.ccore-personal_panel-inner_menu-mobile .ccore-personal_panel-inner_menu-item{
+  width: 90%;
+  height: 50px;
+  margin: 5px 5%;
+  text-align: left;
+  position: relative;
+}
+.ccore-personal_panel-inner_menu-mobile .ccore-personal_panel-inner_menu-img{
+  width: 33px;
+  height: 33px;
+  margin: 8px 20px;
+}
+.ccore-personal_panel-inner_menu-mobile p{
+  width: 150px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 70px;
+  font-size: 18px;
+}
+/*-------------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+  .ccore-personal_panel-balance-block{
+    width: 90%;
+    padding: 0 5%;
+  }
+  .ccore-personal_panel-balance-block-table{
+    width: 90%;
+    padding: 0 5%;
+  }
+  .ccore-personal_panel-balance-block table tr th{
+    font-size: 18px;
+  }
+  .ccore-personal_panel-balance-block table tr td{
+    font-size: 14px;
+  }
+}
+/*----------deposit---------------*/
+.ccore-personal_panel-deposit-block{
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 200px;
+}
+.ccore-personal_panel-deposit-block p{
+  font-size: 20px;
+  letter-spacing: 0.3px;
+  color: #82899e;
+}
+.ccore-personal_panel-deposit-block-left{
+  width: 880px;
+  float: left;
+  display: inline-block;
+}
+.ccore-personal_panel-deposit-block-left p{
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #1a85ef;
+  margin-top: 20px;
+}
+.ccore-personal_panel-deposit-block-right p{
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: #49586c;
+  margin-bottom: 15px;
+}
+.ccore-personal_panel-deposit-block-left input, .ccore-personal_panel-deposit-block-left select{
+  width: 100%;
+  height: 50px;
+  border-radius: 3px;
+  background-color: rgba(250, 250, 250, 0.9);
+  border: solid 1px rgba(178, 201, 224, 0.67);
+  padding: 0 10px;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #82899e;
+}
+
+select {
+
+  /* styling */
+  background-color: white;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select {
+  background-image:
+    linear-gradient(45deg, transparent 50%, #1a85ef 50%),
+    linear-gradient(135deg, #1a85ef 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+.ccore-personal_panel-deposit-block-left input{
+  width: 720px;
+  height: 50px;
+  border-radius: 3px 0 0 3px;
+  display: inline-block;
+}
+.ccore-personal_panel-deposit-block-left label span{
+  opacity: 1;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #49586c;
+}
+.ccore-personal_panel-deposit-copy{
+  display: inline-block!important;
+  width: 137px!important;
+  border-radius: 0 3px 3px 0;
+  background-color: #16d086;
+  font-size: 16px!important;
+  color: #ffffff!important;
+  text-align: center!important;
+  padding-bottom: 17px!important;
+  padding-top: 19px!important;
+  cursor: pointer;
+  margin-left: -3px;
+}
+.ccore-personal_panel-deposit-block-right{
+  width: 151px;
+  float: right;
+  display: inline-block;
+}
+.ccore-personal_panel-deposit-block-right img{
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1200px) {
+  .ccore-personal_panel-deposit-block{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .ccore-personal_panel-deposit-block p{
+    font-size: 18px;
+  }
+  .ccore-personal_panel-deposit-block-left p{
+    font-size: 14px;
+  }
+  .ccore-personal_panel-deposit-block-left{
+    width: 100%;
+  }
+  .ccore-personal_panel-deposit-block-right{
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+  }
+  .ccore-personal_panel-deposit-block-right img{
+    width: 151px;
+    height: auto;
+  }
+  .ccore-personal_panel-block-inner {
+    margin-bottom: 20px;
+  }
+  .ccore-personal_panel-deposit-block-left input{
+    width: 60%;
+    font-size: 14px;
+  }
+  .ccore-personal_panel-deposit-copy{
+    display: inline-block!important;
+    width: 33%!important;
+    border-radius: 0 3px 3px 0;
+    background-color: #16d086;
+    font-size: 14px!important;
+    color: #ffffff!important;
+    text-align: center!important;
+    padding-bottom: 17px!important;
+    padding-top: 19px!important;
+    cursor: pointer;
+    margin-left: -3px;
+  }
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------pay-----------------------------------------*/
+.ccore-personal_panel-block-inner-tab{
+  width: 100%;
+  margin-top: 20px;
+  border-bottom: 1px solid rgba(178, 201, 224, 0.21);
+}
+.ccore-personal_panel-block-inner-tab span{
+  display: inline-block;
+  padding: 15px 0;
+  margin-right: 40px;
+  font-size: 22px;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #82899e;
+  cursor: pointer;
+}
+.ccore-personal_panel-block-inner-tab .ccore-personal_panel-block-inner-tab-active{
+  color: #49586c;
+  border-bottom: 2px solid #1a85ef;
+}
+.ccore-personal_panel-block-inner-2{
+  display: none;
+  width: 100%;
+  float: left;
+}
+.ccore-personal_panel-block-inner-2-active{
+  display: inline-block;
+}
+.Services-and-payments-block{
+  width: 520px;
+  height: 280px;
+  border-radius: 3px;
+  background-color: rgba(250, 250, 250, 0.9);
+  border: solid 1px #dae3ec;
+  display: inline-block;
+  margin-top: 50px;
+  position: relative;
+}
+.Services-and-payments-block-1{
+  float: left;
+}
+.Services-and-payments-block-2{
+  float: right;
+}
+.Services-and-payments-block hr{
+  border-bottom: 1px solid #dae3ec;
+}
+.Services-and-payments-block img{
+  height: 45px;
+  margin: 10px 15px;
+}
+.Services-and-payments-block p{
+  font-size: 28px;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #49586c;
+  position: absolute;
+  left: 80px;
+  top: 25px;
+  display: inline-block;
+}
+.Services-and-payments-block a{
+  font-size: 21px;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #1a85ef;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-top: 10px;
+  display: block;
+}
+.Services-and-payments-block .text-center a{
+  font-size: 18px;
+  color: #16d086;
+  padding: 7px;
+  display: inline-block;
+}
+@media (max-width: 1200px) {
+  .ccore-personal_panel-block-inner-tab span{
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  .Services-and-payments-block{
+    width: 100%;
+    height: 243px;
+  }
+  .Services-and-payments-block img{
+    height: 30px;
+    margin: 10px 15px;
+  }
+  .Services-and-payments-block p{
+    font-size: 18px;
+    left: 60px;
+    top: 20px;
+  }
+  .Services-and-payments-block a{
+    font-size: 15px;
+  }
+  .Services-and-payments-block .text-center a{
+    font-size: 14px;
+  }
+}
+
+.ccore-personal_panel-block-inner-2 table{
+  margin-top: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0 15px;
+}
+.ccore-personal_panel-block-inner-2 table img, .Invoices-mobile img{
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+}
+.Invoices-table-gray{
+  background-color: #f8faff;
+}
+.ccore-personal_panel-block-inner-2 table tr td, .ccore-personal_panel-block-inner-2 table tr th{
+  padding: 10px 15px;
+  border-top: 1px solid #dedef8;
+  font-family: Roboto;
+  font-size: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #82899e;
+}
+.ccore-personal_panel-block-inner-2 table tr th{
+  border-top: 0px solid #dedef8;
+}
+.ccore-personal_panel-block-inner-2 table tr th{
+  padding: 20px 15px;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #49586c;
+}
+.Invoices-pay{
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #11bc78;
+  cursor: pointer;
+}
+.Invoices-cancel{
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ee2828;
+  cursor: pointer;
+}
+.Invoices-mobile{
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px 0 rgba(178, 201, 224, 0.43);
+  border: solid 1px #dae3ec;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 20px;
+  display: none;
+}
+.Invoices-mobile p, .Invoices-mobile span{
+  margin: 0 15px;
+}
+.Invoices-mobile p{
+  color: #82899e;
+  font-size: 15px;
+}
+.Invoices-mobile p{
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+.Invoices-mobile .Invoices-mobile-header{
+  font-size: 18px;
+  font-weight: 700;
+  color: #49586c;
+  margin-top: 20px;
+}
+.ccore-personal_panel-history table tr td{
+  font-size: 14px;
+}
+.ccore-personal_panel-history table tr th{
+  font-size: 18px;
+}
+.ccore-personal_panel-history green{
+  color: #16d086;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .Invoices-mobile{
+    display: block;
+  }
+  .Invoices table{
+    display: none;
+  }
+  .ccore-personal_panel-history{
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  .ccore-personal_panel-history {
+    width: 100%;
+    padding: 0;
+  }
+  .ccore-personal_panel-history table thead{
+    display: none;
+  }
+  .ccore-personal_panel-history table tr{
+    display: block;
+    background: none!important;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px 0 rgba(178, 201, 224, 0.43);
+    border: solid 1px #dae3ec;
+    margin-bottom: 20px;
+  }
+  .ccore-personal_panel-history table td{
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    padding: 0;
+    font-size: 14px;
+  }
+  .ccore-personal_panel-history table td span{
+    float: right;
+    margin-right: 15px;
+  }
+  .ccore-personal_panel-history table td:before {
+    content: attr(data-label);
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #49586c;
+    margin-left: 15px;
+  }
+  .ccore-personal_panel-block-inner-2 table tr td, .ccore-personal_panel-block-inner-2 table tr th{
+    border-top: 0px solid #dedef8;
+  }
+  .ccore-personal_panel-block-inner-2 table tr td, .ccore-personal_panel-block-inner-2 table tr th {
+    padding: 10px 0px;
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------*/
+.ccore-personal_panel-pagination{
+  display: inline-block;
+  float: right;
+  margin-top: 30px;
+}
+.ccore-personal_panel-pagination ul li{
+  display: inline-block;
+  padding: 7px 10px;
+  font-family: Lato;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #666d83;
+  cursor: pointer;
+}
+.ccore-personal_panel-pagination ul li:hover{
+  border-radius: 4px;
+  background-color: #1a85ef;
+  color: #fff;
+}
+.ccore-personal_panel-pagination-active{
+  color: #1a85ef!important;
+}
+@media (max-width: 1200px) {
+  .ccore-personal_panel-pagination{
+    width: 100%;
+    text-align: center;
+  }
+}
+/*----------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------*/
+.ccore-send-form{
+  width: 100%;
+  display: inline-block;
+  float: left;
+}
+.ccore-send-form input, .ccore-send-form select{
+  width: 99%;
+  height: 50px;
+  border-radius: 3px;
+  background-color: rgba(250, 250, 250, 0.9);
+  border: solid 1px rgba(178, 201, 224, 0.67);
+  padding: 0 1%;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #82899e;
+}
+.ccore-send-form input{
+  width: 1065px;
+}
+.ccore-send-form label span{
+  opacity: 1;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #49586c;
+}
+.ccore-send-form input[type="submit"]{
+  width: 135px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #16d086;
+  box-shadow: 0 2px 4px 0 rgba(73, 88, 108, 0.24);
+  font-family: Roboto;
+  font-size: 24px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.send-amount{
+  width: 100%;
+  display: inline-block;
+  float: left;
+  margin-bottom: 30px;
+}
+.send-amount-1, .send-amount-2, .send-amount-3{
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+.send-amount-1{
+  width: 35%;
+}
+.send-amount-2{
+  width: 24%;
+  margin-left: 2%;
+}
+.send-amount-3{
+  margin-left: 2%;
+  width: 35%;
+}
+.send-amount-1 input, .send-amount-2 input, .send-amount-3 input{
+  width: 100%;
+}
+.send-amount-1-class{
+  position: absolute;
+  right: 0;
+  top: 18px;
+  font-size: 16px;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 0.2px;
+  color: #e20d0d;
+}
+.send-amount-3-class{
+  position: absolute;
+  right: 10px;
+  top: 65px;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  color: #82899e;
+}
+@media (max-width: 1200px) {
+  .send-amount-1, .send-amount-2, .send-amount-3{
+    width: 98%;
+    margin: 0;
+  }
+  .ccore-send-form input{
+    width: 98%;
+  }
+  .ccore-send-form input[type="submit"]{
+    width: 100%;
+  }
+}
+
+form.ng-invalid .help-block{display: inline}
 input::placeholder {
   color: #cfcfcf;
 }

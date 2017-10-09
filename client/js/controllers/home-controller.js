@@ -1,6 +1,6 @@
 angular
   .module('app')
-  .controller('HomeController', ['$scope', '$rootScope', '$controller', '$document', function($scope, $rootScope, $controller, $document)
+  .controller('HomeController', ['$scope', '$rootScope', '$controller', '$document', 'authService', function($scope, $rootScope, $controller, $document, authService)
   {
 
     /*if(IsFirstTime)document.getElementById("bgvid").play();*/
@@ -10,6 +10,15 @@ angular
     $scope.Language = {
 
     };
+
+    $scope.WalletHref = $rootScope.isAuthenticated ? "#/wallet" : "#/login";
+    $scope.IcoHref = $rootScope.isAuthenticated ? "#/ico" : "#/login";
+
+   /* authService.getCurrentUser().then(function (response) {
+      console.log(response);
+    }, function (err) {
+      console.log(err);
+    });*/
 
     /*var scope = $rootScope;
     $scope.CurrentIndex = 0;

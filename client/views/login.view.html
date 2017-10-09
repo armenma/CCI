@@ -1,4 +1,4 @@
-<div class="col-md-6 col-md-offset-3">
+<!--<div class="col-md-6 col-md-offset-3">
     <h2>Login</h2>
     <form name="form" ng-submit="login()" role="form">
         <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
@@ -17,4 +17,51 @@
             <a href="#!/register" class="btn btn-link">Register</a>
         </div>
     </form>
+</div>-->
+<div class="ccore-create_account-bg">
+  <div class="container">
+    <div class="content">
+      <div class="ccore-sign">
+        <div class="ccore-sign-form">
+          <div class="ccore-sign-name">
+            <p>cWallet</p>
+          </div>
+          <p class="ccore-create_account-form-white-h1">Sign In To cWallet</p>
+
+          <br>
+          <label for="Email"><span>Email*</span>
+            <input name="Email" ng-model="User.email" type="text" placeholder="Email*" required/>
+          </label>
+          <br>
+          <label for="Password"><span>Password*</span>
+            <input name="Password" ng-model="User.password" type="password" placeholder="Password*"/>
+          </label>
+
+          <div class="ccore-sign-form-left">
+            <p>
+              <label class="ccore-sign-check_label">
+                <input type="checkbox" name=""/>
+                <span></span>
+              </label>
+              &nbsp;
+              Remember me</p>
+          </div>
+          <div class="ccore-sign-form-right">
+            <a href="">Forgot password?</a>
+          </div>
+
+          <div class="text-center">
+            <input ng-click="login()" type="submit" value="Sign up"/>
+
+            <br>
+            <br>
+            <p>Don't have an account? <a href="#/register">Sign up</a></p>
+          </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

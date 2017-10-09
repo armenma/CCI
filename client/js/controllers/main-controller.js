@@ -3,7 +3,7 @@
  */
 angular
   .module('app')
-  .controller('MainController', ['$scope', '$anchorScroll', '$location', 'coreFactory', '$state', "$timeout", "UserEmails", "$interval", "$rootScope", function($scope, $anchorScroll, $location, coreFactory, $state, $timeout, UserEmails, $interval, $rootScope)
+  .controller('MainController', ['$scope', '$anchorScroll', '$location', 'coreFactory', '$state', "$timeout", "UserEmails", "$interval", "$rootScope", 'authService', function($scope, $anchorScroll, $location, coreFactory, $state, $timeout, UserEmails, $interval, $rootScope, authService)
   {
 
     $scope.Deys = 0;
@@ -11,6 +11,8 @@ angular
     $scope.Minutes = 0;
     $scope.Seconds = 0;
     var countDownDate = new Date(Date.UTC(2017, 9, 1, 18, 14)).getTime();
+
+    $scope.WalletHref = $rootScope.isAuthenticated ? "#/wallet" : "#/login";
 
     /*function calculate()
     {
@@ -71,6 +73,19 @@ angular
       $scope.MenuItemSelectedIndex = -1;
     }
 
+    $scope.logout = function() {
+      authService.logout().then(function (response) {
+        /*$location.path('/login');
+        console.log(response);*/
+        $state.go("home");
+        location.reload();
+      }, function (err) {
+        alert(err.data.error.message);
+        console.log(err);
+      });
+    }
+
+
     $scope.Email = {text:""}
 
     /*$scope.SendEmail = function () {
@@ -106,6 +121,16 @@ angular
     $scope.GoToRoadMap = function () {
       $state.go("home");
       timeoutPromise =  $timeout(function(){$scope.GoToById("roadmap", true)},200);
+    }
+
+    $scope.CloseMobileMenu = function ()
+    {
+      $("#ccore-header-menu_button-button-opened").hide();
+      $("#ccore-header-menu_button-button-closed").show();
+
+      $( '.ccore-menu' ).slideToggle( "slow", function() {
+
+      });
     }
 
     $scope.GoToById = function (id, isClose)

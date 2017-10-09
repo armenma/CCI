@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="491" height="358" viewBox="0 0 491 358">
+    <defs>
+        <circle id="b" cx="239.5" cy="249.5" r="100.5"/>
+        <filter id="a" width="115.4%" height="115.4%" x="-7.7%" y="-6.7%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="1" result="shadowSpreadOuter1"/>
+            <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4.5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.287190036 0 0 0 0 0.345537917 0 0 0 0 0.424479167 0 0 0 0.373839447 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(1 -4)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#1A85EF" stroke="#1A85EF" stroke-width="2" xlink:href="#b"/>
+        </g>
+        <text fill="#FFF" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="40" transform="translate(1 -4)">
+            <tspan x="183" y="265">ccore</tspan>
+        </text>
+        <path stroke="#17D086" stroke-dasharray="3" d="M131 248H43V130"/>
+        <path fill="#17D086" d="M43.5 122l7.5 11H36z"/>
+        <path stroke="#17D086" stroke-dasharray="3" d="M356 248h88V124"/>
+        <path fill="#17D086" d="M350 247.5l11-7.5v15z"/>
+        <text fill="#49586C" font-family="Roboto-Regular, Roboto" font-size="20" transform="translate(1 -4)">
+            <tspan x="0" y="19">Merchant </tspan>
+        </text>
+        <text fill="#49586C" font-family="Roboto-Regular, Roboto" font-size="20" transform="translate(1 -4)">
+            <tspan x="399" y="19">Consumer</tspan>
+        </text>
+        <g transform="translate(1 30)">
+            <circle cx="43" cy="43" r="43" stroke="#17D086"/>
+            <circle cx="43" cy="43" r="37" fill="#17D086"/>
+        </g>
+        <g transform="translate(401 30)">
+            <circle cx="43" cy="43" r="43" stroke="#17D086"/>
+            <circle cx="43" cy="43" r="37" fill="#17D086"/>
+        </g>
+        <text fill="#82899E" font-family="Roboto-Regular, Roboto" font-size="14" transform="translate(1 -4)">
+            <tspan x="54" y="162">Fiat currency</tspan>
+        </text>
+        <text fill="#82899E" font-family="Roboto-Regular, Roboto" font-size="14" transform="translate(1 -4)">
+            <tspan x="178" y="53">Product and services</tspan>
+        </text>
+        <text fill="#82899E" font-family="Roboto-Regular, Roboto" font-size="14" transform="translate(1 -4)">
+            <tspan x="372" y="282">Cryptocurrency </tspan>
+        </text>
+        <g transform="translate(375 286)">
+            <circle cx="2" cy="8" r="2" fill="#17D086"/>
+            <text fill="#82899E" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400">
+                <tspan x="8" y="13">ccore tokens</tspan> <tspan x="89.006" y="13" font-family="Roboto-Regular, Roboto" font-weight="normal"> </tspan>
+            </text>
+        </g>
+        <g transform="translate(375 303.5)">
+            <circle cx="2" cy="8" r="2" fill="#17D086"/>
+            <text fill="#82899E" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400">
+                <tspan x="8" y="13">BTC</tspan>
+            </text>
+        </g>
+        <g transform="translate(375 321)">
+            <circle cx="2" cy="8" r="2" fill="#17D086"/>
+            <text fill="#82899E" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400">
+                <tspan x="8" y="13">ETH</tspan> <tspan x="34.359" y="13" font-family="Roboto-Regular, Roboto" font-weight="normal"> </tspan>
+            </text>
+        </g>
+        <g>
+            <path stroke="#17D086" stroke-dasharray="3" d="M95.5 67h275"/>
+            <path fill="#17D086" d="M382 66.5L371 59v15z"/>
+        </g>
+        <g fill="#FFF" fill-rule="nonzero">
+            <path d="M460.145 71.977a2.65 2.65 0 0 0-1.942-.795h-.913v-5.455c0-3.485-1.256-6.477-3.768-8.977-2.513-2.5-5.52-3.75-9.022-3.75-3.503 0-6.51 1.25-9.022 3.75-2.513 2.5-3.769 5.492-3.769 8.977v5.455h-.913a2.65 2.65 0 0 0-1.942.795c-.533.53-.8 1.174-.8 1.932v16.364c0 .757.267 1.401.8 1.932.533.53 1.18.795 1.942.795h27.408a2.65 2.65 0 0 0 1.942-.795c.532-.53.8-1.175.8-1.932V73.909c0-.757-.268-1.401-.801-1.932zm-8.336-.795H437.19v-5.455c0-2.007.714-3.722 2.141-5.142 1.428-1.42 3.15-2.13 5.168-2.13 2.018 0 3.74.71 5.168 2.13 1.427 1.42 2.14 3.135 2.14 5.142v5.455z"/>
+        </g>
+        <g fill="#FFF" fill-rule="nonzero">
+            <g transform="translate(31 62)">
+                <path d="M20.37 3.585H8.218c-.396 0-.621.308-.504.688l1.923 5.664c.094.306.43.553.748.553h7.967a.83.83 0 0 0 .747-.553l1.676-5.798c.095-.306-.085-.554-.405-.554z"/>
+                <ellipse cx="9.501" cy="16.682" rx="1.818" ry="1.828"/>
+                <ellipse cx="17.184" cy="16.682" rx="1.818" ry="1.828"/>
+                <path d="M19.232 12.317H8.6L4.344 0H1.029C.461 0 0 .463 0 1.035c0 .572.46 1.036 1.03 1.036h1.85l4.256 12.317h12.096c.569 0 1.03-.463 1.03-1.035 0-.572-.461-1.036-1.03-1.036z"/>
+            </g>
+            <path d="M68.12 84.28h-2.736V58.949A1.938 1.938 0 0 0 63.456 57H23.43a1.938 1.938 0 0 0-1.929 1.948V84.28h-2.62a.885.885 0 0 0-.881.89C18 87.28 19.701 89 21.792 89h30.505v-1.656c0-.589.473-1.066 1.056-1.066.583 0 1.056.477 1.056 1.066V89h1.732v-1.656c0-.589.473-1.066 1.056-1.066.583 0 1.056.477 1.056 1.066V89h6.955C67.298 89 69 87.282 69 85.17a.885.885 0 0 0-.88-.89zm-6.091-1.332H24.856v-22.56H62.03v22.56z"/>
+        </g>
+    </g>
+</svg>

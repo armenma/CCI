@@ -17,20 +17,85 @@ $( document ).ready(function() {
         });
     });
 
+    $('.ccore-header-username').on('click',function () {
+
+        $( '.ccore-header-personal_menu' ).slideToggle( "slow", function() {
+
+        });
+    });
+
+
+
     //---------------------------------------------------------------------------------------
 
-    $("#biolab-home-button1").on('click',function () {
-        $("#biolab-home-news").show();
-        $("#biolab-home-news2").hide();
-        $("#biolab-home-button1").addClass("biolab-home-button-active");
-        $("#biolab-home-button2").removeClass("biolab-home-button-active");
+    //---------------------------------------------------------------------------------------
+    /*$(".ccore-create_account-form-personal_span").on('click',function () {
+
+        $('.ccore-create_account-form-blue').css('min-height', '510px');
+        $(".ccore-create_account-form-business-input").hide();
+
+        $(".ccore-create_account-h2-business").addClass("ccore-create_account-h2-opacity");
+        $(".ccore-create_account-h2-pesonal").removeClass("ccore-create_account-h2-opacity");
+
+        $(".ccore-create_account-text-business").addClass("ccore-create_account-hidden");
+        $(".ccore-create_account-text-personal").removeClass("ccore-create_account-hidden");
+
+        $(".ccore-create_account-form-personal_span").addClass("ccore-create_account-active");
+        $(".ccore-create_account-form-business_span").removeClass("ccore-create_account-active");
+    });*/
+
+    //---------------------------------------------------------------------------------------
+    /*$(".ccore-create_account-form-business_span").on('click',function () {
+
+        $('.ccore-create_account-form-blue').css('min-height', '640px');
+
+        $(".ccore-create_account-form-business-input").show();
+
+        $(".ccore-create_account-h2-pesonal").addClass("ccore-create_account-h2-opacity");
+        $(".ccore-create_account-h2-business").removeClass("ccore-create_account-h2-opacity");
+
+        $(".ccore-create_account-text-personal").addClass("ccore-create_account-hidden");
+        $(".ccore-create_account-text-business").removeClass("ccore-create_account-hidden");
+
+        $(".ccore-create_account-form-business_span").addClass("ccore-create_account-active");
+        $(".ccore-create_account-form-personal_span").removeClass("ccore-create_account-active");
+    });*/
+
+    //---------------------------------------------------------------------------------------
+   /* $(".ccore-personal_panel-inner_menu-item").on('click',function () {
+        $(".ccore-personal_panel-inner_menu-item").removeClass("ccore-personal_panel-inner_menu-item-active");
+        $(this).addClass("ccore-personal_panel-inner_menu-item-active");
+    });*/
+    //---------------------------------------------------------------------------------------
+   /* $(".ccore-personal_panel-inner_menu-balance").on('click',function () {
+        $(".ccore-personal_panel-block").hide();
+        $(".ccore-personal_panel-balance-block").show();
+
     });
-    $("#biolab-home-button2").on('click',function () {
-        $("#biolab-home-news2").show();
-        $("#biolab-home-news").hide();
-        $("#biolab-home-button2").addClass("biolab-home-button-active");
-        $("#biolab-home-button1").removeClass("biolab-home-button-active");
+    $(".ccore-personal_panel-inner_menu-deposit").on('click',function () {
+        $(".ccore-personal_panel-block").hide();
+        $(".ccore-personal_panel-deposit-block").show();
+
     });
+    $(".ccore-personal_panel-inner_menu-pay").on('click',function () {
+        $(".ccore-personal_panel-block").hide();
+        $(".ccore-personal_panel-pay-block").show();
+
+    });
+    $(".ccore-personal_panel-inner_menu-send").on('click',function () {
+        $(".ccore-personal_panel-block").hide();
+        $(".ccore-personal_panel-send-block").show();
+
+    });
+    $(".ccore-personal_panel-inner_menu-history").on('click',function () {
+        $(".ccore-personal_panel-block").hide();
+        $(".ccore-personal_panel-history-block").show();
+
+    });*/
+
+    //-----------------------------------------------------------------------------------------------
+
+
 
     $('.biolab-home-news-new').on('click',function () {
         if ($( this ).find('i').hasClass( "fa-chevron-right" )){
@@ -65,37 +130,62 @@ $( document ).ready(function() {
     });
 
 
-   //---------------------------------ЖИВОЙ ПОИСК----------------------------------------------------------
+    //---------------------------------------------------------------------------------------
+    /*$(".Services-and-payments-tab").on('click',function () {
+        $(".Invoices-tab").removeClass("ccore-personal_panel-block-inner-tab-active");
+        $(this).addClass("ccore-personal_panel-block-inner-tab-active");
+        $(".Invoices").hide();
+        $(".Services-and-payments").show();
+    });
+    $(".Invoices-tab").on('click',function () {
+        $(".Services-and-payments-tab").removeClass("ccore-personal_panel-block-inner-tab-active");
+        $(this).addClass("ccore-personal_panel-block-inner-tab-active");
+        $(".Services-and-payments").hide();
+        $(".Invoices").show();
+    });*/
 
-
+    $(".All-tab").on('click',function () {
+        $(".Sent-tab").removeClass("ccore-personal_panel-block-inner-tab-active");
+        $(".Received-tab").removeClass("ccore-personal_panel-block-inner-tab-active");
+        $(".Transferred-tab").removeClass("ccore-personal_panel-block-inner-tab-active");
+        $(this).addClass("ccore-personal_panel-block-inner-tab-active");
+        $(".Sent").hide();
+        $(".Received").hide();
+        $(".Transferred").hide();
+        $(".All").show();
+    });
+    $(".Sent-tab").on('click',function () {
+        $(".All-tab").removeClass("ccore-personal_panel-block-inner-tab-active");
+        $(".Received-tab").removeClass("ccore-personal_panel-block-inner-tab-active");
+        $(".Transferred-tab").removeClass("ccore-personal_panel-block-inner-tab-active");
+        $(this).addClass("ccore-personal_panel-block-inner-tab-active");
+        $(".All").hide();
+        $(".Received").hide();
+        $(".Transferred").hide();
+        $(".Sent").show();
+    });
+    $(".Received-tab").on('click',function () {
+        $(".Sent-tab").removeClass("ccore-personal_panel-block-inner-tab-active");
+        $(".All-tab").removeClass("ccore-personal_panel-block-inner-tab-active");
+        $(".Transferred-tab").removeClass("ccore-personal_panel-block-inner-tab-active");
+        $(this).addClass("ccore-personal_panel-block-inner-tab-active");
+        $(".Sent").hide();
+        $(".All").hide();
+        $(".Transferred").hide();
+        $(".Received").show();
+    });
+    $(".Transferred-tab").on('click',function () {
+        $(".Sent-tab").removeClass("ccore-personal_panel-block-inner-tab-active");
+        $(".Received-tab").removeClass("ccore-personal_panel-block-inner-tab-active");
+        $(".All-tab").removeClass("ccore-personal_panel-block-inner-tab-active");
+        $(this).addClass("ccore-personal_panel-block-inner-tab-active");
+        $(".Sent").hide();
+        $(".Received").hide();
+        $(".All").hide();
+        $(".Transferred").show();
+    });
     //-------------------------------------------------------------------------------------------
 });
 
-function showClinic11 () {
-        $('.biolab-laboratirie').each(function(index) {
-            if (min_id == index) {
-                $(this).show();
-            }	else 	$(this).hide();
-        });
-}
-
-
-        function showClinic (id) {
-               if ($( ".biolab-laboratirie-"+id+" span" ).find('i').hasClass( "fa-plus" )){
-                   $( ".biolab-laboratirie-"+id+" span" ).find('i').removeClass( "fa-plus" );
-                   $( ".biolab-laboratirie-"+id+" span" ).find('i').addClass( "fa-minus" );
-               }
-               else {
-                   $( ".biolab-laboratirie-"+id+" span" ).find('i').removeClass( "fa-minus" );
-                   $( ".biolab-laboratirie-"+id+" span" ).find('i').addClass( "fa-plus" );
-               }
-
-               $( ".biolab-laboratirie-"+id+"  .biolab-laboratirie-more_info" ).slideToggle( "slow", function() {
-                 // Animation complete.
-               });
-               $( ".biolab-laboratirie-"+id+"  .biolab-laboratirie-short-address" ).slideToggle( "slow", function() {
-                 // Animation complete.
-               });
-           }
 
 

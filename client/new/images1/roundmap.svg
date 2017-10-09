@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="783" height="853" viewBox="0 0 783 853">
+    <defs>
+        <path id="a" d="M0 21V.837h55.402V21z"/>
+        <path id="c" d="M.238.712h55v19.559h-55V.712z"/>
+        <path id="e" d="M0 21V.837h55.402V21z"/>
+        <path id="g" d="M.238.712h55v19.559h-55V.712z"/>
+        <path id="i" d="M0 21V.837h55.402V21z"/>
+        <path id="k" d="M.238.712h55v19.559h-55V.712z"/>
+        <path id="m" d="M0 21V.837h55.402V21z"/>
+        <path id="o" d="M.238.712h55v19.559h-55V.712z"/>
+        <path id="q" d="M0 21V.837h55.402V21z"/>
+        <path id="s" d="M.238.712h55v19.559h-55V.712z"/>
+        <path id="u" d="M0 21V.837h55.402V21z"/>
+        <path id="w" d="M.238.712h55v19.559h-55V.712z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#17D086" d="M394 0h-6v70h6zM394 143.2h-6v70h6zM394 286.4h-6v70h6zM394 429.6h-6v70h6zM394 572.8h-6v70h6zM394 716h-6v70h6z"/>
+        <g transform="translate(363 75)">
+            <path fill="#177DEB" d="M38.007 30.162c-.01 5.678-4.636 10.276-10.309 10.266-5.677-.011-10.274-4.627-10.263-10.305.01-5.677 4.625-10.274 10.302-10.264 5.673.011 10.281 4.626 10.27 10.303"/>
+            <path fill="#177DEB" d="M7.146 30.103c-.015 8.105 4.683 15.138 11.505 18.497l.004-1.928c-5.846-3.216-9.81-9.439-9.796-16.566.014-7.126 4.001-13.332 9.859-16.528l.003-1.928C11.887 14.984 7.162 22 7.146 30.103M46.578 30.178c-.013 6.876-3.731 12.9-9.25 16.181l-.004 1.967c6.504-3.446 10.946-10.285 10.96-18.145.016-7.859-4.401-14.714-10.891-18.184l-.004 1.967c5.506 3.302 9.202 9.338 9.189 16.214"/>
+            <g transform="translate(0 38.288)">
+                <mask id="b" fill="#fff">
+                    <use xlink:href="#a"/>
+                </mask>
+                <path fill="#177DEB" d="M27.665 20.169C15.213 20.142 4.634 12.039.877.839L0 .837C3.787 12.5 14.747 20.976 27.663 21c12.917.024 23.91-8.41 27.74-20.058L54.526.94C50.73 12.123 40.117 20.189 27.665 20.169" mask="url(#b)"/>
+            </g>
+            <g transform="translate(0 .288)">
+                <mask id="d" fill="#fff">
+                    <use xlink:href="#c"/>
+                </mask>
+                <path fill="#177DEB" d="M27.773.712C15.084.685 4.251 8.826.238 20.167l.88-.001C5.091 9.298 15.54 1.523 27.768 1.546c12.23.025 22.661 7.833 26.583 18.725l.886-.002C51.27 8.913 40.463.739 27.773.712" mask="url(#d)"/>
+            </g>
+            <path stroke="#177DEB" stroke-dasharray="7" stroke-linecap="square" stroke-width="1.5" d="M58.5 30.75h350"/>
+            <circle cx="411" cy="31" r="5" fill="#1A85EF"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 416 219.2)">
+            <path fill="#177DEB" d="M38.007 30.162c-.01 5.678-4.636 10.276-10.309 10.266-5.677-.011-10.274-4.627-10.263-10.305.01-5.677 4.625-10.274 10.302-10.264 5.673.011 10.281 4.626 10.27 10.303"/>
+            <path fill="#177DEB" d="M7.146 30.103c-.015 8.105 4.683 15.138 11.505 18.497l.004-1.928c-5.846-3.216-9.81-9.439-9.796-16.566.014-7.126 4.001-13.332 9.859-16.528l.003-1.928C11.887 14.984 7.162 22 7.146 30.103M46.578 30.178c-.013 6.876-3.731 12.9-9.25 16.181l-.004 1.967c6.504-3.446 10.946-10.285 10.96-18.145.016-7.859-4.401-14.714-10.891-18.184l-.004 1.967c5.506 3.302 9.202 9.338 9.189 16.214"/>
+            <g transform="translate(0 38.288)">
+                <mask id="f" fill="#fff">
+                    <use xlink:href="#e"/>
+                </mask>
+                <path fill="#177DEB" d="M27.665 20.169C15.213 20.142 4.634 12.039.877.839L0 .837C3.787 12.5 14.747 20.976 27.663 21c12.917.024 23.91-8.41 27.74-20.058L54.526.94C50.73 12.123 40.117 20.189 27.665 20.169" mask="url(#f)"/>
+            </g>
+            <g transform="translate(0 .288)">
+                <mask id="h" fill="#fff">
+                    <use xlink:href="#g"/>
+                </mask>
+                <path fill="#177DEB" d="M27.773.712C15.084.685 4.251 8.826.238 20.167l.88-.001C5.091 9.298 15.54 1.523 27.768 1.546c12.23.025 22.661 7.833 26.583 18.725l.886-.002C51.27 8.913 40.463.739 27.773.712" mask="url(#h)"/>
+            </g>
+            <path stroke="#177DEB" stroke-dasharray="7" stroke-linecap="square" stroke-width="1.5" d="M58.5 30.75h350"/>
+            <circle cx="411" cy="31" r="5" fill="#1A85EF"/>
+        </g>
+        <g transform="translate(363 362.4)">
+            <path fill="#177DEB" d="M38.007 30.162c-.01 5.678-4.636 10.276-10.309 10.266-5.677-.011-10.274-4.627-10.263-10.305.01-5.677 4.625-10.274 10.302-10.264 5.673.011 10.281 4.626 10.27 10.303"/>
+            <path fill="#177DEB" d="M7.146 30.103c-.015 8.105 4.683 15.138 11.505 18.497l.004-1.928c-5.846-3.216-9.81-9.439-9.796-16.566.014-7.126 4.001-13.332 9.859-16.528l.003-1.928C11.887 14.984 7.162 22 7.146 30.103M46.578 30.178c-.013 6.876-3.731 12.9-9.25 16.181l-.004 1.967c6.504-3.446 10.946-10.285 10.96-18.145.016-7.859-4.401-14.714-10.891-18.184l-.004 1.967c5.506 3.302 9.202 9.338 9.189 16.214"/>
+            <g transform="translate(0 38.288)">
+                <mask id="j" fill="#fff">
+                    <use xlink:href="#i"/>
+                </mask>
+                <path fill="#177DEB" d="M27.665 20.169C15.213 20.142 4.634 12.039.877.839L0 .837C3.787 12.5 14.747 20.976 27.663 21c12.917.024 23.91-8.41 27.74-20.058L54.526.94C50.73 12.123 40.117 20.189 27.665 20.169" mask="url(#j)"/>
+            </g>
+            <g transform="translate(0 .288)">
+                <mask id="l" fill="#fff">
+                    <use xlink:href="#k"/>
+                </mask>
+                <path fill="#177DEB" d="M27.773.712C15.084.685 4.251 8.826.238 20.167l.88-.001C5.091 9.298 15.54 1.523 27.768 1.546c12.23.025 22.661 7.833 26.583 18.725l.886-.002C51.27 8.913 40.463.739 27.773.712" mask="url(#l)"/>
+            </g>
+            <path stroke="#177DEB" stroke-dasharray="7" stroke-linecap="square" stroke-width="1.5" d="M58.5 30.75h350"/>
+            <circle cx="411" cy="31" r="5" fill="#1A85EF"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 416 504.6)">
+            <path fill="#177DEB" d="M38.007 30.162c-.01 5.678-4.636 10.276-10.309 10.266-5.677-.011-10.274-4.627-10.263-10.305.01-5.677 4.625-10.274 10.302-10.264 5.673.011 10.281 4.626 10.27 10.303"/>
+            <path fill="#177DEB" d="M7.146 30.103c-.015 8.105 4.683 15.138 11.505 18.497l.004-1.928c-5.846-3.216-9.81-9.439-9.796-16.566.014-7.126 4.001-13.332 9.859-16.528l.003-1.928C11.887 14.984 7.162 22 7.146 30.103M46.578 30.178c-.013 6.876-3.731 12.9-9.25 16.181l-.004 1.967c6.504-3.446 10.946-10.285 10.96-18.145.016-7.859-4.401-14.714-10.891-18.184l-.004 1.967c5.506 3.302 9.202 9.338 9.189 16.214"/>
+            <g transform="translate(0 38.288)">
+                <mask id="n" fill="#fff">
+                    <use xlink:href="#m"/>
+                </mask>
+                <path fill="#177DEB" d="M27.665 20.169C15.213 20.142 4.634 12.039.877.839L0 .837C3.787 12.5 14.747 20.976 27.663 21c12.917.024 23.91-8.41 27.74-20.058L54.526.94C50.73 12.123 40.117 20.189 27.665 20.169" mask="url(#n)"/>
+            </g>
+            <g transform="translate(0 .288)">
+                <mask id="p" fill="#fff">
+                    <use xlink:href="#o"/>
+                </mask>
+                <path fill="#177DEB" d="M27.773.712C15.084.685 4.251 8.826.238 20.167l.88-.001C5.091 9.298 15.54 1.523 27.768 1.546c12.23.025 22.661 7.833 26.583 18.725l.886-.002C51.27 8.913 40.463.739 27.773.712" mask="url(#p)"/>
+            </g>
+            <path stroke="#177DEB" stroke-dasharray="7" stroke-linecap="square" stroke-width="1.5" d="M58.5 30.75h350"/>
+            <circle cx="411" cy="31" r="5" fill="#1A85EF"/>
+        </g>
+        <g transform="translate(363 649.8)">
+            <path fill="#177DEB" d="M38.007 30.162c-.01 5.678-4.636 10.276-10.309 10.266-5.677-.011-10.274-4.627-10.263-10.305.01-5.677 4.625-10.274 10.302-10.264 5.673.011 10.281 4.626 10.27 10.303"/>
+            <path fill="#177DEB" d="M7.146 30.103c-.015 8.105 4.683 15.138 11.505 18.497l.004-1.928c-5.846-3.216-9.81-9.439-9.796-16.566.014-7.126 4.001-13.332 9.859-16.528l.003-1.928C11.887 14.984 7.162 22 7.146 30.103M46.578 30.178c-.013 6.876-3.731 12.9-9.25 16.181l-.004 1.967c6.504-3.446 10.946-10.285 10.96-18.145.016-7.859-4.401-14.714-10.891-18.184l-.004 1.967c5.506 3.302 9.202 9.338 9.189 16.214"/>
+            <g transform="translate(0 38.288)">
+                <mask id="r" fill="#fff">
+                    <use xlink:href="#q"/>
+                </mask>
+                <path fill="#177DEB" d="M27.665 20.169C15.213 20.142 4.634 12.039.877.839L0 .837C3.787 12.5 14.747 20.976 27.663 21c12.917.024 23.91-8.41 27.74-20.058L54.526.94C50.73 12.123 40.117 20.189 27.665 20.169" mask="url(#r)"/>
+            </g>
+            <g transform="translate(0 .288)">
+                <mask id="t" fill="#fff">
+                    <use xlink:href="#s"/>
+                </mask>
+                <path fill="#177DEB" d="M27.773.712C15.084.685 4.251 8.826.238 20.167l.88-.001C5.091 9.298 15.54 1.523 27.768 1.546c12.23.025 22.661 7.833 26.583 18.725l.886-.002C51.27 8.913 40.463.739 27.773.712" mask="url(#t)"/>
+            </g>
+            <path stroke="#177DEB" stroke-dasharray="7" stroke-linecap="square" stroke-width="1.5" d="M58.5 30.75h350"/>
+            <circle cx="411" cy="31" r="5" fill="#1A85EF"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 416 793)">
+            <path fill="#177DEB" d="M38.007 30.162c-.01 5.678-4.636 10.276-10.309 10.266-5.677-.011-10.274-4.627-10.263-10.305.01-5.677 4.625-10.274 10.302-10.264 5.673.011 10.281 4.626 10.27 10.303"/>
+            <path fill="#177DEB" d="M7.146 30.103c-.015 8.105 4.683 15.138 11.505 18.497l.004-1.928c-5.846-3.216-9.81-9.439-9.796-16.566.014-7.126 4.001-13.332 9.859-16.528l.003-1.928C11.887 14.984 7.162 22 7.146 30.103M46.578 30.178c-.013 6.876-3.731 12.9-9.25 16.181l-.004 1.967c6.504-3.446 10.946-10.285 10.96-18.145.016-7.859-4.401-14.714-10.891-18.184l-.004 1.967c5.506 3.302 9.202 9.338 9.189 16.214"/>
+            <g transform="translate(0 38.288)">
+                <mask id="v" fill="#fff">
+                    <use xlink:href="#u"/>
+                </mask>
+                <path fill="#177DEB" d="M27.665 20.169C15.213 20.142 4.634 12.039.877.839L0 .837C3.787 12.5 14.747 20.976 27.663 21c12.917.024 23.91-8.41 27.74-20.058L54.526.94C50.73 12.123 40.117 20.189 27.665 20.169" mask="url(#v)"/>
+            </g>
+            <g transform="translate(0 .288)">
+                <mask id="x" fill="#fff">
+                    <use xlink:href="#w"/>
+                </mask>
+                <path fill="#177DEB" d="M27.773.712C15.084.685 4.251 8.826.238 20.167l.88-.001C5.091 9.298 15.54 1.523 27.768 1.546c12.23.025 22.661 7.833 26.583 18.725l.886-.002C51.27 8.913 40.463.739 27.773.712" mask="url(#x)"/>
+            </g>
+            <path stroke="#177DEB" stroke-dasharray="7" stroke-linecap="square" stroke-width="1.5" d="M58.5 30.75h350"/>
+            <circle cx="411" cy="31" r="5" fill="#1A85EF"/>
+        </g>
+        <text fill="#17D086" font-family="Roboto-Medium, Roboto" font-size="36" font-weight="400" transform="translate(0 -7)">
+            <tspan x="454" y="33">August 2017 </tspan>
+        </text>
+        <text fill="#82899E" font-family="Roboto-Regular, Roboto" font-size="18" transform="translate(0 -7)">
+            <tspan x="454" y="65">Conduction of Pre-ICO</tspan>
+        </text>
+        <text fill="#17D086" font-family="Roboto-Medium, Roboto" font-size="36" font-weight="400" transform="translate(0 -7)">
+            <tspan x="5" y="115">September 2017 </tspan>
+        </text>
+        <text fill="#82899E" font-family="Roboto-Regular, Roboto" font-size="18" transform="translate(0 -7)">
+            <tspan x="5" y="147">Replanishment of a team</tspan>  <tspan x="5" y="189">Platform development including</tspan> <tspan x="5" y="210">extansions of Cchange and Cwallet</tspan>
+        </text>
+        <text fill="#17D086" font-family="Roboto-Medium, Roboto" font-size="36" font-weight="400" transform="translate(0 -7)">
+            <tspan x="5" y="377">November 2017 </tspan>
+        </text>
+        <text fill="#82899E" font-family="Roboto-Regular, Roboto" font-size="18" transform="translate(0 -7)">
+            <tspan x="5" y="409">Official platform startup</tspan> <tspan x="5" y="430">Commencement of bidding on stock </tspan> <tspan x="5" y="451">exchange</tspan> <tspan x="5" y="472">Inclusion of core tokens in stock exchange</tspan> <tspan x="5" y="493">Test startup of Cpay and C information</tspan>
+        </text>
+        <text fill="#17D086" font-family="Roboto-Medium, Roboto" font-size="36" font-weight="400" transform="translate(0 -7)">
+            <tspan x="8" y="712">2018</tspan>
+        </text>
+        <text fill="#82899E" font-family="Roboto-Regular, Roboto" font-size="18" transform="translate(0 -7)">
+            <tspan x="8" y="744">Development of new extansions</tspan>  <tspan x="8" y="786">Project scaling</tspan>
+        </text>
+        <text fill="#17D086" font-family="Roboto-Medium, Roboto" font-size="36" font-weight="400" transform="translate(0 -7)">
+            <tspan x="454" y="260">October 2017 </tspan>
+        </text>
+        <text fill="#82899E" font-family="Roboto-Regular, Roboto" font-size="18" transform="translate(0 -7)">
+            <tspan x="454" y="297">Conduction of ICO</tspan>  <tspan x="454" y="329">Test platform startup</tspan>  <tspan x="467.263" y="366.011">Development of extension of C Pay</tspan> <tspan x="467.263" y="391.011">and C information</tspan>
+        </text>
+        <text fill="#17D086" font-family="Roboto-Medium, Roboto" font-size="36" font-weight="400" transform="translate(0 -7)">
+            <tspan x="456" y="511">December 2017 </tspan>
+        </text>
+        <text fill="#82899E" font-family="Roboto-Regular, Roboto" font-size="18" transform="translate(0 -7)">
+            <tspan x="469.263" y="540">Official startup of Cpay and </tspan> <tspan x="469.263" y="562">Iinformation</tspan>  <tspan x="456" y="600">Connection of first Online-stores to ccore</tspan>  <tspan x="469.263" y="632">Extension of types of cryptocurrencies </tspan> <tspan x="469.263" y="654">sold on stock exchange</tspan>
+        </text>
+    </g>
+</svg>

@@ -9,6 +9,27 @@ app.factory('localFactory', ['coreFactory', function (coreFactory) {
   return coreFactory;
 }]);
 
+app.directive("compareTo", compareTo);
+
+function compareTo() {
+  return {
+    require: "ngModel",
+    scope: {
+      otherModelValue: "=compareTo"
+    },
+    link: function(scope, element, attributes, ngModel) {
+
+      ngModel.$validators.compareTo = function(modelValue) {
+        return modelValue == scope.otherModelValue;
+      };
+
+      scope.$watch("otherModelValue", function() {
+        ngModel.$validate();
+      });
+    }
+  };
+};
+
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
                                                               $urlRouterProvider) {
   $stateProvider
@@ -43,6 +64,11 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
       templateUrl: 'views/home.html',
       controller: 'HomeController'
     })
+    .state('wallet', {
+      url: '/wallet',
+      templateUrl: 'views/wallet.html',
+      controller: 'WalletController'
+    })
     .state('login', {
     url: '/login',
     templateUrl: 'views/login.view.html',
@@ -60,6 +86,20 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider,
   $rootScope.CryptoCurrencyIndexes = [];
 
   console.log("USER: " + User.isAuthenticated());
+
+  $rootScope.isAuthenticated = User.isAuthenticated();
+
+  if($rootScope.isAuthenticated)
+  {
+    User.getCurrent().$promise.then(function (response) {
+      console.log(response);
+      $rootScope.userData = response.data;
+    }, function (err) {
+      console.log(err);
+    });
+  }
+
+
 
   /*var timeoutPromise;
 

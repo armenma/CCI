@@ -29,12 +29,12 @@
                 .$promise;
         }
 
-        function register(email, password) {
+        function register(email, password, data) {
             return User
                 .create({
                     email: email,
                     password: password,
-                    country:"Armenia"
+                    data:data
                 })
                 .$promise;
         }
