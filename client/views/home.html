@@ -1,4 +1,4 @@
-<div class="ccore-about_ICO">
+<div class="ccore-about_ICO" id="home-top">
   <div class="content">
     <div class="ccore-block-2">
       <div class="ccore-block-2-inner-left">
@@ -30,7 +30,7 @@
           <br>
           <br>
           <div class="ccore-about_ICO-submit text-center">
-            <a ng-href="{{IcoHref}}" ng-click="$event.stopPropagation();">{{'INVEST_NOW' | i18n}}</a>
+            <a ng-click="showAlert('ICO will start in early November, subscribe to our telegram (https://t.me/ccore_io) and become the first one to get news about our ICO.')">{{'INVEST_NOW' | i18n}}</a>
           </div>
 
 
@@ -189,7 +189,7 @@
         </ul>
         <br  class="full-screen">
 
-        <p class="small-center"><a ng-href="{{IcoHref}}" ng-click="$event.stopPropagation();" class="ccore-token-button-green">{{'INVEST_NOW' | i18n}}</a></p>
+        <p class="small-center"><a ng-click="showAlert('ICO will start in early November, subscribe to our telegram (https://t.me/ccore_io) and become the first one to get news about our ICO.')" class="ccore-token-button-green">{{'INVEST_NOW' | i18n}}</a></p>
         <br  class="small-screen">
       </div>
     </div>
@@ -221,6 +221,7 @@
         </div>
         <p class="ccore-team-item-name">Armen Mardoyan</p>
         <p class="ccore-team-item-post">Core Developer</p>
+
       </div>
       <div class="ccore-team-item">
         <div class="ccore-team-item-img">
@@ -452,15 +453,14 @@
         </form>
       </div>
       <div class="ccore-footer-item-2">
-        <p><a ng-href="{{WalletHref}}">cExchange</a></p>
-        <p><a href="" ng-click="Comming()">cWallet</a></p>
-        <p><a href="" ng-click="Comming()">cPay</a></p>
-        <!--<p><a href="">Pre-ICO</a></p>-->
+        <p><a ng-href="{{WalletHref}}">cWallet</a></p>
+        <p><a href="" ng-click="Comming()">Try Demo</a></p>
+        <p><a href="" ng-click="GoToById('home-top')">ICO</a></p>
       </div>
       <div class="ccore-footer-item-2">
         <p><a style="text-transform: capitalize" ng-href="{{Whitepaper}}" target="_blank">Witepaper</a></p>
         <p><a style="cursor: pointer" ng-click="GoToById('our-team')">The team</a></p>
-        <p><a ng-href="{{Benefits}}" target="_blank">Benefits</a></p>
+        <p><a ng-click="GoToRoadMap()" >{{'ROADMAP' | i18n}}</a></p>
       </div>
       <div class="ccore-footer-item-3 ccore-footer-form">
         <p>Contact Us:</p>

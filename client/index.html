@@ -35,17 +35,16 @@
                 </a>
                 <div class="ccore-header-menu">
                     <ul>
-                        <li><a ng-href="{{WalletHref}}">cExchange</a></li>
-                        <li><a href="" ng-click="Comming()">cWallet</a></li>
-                        <li><a href="" ng-click="Comming()">cPay</a></li>
-                        <!--<li><a href="">Pre-ICO</a></li>-->
+                        <li><a ng-href="{{WalletHref}}">cWallet</a></li>
+                        <li><a href="" ng-click="Comming()">Try Demo</a></li>
+                        <li ng-show="$root.isAuthenticated"><a style="cursor: pointer" ng-click="GoToICO()">ICO</a></li>
                     </ul>
                 </div>
                 <div class="ccore-header-buttons" ng-if="!$root.isAuthenticated">
                     <a href="#/login" class="ccore-header-buttons-button">Sign in</a>
                     <a href="#/register" class="ccore-header-buttons-button">Sign up</a>
                 </div>
-                <div ng-style="{'margin-left': $root.isAuthenticated ? '350px' : '145px'}" class="ccore-header-language">
+                <div ng-style="{'margin-left': $root.isAuthenticated ? '513px' : '15px'}" class="ccore-header-language">
                   <select id="languages" ng-options="option.name for option in Languages.availableLanguages track by option.id"
                           ng-model="Languages.selectedLanguage" ng-change="ChangeLanguage()">
                   </select>
@@ -99,13 +98,9 @@
                 <ul>
                     <li ng-if="$root.isAuthenticated"   class="small-screen"><a href="">{{$root.userData.username}}</a></li>
                     <hr>
-                    <li   class="small-screen"><a href="#/wallet">cExchange</a></li>
+                    <li   class="small-screen"><a href="#/wallet">cWallet</a></li>
                     <hr>
-                    <li   class="small-screen"><a href="" ng-click="Comming()">cWallet</a></li>
-                    <hr>
-                    <li   class="small-screen"><a href="" ng-click="Comming()">cPay</a></li>
-                    <!--<hr>
-                    <li   class="small-screen"><a href="">Pre-ICO</a></li>-->
+                    <li   class="small-screen"><a href="" ng-click="Comming()">Try Demo</a></li>
                     <hr>
                     <li   class="ccore-header-menu-item-2"><a ng-href="{{Whitepaper}}" target="_blank">Witepaper</a></li>
                     <hr>

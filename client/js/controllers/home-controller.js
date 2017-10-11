@@ -11,8 +11,12 @@ angular
 
     };
 
+    $scope.showAlert = function (message) {
+      alert(message);
+    }
+
     $scope.WalletHref = $rootScope.isAuthenticated ? "#/wallet" : "#/login";
-    $scope.IcoHref = $rootScope.isAuthenticated ? "#/ico" : "#/login";
+    $scope.IcoHref = "#/ico";
 
    /* authService.getCurrentUser().then(function (response) {
       console.log(response);

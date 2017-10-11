@@ -23,7 +23,7 @@ angular
     $scope.ETHChange = function ()
     {
       var eth_value = Number($scope.ETHValue.Value);
-      $scope.multiplicator = 3000;
+      $scope.multiplicator = 1200;
       $scope.CCValue.Value = $scope.ETHValue.Value * $scope.multiplicator;
     }
 

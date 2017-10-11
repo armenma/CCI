@@ -14,6 +14,12 @@ angular
 
     $scope.WalletHref = $rootScope.isAuthenticated ? "#/wallet" : "#/login";
 
+    if($rootScope.isAuthenticated)
+    {
+      $timeout(function(){$state.go('wallet');},200);
+    }
+
+
     /*function calculate()
     {
       var now = new Date().getTime();
@@ -116,6 +122,12 @@ angular
     {
       $state.go("home");
       timeoutPromise =  $timeout(function(){$scope.GoToById("our-team", true)},200);
+    }
+
+    $scope.GoToICO = function ()
+    {
+      $state.go("home");
+      timeoutPromise =  $timeout(function(){$scope.GoToById("home-top", true)},200);
     }
 
     $scope.GoToRoadMap = function () {

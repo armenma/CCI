@@ -281,7 +281,7 @@ h4{
 	font-size: 16px;
 }
 .ccore-header-buttons{
-	margin-left: 220px; /*170*/
+	margin-left: 490px; /*170*/
 	margin-top: 25px;
 	font-size: 14px;
 }
@@ -325,7 +325,7 @@ h4{
 	position: relative;
 	cursor: pointer;
 	margin-top: 25px;
-	margin-left: 60px;
+	margin-left: 10px;
 }
 .ccore-header-menu_button-button{
 	position: absolute;
@@ -360,7 +360,7 @@ h4{
 /*--------personal-----------------*/
 .ccore-header-username{
   position: relative;
-  margin-left: 90px;
+  margin-left: -5px;
   margin-top: 25px;
 }
 .ccore-header-username span{
