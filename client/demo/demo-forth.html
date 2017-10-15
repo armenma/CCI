@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+
+	<META NAME="KEYWORDS" CONTENT="">
+	<META NAME="DESCRIPTION" CONTENT="">
+	<META NAME="COPYRIGHT" CONTENT="">
+
+
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+	<title></title>
+</head>
+<body>
+<div class="container">
+	<div style="pointer-events: none" class="ccore-header">
+		<div class="content">
+			<div class="ccore-header-logo">
+				<img src="images/ccore.png">
+			</div>
+			<div st class="ccore-header-menu">
+				<ul>
+					<li><a href="">cExchange</a></li>
+					<li><a href="">cWallet</a></li>
+					<li><a href="">cPay</a></li>
+					<li><a href="">Pre-ICO</a></li>
+				</ul>
+			</div>
+			<div class="ccore-header-message">
+				<span class=""><img src="images/message.png" /></span>
+			</div>
+			<div class="ccore-header-support">
+				<span class="">Support</span>
+			</div>
+			<div class="ccore-header-username">
+				<span class="ccore-header-language-button">User Name <span class="ccore-header-language-button-triangle"></span> </span>
+			</div>
+			<div class="ccore-header-personal_menu">
+				<a href=""><img src="images/settings-gray.png"/> Settings</a>
+				<hr>
+				<a href=""><img src="images/logout-gray.png"/> Log out</a>
+			</div>
+			<div class="ccore-header-menu_button ccore-header-menu_button-personal">
+                    <span class="ccore-header-menu_button-button">
+                        <img  id="ccore-header-menu_button-button-closed" src="images/menu-icon.png" />
+                        <img  id="ccore-header-menu_button-button-opened" src="images/menu-icon-close.png" />
+                    </span>
+			</div>
+		</div>
+	</div>
+	<div style="pointer-events: none" class="ccore-menu">
+		<div class="content">
+			<div class="ccore-menu-head">
+				<div class="ccore-header-logo">
+					<img src="images/ccore.png">
+				</div>
+				<div class="ccore-header-buttons">
+					<span class="ccore-header-buttons-button">Sign in</span>
+					<span class="ccore-header-buttons-button">Sign up</span>
+				</div>
+				<div class="ccore-header-message">
+					<span class=""><img src="images/message.png" /></span>
+				</div>
+				<div class="ccore-header-support">
+					<span class="">Support</span>
+				</div>
+				<div class="ccore-header-menu_button">
+					<span class="ccore-header-menu_button-button"><img src="images/menu-icon-close.png" /></span>
+				</div>
+			</div>
+
+			<ul>
+			</ul>
+
+			<ul>
+				<hr>
+				<li   class="small-screen ccore-header-menu-username"><a href="">User Name</a></li>
+				<hr>
+				<li   class="small-screen"><a href="">cExchange</a></li>
+				<hr>
+				<li   class="small-screen"><a href="">cWallet</a></li>
+				<hr>
+				<li   class="small-screen"><a href="">cPay</a></li>
+				<hr>
+				<li   class="small-screen"><a href="">Pre-ICO</a></li>
+				<hr>
+			</ul>
+
+			<p><a href=""> <img src="images/settings.png"/> Settings </a></p>
+			<p><a href=""> <img src="images/logout.png"/> Log out </a></p>
+		</div>
+	</div>
+
+
+	<div class="content">
+		<div class="ccore-personal_panel">
+			<div class="text-center">
+				<p class="ccore-personal_panel-h1">cWallet</p>
+			</div>
+			<div style="pointer-events: none"  class="ccore-personal_panel-inner_menu">
+				<div class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-balance ">
+					<div class="ccore-personal_panel-inner_menu-img">
+					</div>
+					<p class="ccore-personal_panel-inner_menu-p">BALANCE</p>
+				</div>
+				<div class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-deposit">
+					<div class="ccore-personal_panel-inner_menu-img">
+					</div>
+					<p class="ccore-personal_panel-inner_menu-p">DEPOSIT</p>
+				</div>
+				<div class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-pay ccore-personal_panel-inner_menu-item-active">
+					<div class="ccore-personal_panel-inner_menu-img">
+					</div>
+					<p class="ccore-personal_panel-inner_menu-p">PAY</p>
+				</div>
+				<div class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-send">
+					<div class="ccore-personal_panel-inner_menu-img">
+					</div>
+					<p class="ccore-personal_panel-inner_menu-p">SEND</p>
+				</div>
+				<div class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-history">
+					<div class="ccore-personal_panel-inner_menu-img">
+					</div>
+					<p class="ccore-personal_panel-inner_menu-p">HISTORY</p>
+				</div>
+			</div>
+
+			<div style="display: none" class="ccore-personal_panel-inner_menu-mobile">
+				<div class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-balance">
+					<div class="ccore-personal_panel-inner_menu-img">
+					</div>
+					<p class="ccore-personal_panel-inner_menu-p">BALANCE</p>
+					<div class="ccore-personal_panel-inner_menu-arrow"></div>
+				</div>
+			</div>
+			<div style="display: none" class="ccore-personal_panel-block ccore-personal_panel-balance-block">
+				<div class="ccore-personal_panel-balance-block-table">
+					<table>
+						<tr><th class="text-left">Currency</th><th class="text-right">Balance</th></tr>
+						<tr class="ccore-personal_panel-balance_table-gray"><td>Bitcoin</td><td class="text-right">0.00000243</td></tr>
+						<tr                                                ><td>Bitcoin Cash</td><td class="text-right">0</td></tr>
+						<tr class="ccore-personal_panel-balance_table-gray"><td>Ccoin</td><td class="text-right">0</td></tr>
+						<tr                                                ><td>Ethereum</td><td class="text-right">0</td></tr>
+						<tr class="ccore-personal_panel-balance_table-gray"><td>Litecoin</td><td class="text-right">0</td></tr>
+						<tr                                                ><td>USD</td><td class="text-right">0</td></tr>
+						<tr class="ccore-personal_panel-balance_table-gray"><td>EUR</td><td class="text-right">0</td></tr>
+						<tr                                                ><td>RUB</td><td class="text-right">0</td></tr>
+					</table>
+				</div>
+			</div>
+
+			<div style="display: none" class="ccore-personal_panel-inner_menu-mobile">
+				<div class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-deposit">
+					<div class="ccore-personal_panel-inner_menu-img">
+					</div>
+					<p class="ccore-personal_panel-inner_menu-p">DEPOSIT</p>
+					<div class="ccore-personal_panel-inner_menu-arrow"></div>
+				</div>
+			</div>
+			<div style="display: none" class="ccore-personal_panel-block ccore-personal_panel-deposit-block">
+				<div class="ccore-personal_panel-block-inner">
+					<p>Share this address with others, and they can send you BTC directly to your wallet.</p>
+					<br>
+					<div class="ccore-personal_panel-deposit-block-left">
+						<label for="Currency"><span>SELECT CURRENCY</span>
+							<select name="Currency">
+								<option>Bitcoin BTC</option>
+								<option>Bitcoin BTC</option>
+							</select>
+						</label>
+						<label for="Deposit"><span>BITCOIN DEPOSIT ADDRESS</span>
+							<input name="Deposit" type="text" value="0x263F19BFc32751676D5B37F2e932Ed9F66A174d0"/>
+							<span class="ccore-personal_panel-deposit-copy">Copy address</span>
+						</label>
+						<p>Minimum deposit amount: 0.0001 BTC</p>
+					</div>
+					<div class="ccore-personal_panel-deposit-block-right">
+						<p>OR SCAN QR CODE</p>
+						<img src="images/qr_example.png"/>
+					</div>
+				</div>
+			</div>
+
+			<div class="ccore-personal_panel-inner_menu-mobile">
+				<div class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-pay">
+					<div class="ccore-personal_panel-inner_menu-img">
+					</div>
+					<p class="ccore-personal_panel-inner_menu-p">PAY</p>
+					<div class="ccore-personal_panel-inner_menu-arrow"></div>
+				</div>
+			</div>
+			<div style="display: block" class="ccore-personal_panel-block ccore-personal_panel-pay-block">
+				<div class="ccore-personal_panel-block-inner">
+					<div class="ccore-personal_panel-block-inner-tab">
+						<span  class="Services-and-payments-tab">Services and payments</span>
+						<span  class="Invoices-tab ccore-personal_panel-block-inner-tab-active">Invoices</span>
+					</div>
+					<div style="display: none" class="ccore-personal_panel-block-inner-2 ccore-personal_panel-block-inner-2-active Services-and-payments">
+						<div class="Services-and-payments-block Services-and-payments-block-1">
+							<img src="images/phone.png"><p>Mobile</p>
+							<hr>
+							<a href="">In the phone number</a>
+						</div>
+						<div  class="Services-and-payments-block Services-and-payments-block-2">
+							<img src="images/game.png"><p>Games and Entertainment</p>
+							<hr>
+							<a href="">World of Tanks</a><br>
+							<a href="">Steam</a><br>
+							<a href="">4game</a><br>
+							<hr>
+							<div class="text-center"><a href="">All Games and Entertainment</a></div>
+						</div>
+					</div>
+					<div style="display: block" class="ccore-personal_panel-block-inner-2 Invoices">
+						<div class="ccore-personal_panel-balance-block-table">
+							<table>
+								<tr><th>Creation Date / Payment Date</th><th>From</th><th>Amount</th><th></th><th></th></tr>
+								<tr class="Invoices-table-gray"><td><img src="images/in-yellow.png"/>12.07.2017 17.07.2017</td><td>Demo store</td>
+									<td>1 067.00 $</td><td><a href="demo-fifth.html" class="Invoices-pay">Pay</a></td>
+									<td><span class="Invoices-cancel">Cancel</span></td>
+								</tr>
+								<tr><td><img src="images/in-green.png"/>12.07.2017 17.07.2017</td><td>Demo store</td>
+									<td>1 000.00 $</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr class="Invoices-table-gray"><td><img src="images/in-green.png"/>12.07.2017 17.07.2017</td><td>Demo store</td>
+									<td>1 000.00 $</td><td></td>
+									<td></td>
+								</tr>
+								<tr><td><img src="images/in-red.png"/>12.07.2017 17.07.2017</td><td>Demo store</td>
+									<td>1 000.00 $</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+						<div class="Invoices-mobile">
+							<div class="text-right"><p>Amount |<blue>1 000.00 $</blue> </p></div>
+							<p class="Invoices-mobile-header">Creation Date / Payment Date</p>
+							<p><img src="images/in-yellow.png"/> 12.07.2017 17.07.2017</p>
+							<p class="Invoices-mobile-header">Creation Date / Payment Date</p>
+							<p>Amazon</p>
+							<div class="text-right">
+								<hr>
+								<a href="demo-fifth.html" class="Invoices-pay">Pay</a>
+								<span class="Invoices-cancel">Cancel</span>
+							</div>
+						</div>
+						<div class="Invoices-mobile">
+							<div class="text-right"><p>Amount |<blue>1 000.00 $</blue> </p></div>
+							<p class="Invoices-mobile-header">Creation Date / Payment Date</p>
+							<p><img src="images/in-green.png"/> 12.07.2017 17.07.2017</p>
+							<p class="Invoices-mobile-header">Creation Date / Payment Date</p>
+							<p>Amazon</p>
+						</div>
+						<div class="Invoices-mobile">
+							<div class="text-right"><p>Amount |<blue>1 000.00 $</blue> </p></div>
+							<p class="Invoices-mobile-header">Creation Date / Payment Date</p>
+							<p><img src="images/in-red.png"/> 12.07.2017 17.07.2017</p>
+							<p class="Invoices-mobile-header">Creation Date / Payment Date</p>
+							<p>Amazon</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div style="display: none" class="ccore-personal_panel-inner_menu-mobile">
+				<div class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-send">
+					<div class="ccore-personal_panel-inner_menu-img">
+					</div>
+					<p class="ccore-personal_panel-inner_menu-p">SEND</p>
+					<div class="ccore-personal_panel-inner_menu-arrow"></div>
+				</div>
+			</div>
+			<div style="display: none" class="ccore-personal_panel-block ccore-personal_panel-send-block">
+				<div class="ccore-personal_panel-block-inner">
+					<div class="ccore-send-form">
+						<form action="" method="">
+							<label for="Currency"><span>SELECT CURRENCY</span>
+								<select name="Currency">
+									<option>Bitcoin BTC</option>
+									<option>Bitcoin BTC</option>
+								</select>
+							</label>
+							<label for="Adr"><span>TO</span>
+								<input name="Adr" type="text" placeholder="Paste address"/>
+							</label>
+							<br>
+							<br><br>
+							<label for="Templates">
+								<select name="Templates">
+									<option>Templates BTC</option>
+									<option>Bitcoin BTC</option>
+								</select>
+							</label>
+							<br><br><br>
+							<div class="send-amount">
+								<div  class="send-amount-1">
+									<label for="Adr"><span>AMOUNT:</span>
+										<input name="Adr" type="text" placeholder="min 0.0001 BTC"/>
+									</label>
+									<span  class="send-amount-1-class">0 BTC available</span>
+								</div>
+								<div class="send-amount-2">
+									<label for="Adr"><span>TRANSACTION FEE</span>
+										<input name="Adr" type="text" placeholder=""/>
+									</label>
+								</div>
+								<div class="send-amount-3">
+									<label for="Adr"><span>YOU WILL GET</span>
+										<input name="Adr" type="text" placeholder="0"/>
+									</label>
+									<span  class="send-amount-3-class">BTC</span>
+								</div>
+							</div>
+								<p>
+									<label class="ccore-send-form-check_label">
+										<input type="checkbox" name=""/>
+										<span></span>
+									</label>
+									&nbsp;
+									<gray>Save to my templates</gray></p>
+							<br><br>
+							<input type="submit" value="Send"/>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div style="display: none" class="ccore-personal_panel-inner_menu-mobile">
+				<div class="ccore-personal_panel-inner_menu-item ccore-personal_panel-inner_menu-history">
+					<div class="ccore-personal_panel-inner_menu-img">
+					</div>
+					<p class="ccore-personal_panel-inner_menu-p">HISTORY</p>
+					<div class="ccore-personal_panel-inner_menu-arrow"></div>
+				</div>
+			</div>
+			<div style="display: none" class="ccore-personal_panel-block ccore-personal_panel-history-block">
+				<div class="ccore-personal_panel-block-inner">
+					<div class="ccore-personal_panel-block-inner-tab">
+						<span  class="All-tab ccore-personal_panel-block-inner-tab-active">All</span>
+						<span  class="Sent-tab">Sent</span>
+						<span  class="Received-tab">Received</span>
+						<span  class="Transferred-tab">Transferred</span>
+					</div>
+					<div class="ccore-personal_panel-block-inner-2 ccore-personal_panel-block-inner-2-active All">
+						<div class="ccore-personal_panel-balance-block-table ccore-personal_panel-history">
+							<table>
+								<thead>
+								<tr>
+									<th>Date/Time</th>
+									<th>Operation</th>
+									<th>Currency</th>
+									<th>Amount</th>
+									<th>Status</th>
+									<th>Payment System</th>
+									<th>Information</th>
+								</tr>
+								</thead>
+								<tr class="Invoices-table-gray">
+									<td data-label="Date/Time"><span>10.09 07:00</span></td>
+									<td data-label="Operation"><span><green>Deposit</green></span></td>
+									<td data-label="Currency"><span>ETH</span></td>
+									<td data-label="Amount"><span>-0.11053136</span></td>
+									<td data-label="Status"><span>Sent</span></td>
+									<td data-label="Payment System"><span>ETH</span></td>
+									<td data-label="Information"><span>0xCFe66A7339bd08469bB2Fc6ab4CAED4C022Fc6ac</span></td>
+								</tr>
+								<tr>
+									<td data-label="Date/Time"><span>10.09 07:00</span></td>
+									<td data-label="Operation"><span><green>Deposit</green></span></td>
+									<td data-label="Currency"><span>ETH</span></td>
+									<td data-label="Amount"><span>-0.11053136</span></td>
+									<td data-label="Status"><span>Sent</span></td>
+									<td data-label="Payment System"><span>ETH</span></td>
+									<td data-label="Information"><span>0xCFe66A7339bd08469bB2Fc6ab4CAED4C022Fc6ac</span></td>
+								</tr>
+								<tr class="Invoices-table-gray">
+									<td data-label="Date/Time"><span>10.09 07:00</span></td>
+									<td data-label="Operation"><span><green>Deposit</green></span></td>
+									<td data-label="Currency"><span>ETH</span></td>
+									<td data-label="Amount"><span>-0.11053136</span></td>
+									<td data-label="Status"><span>Sent</span></td>
+									<td data-label="Payment System"><span>ETH</span></td>
+									<td data-label="Information"><span>0xCFe66A7339bd08469bB2Fc6ab4CAED4C022Fc6ac</span></td>
+								</tr>
+								<tr>
+									<td data-label="Date/Time"><span>10.09 07:00</span></td>
+									<td data-label="Operation"><span><green>Deposit</green></span></td>
+									<td data-label="Currency"><span>ETH</span></td>
+									<td data-label="Amount"><span>-0.11053136</span></td>
+									<td data-label="Status"><span>Sent</span></td>
+									<td data-label="Payment System"><span>ETH</span></td>
+									<td data-label="Information"><span>0xCFe66A7339bd08469bB2Fc6ab4CAED4C022Fc6ac</span></td>
+								</tr>
+								<tr class="Invoices-table-gray">
+									<td data-label="Date/Time"><span>10.09 07:00</span></td>
+									<td data-label="Operation"><span><green>Deposit</green></span></td>
+									<td data-label="Currency"><span>ETH</span></td>
+									<td data-label="Amount"><span>-0.11053136</span></td>
+									<td data-label="Status"><span>Sent</span></td>
+									<td data-label="Payment System"><span>ETH</span></td>
+									<td data-label="Information"><span>0xCFe66A7339bd08469bB2Fc6ab4CAED4C022Fc6ac</span></td>
+								</tr>
+								<tr>
+									<td data-label="Date/Time"><span>10.09 07:00</span></td>
+									<td data-label="Operation"><span><green>Deposit</green></span></td>
+									<td data-label="Currency"><span>ETH</span></td>
+									<td data-label="Amount"><span>-0.11053136</span></td>
+									<td data-label="Status"><span>Sent</span></td>
+									<td data-label="Payment System"><span>ETH</span></td>
+									<td data-label="Information"><span>0xCFe66A7339bd08469bB2Fc6ab4CAED4C022Fc6ac</span></td>
+								</tr>
+							</table>
+						</div>
+						<div class="ccore-personal_panel-pagination">
+							<ul>
+								<li>&#8592; Prev</li>
+								<li  class="ccore-personal_panel-pagination-active">1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+								<li>5</li>
+								<li>Next &#8594;</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ccore-personal_panel-block-inner-2 Sent">
+
+					</div>
+					<div class="ccore-personal_panel-block-inner-2 Received">
+
+					</div>
+					<div class="ccore-personal_panel-block-inner-2 Transferred">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
