@@ -31,7 +31,7 @@
 		<div class="ccore-header">
             <div class="content">
                 <a href="#/home" class="ccore-header-logo">
-                    <img src="new/images1/ccore.png">
+                    <img src="new/images1/ccore.png" width="150">
                 </a>
                 <div class="ccore-header-menu">
                     <ul>
@@ -44,7 +44,7 @@
                     <a href="#/login" class="ccore-header-buttons-button">Sign in</a>
                     <a href="#/register" class="ccore-header-buttons-button">Sign up</a>
                 </div>
-                <div ng-style="{'margin-left': $root.isAuthenticated ? '513px' : '15px'}" class="ccore-header-language">
+                <div ng-style="{'margin-left': $root.isAuthenticated ? '503px' : '15px'}" class="ccore-header-language">
                   <select id="languages" ng-options="option.name for option in Languages.availableLanguages track by option.id"
                           ng-model="Languages.selectedLanguage" ng-change="ChangeLanguage()">
                   </select>
@@ -98,13 +98,15 @@
                 <ul>
                     <li ng-if="$root.isAuthenticated"   class="small-screen"><a href="">{{$root.userData.username}}</a></li>
                     <hr>
-                    <li   class="small-screen"><a href="#/wallet">cWallet</a></li>
+                    <li   class="small-screen" ng-click="CloseMobileMenu()"><a href="#/wallet">cWallet</a></li>
                     <hr>
                     <li   class="small-screen"><a href="demo/demo-first.html" target="_blank">Try Demo</a></li>
                     <hr>
                     <li   class="ccore-header-menu-item-2"><a ng-href="{{Whitepaper}}" target="_blank">Witepaper</a></li>
                     <hr>
                     <li   class="ccore-header-menu-item-2"><a style="cursor: pointer" ng-click="GoToTeam()">The team</a></li>
+                    <hr>
+                    <li   class="ccore-header-menu-item-2"><a style="cursor: pointer" ng-click="GoToICO()">ICO</a></li>
                     <hr>
                     <!--<li   class="ccore-header-menu-item-2"><a ng-href="{{Benefits}}" target="_blank">Benefits</a></li>-->
                      <li  class="ccore-header-menu-item-2"><a style="cursor: pointer" ng-click="GoToRoadMap()">{{'ROADMAP' | i18n}}</a></li>

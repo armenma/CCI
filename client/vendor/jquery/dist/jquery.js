@@ -7434,7 +7434,7 @@ jQuery.fx.stop = function() {
 
 jQuery.fx.speeds = {
 	slow: 600,
-	fast: 200,
+	fast: 0,
 
 	// Default speed
 	_default: 400

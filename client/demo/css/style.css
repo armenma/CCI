@@ -1458,10 +1458,11 @@ h4{
 	display: inline-block;
 	cursor: pointer;
 }
-.ccore-personal_panel-inner_menu-item:hover{
+.ccore-personal_panel-inner_menu-item:hover, .active .ccore-personal_panel-inner_menu-item{
 	background-image: linear-gradient(300deg, #38bbf9, #1a85ef);
 }
-.ccore-personal_panel-inner_menu-item:hover .ccore-personal_panel-inner_menu-p{
+.ccore-personal_panel-inner_menu-item:hover .ccore-personal_panel-inner_menu-p,
+.active .ccore-personal_panel-inner_menu-item .ccore-personal_panel-inner_menu-p{
 	color: #fff;
 }
 
@@ -1483,6 +1484,7 @@ h4{
 
 .ccore-personal_panel-inner_menu-pay .ccore-personal_panel-inner_menu-img{  background: url(../images/pay.png);  background-size: 100% 100%; }
 .ccore-personal_panel-inner_menu-pay:hover .ccore-personal_panel-inner_menu-img,
+.active .ccore-personal_panel-inner_menu-pay .ccore-personal_panel-inner_menu-img,
 .ccore-personal_panel-inner_menu-pay.ccore-personal_panel-inner_menu-item-active  .ccore-personal_panel-inner_menu-img
 {  background: url(../images/pay-white.png);  background-size: 100% 100%; }
 
@@ -1506,6 +1508,7 @@ h4{
 	background-size: 100% 100%;
 }
 .ccore-personal_panel-inner_menu-item-active .ccore-personal_panel-inner_menu-arrow,
+.active .ccore-personal_panel-inner_menu-item .ccore-personal_panel-inner_menu-arrow,
 .ccore-personal_panel-inner_menu-item:hover .ccore-personal_panel-inner_menu-arrow{
 	background: url(../images/menu-arrow-down.png);
 	background-size: 100% 100%;
@@ -1545,6 +1548,11 @@ h4{
 	margin-top: 40px;
 	margin-bottom: 200px;
 	display: block;
+}
+.small-logo{
+  width: 40px;
+  height: 17px;
+  margin-top: 12px;
 }
 @media (max-width: 1200px) {
 	.ccore-personal_panel-block{

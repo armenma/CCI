@@ -126,6 +126,17 @@ angular
 
     $scope.GoToICO = function ()
     {
+      var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+      if(w > 1200)
+      {
+        $("#ccore-header-menu_button-button-opened").hide();
+        $("#ccore-header-menu_button-button-closed").show();
+
+        $( '.ccore-menu' ).slideToggle( "fast", function() {
+
+        });
+      }
+
       $state.go("home");
       timeoutPromise =  $timeout(function(){$scope.GoToById("home-top", true)},200);
     }

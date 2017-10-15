@@ -493,10 +493,20 @@ body{
 	text-decoration: none;
 	margin-top: 55px;
 }
+.small-logo{
+  width: 40px;
+  height: 12px!important;
+  margin-top: 15px;
+}
 @media (max-width: 1200px) {
 	.ccore-header{
 		height: 60px;
 	}
+  .small-logo{
+    width: 40px;
+    height: 12px!important;
+    margin-top: 7px;
+  }
 	.ccore-demo-Store-back-small{
 		position: absolute;
 		top: 20px;
