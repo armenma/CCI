@@ -1726,6 +1726,7 @@ select#languages option{
   img {
     max-width: 280px;
   }
+  .ccore-header-logo img{width: 115px}
   .ccore-roadmap-map {
     zoom: 0.9;
     -moz-transform: scale(0.95);
