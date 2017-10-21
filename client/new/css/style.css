@@ -523,6 +523,33 @@ h4{
     /*display: none;*/
 	}
 }
+.ccore-index-email{
+  padding: 70px 0;
+  width: 100%;
+  border-left: 1px solid #f1f1f1;
+  border-right: 1px solid #f1f1f1;
+  /*display: none;*/
+}
+.ccore-index-email h4{margin-top: 3px}
+@media (max-width: 1200px) {
+  .ccore-index-email{
+    padding: 40px 0;
+    width: 100%;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    /*display: none;*/
+  }
+
+  .ccore-email-box{
+   width: 100%;
+  }
+  .ccore-email-box form button{
+    width: 100%;
+  }
+  .ccore-email-box form input{
+    width: calc(100% - 20px)!important;
+  }
+}
 .ccore-time h4{
 	margin-top: 20px;
 }
@@ -532,6 +559,44 @@ h4{
 	margin-right: auto;
 	margin-top: 20px;
 }
+.ccore-email-box{
+  width: 439px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.ccore-email-box form input {
+  width: 280px;
+  color: #9bb5d1;
+  font-style: italic;
+}
+
+.ccore-email-box form button {
+  border-radius: 3px;
+  background-color: #26a97d;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.ccore-email-box form button:hover {
+  background-color: #16b771;
+}
+
+.ccore-email-box form input, .ccore-email-box form button {
+  display: inline-block;
+  margin: 0;
+  padding: 0 10px;
+  border: none;
+  height: 48px;
+}
+
+.ccore-email-box form {
+  border: 1px solid #49586c;
+  border-radius: 3px;
+  padding: 0;
+  margin-top: 15px;
+}
+
 .ccore-time-counter-inner{
 	color: #16d086;
 	display: inline-block;

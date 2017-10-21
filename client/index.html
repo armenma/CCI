@@ -123,7 +123,7 @@
 
             </div>
 		</div>
-		<div class="ccore-time">
+		<div ng-if="false" class="ccore-time">
             <div class="content">
                 <h2>{{'HOME_TOKEN_SALES' | i18n}}</h2>
                 <h4>{{'PRE_ICO_HEADER' | i18n}}</h4>
@@ -150,6 +150,19 @@
                 </div>
             </div>
 		</div>
+    <div class="ccore-index-email">
+      <div class="content">
+        <h2> Subscribe To Our News Letter</h2>
+        <h4>Enter your email address below for not missing the news of Ccore ICO</h4>
+        <h4>Over 1000 subscribers already!</h4>
+        <div class="ccore-email-box">
+          <form name="form">
+            <input type="email" ng-model="Email.text" placeholder="Enter Your Email Address"/>
+            <button ng-click="AddEmail(form)">Subscribe for news</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <div class="main-content">
       <div ui-view></div>

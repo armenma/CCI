@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app"  ng-controller="mainCtrl">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
@@ -19,6 +19,8 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
+   <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/coins.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 
@@ -44,21 +46,20 @@
                         </div>
                         <div class="ccore-pay-selects">
                             <label for="Currency"><span>Select Currency</span>
-                                <select name="Currency">
-                                    <option>Bitcoin BTC</option>
+                                <select name="Currency" ng-options="coin.Name for coin in CoinData.Coins track by coin.id" ng-model="CoinData.SelectedCoin">
                                 </select>
                             </label>
-                            <p class="ccore-pay-avialable">3.10023410 BTC available</p>
+                            <p class="ccore-pay-avialable">{{(balance/CoinData.SelectedCoin.Index).toFixed(2)}} {{CoinData.SelectedCoin.Coin}} available</p>
                         </div>
                         <div class="ccore-pay-selects-2">
                             <div class="ccore-pay-selects-2-left">
                                 <label for="Amoun"><span>Amount:</span>
-                                    <input name="Amoun" type="text" placeholder="" value="0.194 BTC"/>
+                                    <input name="Amoun" type="text" placeholder="" value="{{(1067 / CoinData.SelectedCoin.Index).toFixed(2)}} {{CoinData.SelectedCoin.Coin}}"/>
                                 </label>
                             </div>
                             <div class="ccore-pay-selects-2-right">
-                                <label for="BTC"><span>BTC price</span>
-                                    <input name="BTC" type="text" placeholder="" value="$5500.00"/>
+                                <label for="BTC"><span>{{CoinData.SelectedCoin.Coin}} price</span>
+                                    <input name="BTC" type="text" placeholder="" value="${{CoinData.SelectedCoin.Index}}"/>
                                 </label>
                             </div>
                         </div>
@@ -73,12 +74,12 @@
                             <br>
                             <p>$1067.00</p>
                             <br>
-                            <p><green>0.194 BTC</green></p>
+                            <p><green>{{(1067 / CoinData.SelectedCoin.Index).toFixed(2)}} {{CoinData.SelectedCoin.Coin}}</green></p>
                             <br>
                         </div>
 
                             <div class="text-center">
-                              <a class="blue-button" style="background: #16d086; color: white; padding-left: 10px; padding-right: 10px" href="demo-sixth.html">Pay</a>
+                              <a class="blue-button" style="background: #16d086; color: white; padding-left: 10px; padding-right: 10px" ng-href="demo-sixth.html?paid={{(1067 / CoinData.SelectedCoin.Index).toFixed(2)}} {{CoinData.SelectedCoin.Coin}}">Pay</a>
                            </div>
                     </form>
 
@@ -87,23 +88,6 @@
         </div>
     </div>
 </div>
-<script>
-  function dataChange()
-  {
-    var currency = {
-      "Bitcoin BTC":"BTC",
-      "Bitcoin Cash BCH":"BCH",
-      "Ccoin CCO":"CCO",
-      "Ethereum ETH":"ETH",
-      "Litecoin LTC":"LTC",
-      "USD":"USD",
-      "EUR":"EUR",
-      "RUB":"RUB"
-    }
 
-    var x = document.getElementById("mySelect").value;
-    document.getElementById("demo").innerHTML = "You selected: " + x;
-  }
-</script>
 </body>
 </html>
