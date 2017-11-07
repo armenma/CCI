@@ -12,6 +12,18 @@ angular
 
     $scope.TermsChecked = {Value:true};
 
+    $scope.CopyData = function ()
+    {
+      var clipboard = new Clipboard('.copy-button');
+      /*clipboard.on('success', function(e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+
+        e.clearSelection();
+      });*/
+    }
+
     $scope.ChangeState = function (value) {
       $scope.State = value;
     }
