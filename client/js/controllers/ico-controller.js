@@ -36,6 +36,11 @@ angular
     {
       var eth_value = Number($scope.ETHValue.Value);
       $scope.multiplicator = 1200;
+      if($scope.ETHValue.Value >= 10)
+      {
+        $scope.multiplicator = 1500;
+      }
+
       $scope.CCValue.Value = $scope.ETHValue.Value * $scope.multiplicator;
     }
 
