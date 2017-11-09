@@ -12,7 +12,9 @@ angular
     $scope.Seconds = 0;
     var countDownDate = new Date(Date.UTC(2017, 10, 30, 0, 0)).getTime();
 
-    $scope.WalletHref = $rootScope.isAuthenticated ? "#/wallet" : "#/login";
+    /*$scope.WalletHref = $rootScope.isAuthenticated ? "#/wallet" : "#/login";*/
+
+    $scope.WalletHref = "#/wallet";
 
     if($rootScope.isAuthenticated)
     {
