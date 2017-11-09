@@ -24,6 +24,11 @@ angular
     {
       var now = new Date().getTime();
 
+      /*var nowDate = new Date()
+
+      if(Date.UTC(nowDate.getUTCFullYear(),nowDate.getUTCMonth(), nowDate.getUTCDate() ,
+          nowDate.getUTCHours(), nowDate.getUTCMinutes()) < Date.UTC(2017, 10, 9, 0, 0))return;*/
+
       // Find the distance between now an the count down date
       var distance = countDownDate - now;
 
