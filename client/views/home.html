@@ -21,7 +21,7 @@
     <div class="ccore-block-2">
       <div class="ccore-block-2-inner-right">
         <div class="ccore-about_ICO-form text-center">
-          <p class="ccore-header-2-gray">{{'BECOME_INVESTOR' | i18n}}</p>
+          <!--<p class="ccore-header-2-gray">{{'BECOME_INVESTOR' | i18n}}</p>
           <p><gray>{{'CURRENT_RATE' | i18n}} </gray><blue>1ETH : 1200 CCO</blue></p>
           <br>
           <div><input type="number" ng-model="ETHValue.Value" ng-change="ETHChange()" placeholder="min 0.1 ETH"/> <a>ETH</a></div>
@@ -42,7 +42,10 @@
             width: auto;
             cursor: pointer;
 ">CCORE ICO Contribution Guide</a>
-          </section>
+          </section>-->
+
+          <p style="font-size: 21px; font-weight: bold; margin-top: 120px">CCORE ICO IS CONCLUDED</p>
+          <p style="margin-top: 10px; font-size: 18px">Thank you for being a part of our crowdsale</p>
         </div>
       </div>
     </div>
@@ -445,7 +448,7 @@
           <li><a href="https://www.reddit.com/user/ccore_io/posts/" target="_blank"><img src="../new/images/reddit.png" /></a></li>
           <li><a href="https://t.me/ccore_news" target="_blank"><img src="new/images/t-g.png" /></a></li>
         </ul>
-        <form action="" method="post" class="small-screen">
+        <form action="" method="post" class="small-screen" style="visibility: hidden">
           <input type="text" placeholder="Enter Your Email Address" value=""/>
           <button type="submit">Subscribe for news</button>
         </form>
@@ -463,7 +466,7 @@
       <div class="ccore-footer-item-3 ccore-footer-form">
         <p>Contact Us:</p>
         <p><span>info@ccore.io</span></p>
-        <form name="form" class="full-screen">
+        <form name="form" class="full-screen" style="visibility: hidden">
           <input type="email" ng-model="Email.text" placeholder="Enter Your Email Address"/>
           <button ng-click="AddEmail(form)">Subscribe for news</button>
         </form>
