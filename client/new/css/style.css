@@ -531,7 +531,9 @@ h4{
   /*display: none;*/
 }
 .ccore-index-email h4{margin-top: 3px}
+.contact-address{font-size: 18px; color: #82899e!important;}
 @media (max-width: 1200px) {
+  .contact-address{font-size: 14px; color: #82899e!important;}
   .ccore-index-email{
     padding: 40px 0;
     width: 100%;
