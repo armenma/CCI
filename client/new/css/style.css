@@ -2985,3 +2985,34 @@ ul.ico-details-list.gray{list-style: none}
 .coinmarketcap-currency-widget *{color: white!important;}
 .coinmarketcap-currency-widget img{display: none}
 .coinmarketcap-currency-widget{margin-top: 74px}
+.exchange-box
+{
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.ether-delta{
+  width: 272px;
+  height: 186px;
+  background: url(../images/EtherDelta.png);
+  background-size: 100% 100%;
+}
+.coinmarket{
+  width: 495px;
+  height: 127px;
+  background: url(../images/coinmarket.png);
+  background-size: 100% 100%;
+  align-self: center;
+}
+
+@media (max-width: 1200px) {
+  .coinmarket{
+    -ms-transform: scale(0.8, 0.8); /* IE 9 */
+    -webkit-transform: scale(0.8, 0.8); /* Safari */
+    transform: scale(0.8, 0.8);
+  }
+}
