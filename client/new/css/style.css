@@ -2984,7 +2984,10 @@ ul.ico-details-list.gray li{color: #82899e; font-weight: bold}
 ul.ico-details-list.gray{list-style: none}
 .coinmarketcap-currency-widget *{color: white!important;}
 .coinmarketcap-currency-widget img{display: none}
-.coinmarketcap-currency-widget{margin-top: 74px}
+.coinmarketcap-currency-widget{
+  margin-top: 92px;
+  margin-left: 35px;
+}
 .exchange-box
 {
   display: flex;
@@ -2992,8 +2995,8 @@ ul.ico-details-list.gray{list-style: none}
   flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .ether-delta{
   width: 272px;
