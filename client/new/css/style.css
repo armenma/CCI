@@ -637,7 +637,14 @@ h4{
 	height: 411px;
 	background: url(../images1/banner-bg.png);
 	background-size: 100% 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
 }
+.ccore-about_ICO a{margin-right: 20px}
 /*--------------*/
 .ccore-block-2{
 	width: 50%;

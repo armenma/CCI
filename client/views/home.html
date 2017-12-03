@@ -11,8 +11,16 @@
 </div>
 <div style="position: relative" class="ccore-about_ICO" id="home-top">
 
-  <p style="position: absolute; bottom: 50px; right: 187px"><span ng-click="GoToById('home-ico-box')" class="ccore-button-white">Ccore Token Details</span></p>
-  <div class="content">
+  <div class="social-logos">
+    <a href="https://bitcointalk.org/index.php?topic=2100088.msg20989987#msg20989987" target="_blank"><img src="new/images/social-logo/Bitcointalk.png"></a>
+    <a href="https://www.facebook.com/ccore-1738685606430588/" target="_blank"><img src="new/images/social-logo/facebook.png"></a>
+    <a href="https://medium.com/@ccore_official" target="_blank"><img src="new/images/social-logo/medium.png"></a>
+    <a href="https://t.me/ccore_io" target="_blank"> <img src="new/images/social-logo/telegram.png"></a>
+    <a href="https://twitter.com/ccore_io" target="_blank"><img src="new/images/social-logo/twitter.png"></a>
+  </div>
+
+  <!--<p style="position: absolute; bottom: 50px; right: 187px"><span ng-click="GoToById('home-ico-box')" class="ccore-button-white">Ccore Token Details</span></p>-->
+  <div style="display: none" class="content">
     <div class="ccore-block-2">
       <div class="ccore-block-2-inner-left">
         <!--<p class="ccore-about_ICO-header">CCORE ICO DETAILS</p>-->
@@ -231,7 +239,7 @@
   <div class="content">
     <div class="ccore-block-2">
       <div class="ccore-block-2-inner-left">
-        <p style="margin-left: 20px" class="ccore-header-1-gray">CCORE ICO DETAILS</p>
+        <p style="margin-left: 20px" class="ccore-header-1-gray">CCORE DETAILS</p>
         <ul class="ico-details-list gray">
           <li>Ticker - CCO</li>
           <li>Total CCO Supply - 10 000 000 CCO (Initial Total Supply was 100 million has been reduced to 10 million after burning away 90 million CCO tokens)</li>
@@ -241,18 +249,21 @@
           <li>CCORE Tokens allocated for CCORE Team - 2 000 000 CCO (Subjected to a vesting period of 2 years)</li>
           <li>CCORE Tokens allocated for Project Development - 2 800 000 CCO (Subjected to a vesting period of 2 years)</li>
           <li>TOTAL CIRCULATING SUPPLY - 1 200 000 CCO</li>
-          <li>CCO TOKEN LISTING PRICE - 1CCO= 1.0$</li>
+         <!-- <li>CCO TOKEN LISTING PRICE - 1CCO= 1.0$</li>-->
         </ul>
       </div>
     </div>
     <div class="ccore-block-2">
       <div class="ccore-block-2-inner-right">
-        <p style="color: #82899e; font-size: 17px; font-style: italic">Add Ccore Token in Wallet</p>
+        <p style="color: #82899e; font-size: 22px; font-style: italic">Add Ccore Token in Wallet</p>
         <ul>
           <li><span>Address - 0x679BADc551626e01B23CeecEFBc9B877EA18fc46</span></li>
           <li><span>Token Synbol - CCO</span></li>
           <li><span>Decimals - 18</span></li>
         </ul>
+
+        <p ><a style="text-decoration: underline; cursor: pointer" target="_blank" href="../HowToSee.pdf">How to see Ccore Token in MyEtherWallet</a></p>
+
 
         <br  class="full-screen">
 
@@ -470,7 +481,7 @@
           <li><a href="https://twitter.com/ccore_io" target="_blank"><img src="new/images/twitter.png" /></a></li>
           <li><a href="https://www.facebook.com/ccore-1738685606430588/" target="_blank"><img src="new/images/fb.png" /></a></li>
           <li><a href="https://t.me/ccore_io" target="_blank"><img src="new/images/t-g.png" /></a></li>
-          <li><a href="https://www.reddit.com/user/ccore_io/posts/" target="_blank"><img src="../new/images/reddit.png" /></a></li>
+          <!--<li><a href="https://www.reddit.com/user/ccore_io/posts/" target="_blank"><img src="../new/images/reddit.png" /></a></li>-->
           <li><a href="https://t.me/ccore_news" target="_blank"><img src="new/images/t-g.png" /></a></li>
         </ul>
         <form action="" method="post" class="small-screen" style="visibility: hidden">
@@ -479,9 +490,9 @@
         </form>
       </div>
       <div class="ccore-footer-item-2">
-        <p><a ng-href="{{WalletHref}}">cWallet</a></p>
-        <p><a href="" ng-click="Comming()">Try Demo</a></p>
-        <p><a href="" ng-click="GoToById('home-top')">ICO</a></p>
+        <p><a ng-href="{{WalletHref}}" style="display: block; width: 115px">cWallet Demo</a></p>
+        <p><a href="" ng-click="Comming()">cPay Demo</a></p>
+        <!--<p><a href="" ng-click="GoToById('home-top')">ICO</a></p>-->
       </div>
       <div class="ccore-footer-item-2">
         <p><a style="text-transform: capitalize" ng-href="{{Whitepaper}}" target="_blank">Whitepaper</a></p>
