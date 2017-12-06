@@ -264,12 +264,12 @@ h4{
 .ccore-header-logo{
 	width: 91px;
 	height: 37px;
-	margin-left: 0; /*170*/
+	margin-left: -31px; /*170*/
 	margin-top: 25px;
 }
 .ccore-header-menu {
 	margin-left: 60px;
-	margin-top: 25px;
+	margin-top: 28px;
 }
 .ccore-header-menu a, .ccore-menu ul a{
 	color: #FFFFFF;
@@ -3010,12 +3010,21 @@ ul.ico-details-list.gray{list-style: none}
   height: 186px;
   background: url(../images/EtherDelta.png);
   background-size: 100% 100%;
+  align-self: center;
 }
 .coinmarket{
   width: 495px;
   height: 127px;
   background: url(../images/coinmarket.png);
   background-size: 100% 100%;
+  align-self: center;
+}
+.mercatox{
+  width: 336px;
+  height: 167px;
+  background: url(../images/mercatox-logo.png);
+  background-size: 100% 100%;
+  cursor: pointer;
   align-self: center;
 }
 
